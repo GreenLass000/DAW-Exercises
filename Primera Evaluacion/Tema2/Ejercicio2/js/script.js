@@ -2,17 +2,34 @@ const ROW_COUNT = 4; //Se puede ampliar si se quieren guardar mas elementos
 const COL_COUNT = 2;
 const COL_NAMES = ["Nombre", "Primer apellido", "Segundo apellido", "Fecha"];
 const DATE_REGEX = /^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{2})$/;
-const NAME_REGEX = /^([A-Z][a-z]+\s?){0,2}/;
+const NAME_REGEX = /^[A-Z][a-z]+$/;
 
-let dataString, dataSplitted;
+let dataString, dataSplitted, isDataIncorrect;
 
 do {
+	isDataIncorrect = false;
 	dataString = prompt(
 		"Introduce tu nombre, apellidos y fecha de nacimiento con el siguiente formato: \nnombre,apellido1,apellido2,fecha_nacimiento(dd/MM/yy)"
 	);
 	dataSplitted = dataString.split(",");
-	// console.log(dataSplitted);
-} while (dataSplitted.length != 4);
+	console.log(dataSplitted);
+
+	//Comprobar nombre y apellidos
+	for (let i = 0; i < 3; i++) {
+		console.log(dataSplitted[i].match(NAME_REGEX));
+		if (dataSplitted[i].match(NAME_REGEX) == null) {
+			console.log(dataSplitted[i], dataSplitted[i].match(NAME_REGEX));
+			isDataIncorrect = true;
+		}
+	}
+
+	//Comprobar Fecha
+	if (dataSplitted[3].match(DATE_REGEX) == null && !isDataIncorrect) {
+		// console.log(dataSplitted[i].match(DATE_REGEX) == null);
+		isDataIncorrect = true;
+	}
+	console.log(isDataIncorrect);
+} while (dataSplitted.length != 4 || isDataIncorrect);
 
 let tableHTML = "<table border='1'>";
 
@@ -20,31 +37,27 @@ for (let i = 0; i < ROW_COUNT; i++) {
 	// console.log(dataSplitted[i]);
 	if (i === ROW_COUNT - 1) {
 		console.log("Check date");
-		if (dataSplitted[i].match(DATE_REGEX) == null) {
-			// console.log(dataSplitted[i].match(DATE_REGEX) == null);
-			dataSplitted[i] = "Fecha no válida";
-		} else {
-			// console.log(new Date().getFullYear());
-			let separatedDate = dataSplitted[i].split("/");
-			let formattedDate = new Date(
-				new Date().getFullYear() - separatedDate[2] < 2000
-					? separatedDate[2]
-					: parseInt(separatedDate[2]) + 2000,
-				separatedDate[1] - 1,
-				separatedDate[0]
-			);
 
-			dataSplitted[i] = formattedDate;
+		// console.log(new Date().getFullYear());
+		let separatedDate = dataSplitted[i].split("/");
+		let formattedDate = new Date(
+			new Date().getFullYear() - separatedDate[2] < 2000
+				? separatedDate[2]
+				: parseInt(separatedDate[2]) + 2000,
+			separatedDate[1] - 1,
+			separatedDate[0]
+		);
 
-			// dataSplitted[i] = formattedDate.toLocaleDateString("es-es", {
-			// 	weekday: "long",
-			// 	year: "numeric",
-			// 	month: "short",
-			// 	day: "numeric",
-			// 	hour: "2-digit",
-			// 	second: "2-digit",
-			// });
-		}
+		dataSplitted[i] = formattedDate;
+
+		// dataSplitted[i] = formattedDate.toLocaleDateString("es-es", {
+		// 	weekday: "long",
+		// 	year: "numeric",
+		// 	month: "short",
+		// 	day: "numeric",
+		// 	hour: "2-digit",
+		// 	second: "2-digit",
+		// });
 	}
 	tableHTML +=
 		"<tr><td>" + COL_NAMES[i] + "</td><td>" + dataSplitted[i] + "</td></tr>";
