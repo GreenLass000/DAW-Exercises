@@ -2,7 +2,7 @@ const ROW_COUNT = 4; //Se puede ampliar si se quieren guardar mas elementos
 const COL_COUNT = 2;
 const COL_NAMES = ["Nombre", "Primer apellido", "Segundo apellido", "Fecha"];
 const DATE_REGEX = /^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{2})$/;
-const NAME_REGEX = /^[A-Z][a-z]+$/;
+const NAME_REGEX = /^[A-Z][a-z]{2,}$/;
 
 let dataString, dataSplitted, isDataIncorrect;
 
