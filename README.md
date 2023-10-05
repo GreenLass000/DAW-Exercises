@@ -16,4 +16,4 @@ Todos (o todos los que me acuerde de subir) los ejercicios del grado de desarrol
 
 ## Ejercicios Tema 3
 
-![Tema 3](resources/image.png)
+![Tema 3](resources/image-4.png)
