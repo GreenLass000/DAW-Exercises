@@ -3,10 +3,9 @@ let str = "en un lugar de la mancha";
 
 console.log("f1", f1(a));
 a = [1, 2, 3, 4];
-console.log("\n");
 
-console.log("f2");
-f2(a)
+console.log("\n");
+console.log("f2", f2(a));
 
 console.log("\n");
 console.log("f3", f3(a));
