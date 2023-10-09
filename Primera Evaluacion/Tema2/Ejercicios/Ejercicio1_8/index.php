@@ -3,12 +3,15 @@ $var = 1;
 $varStr = "Hola";
 $varArr = array("v1" => "Hola", "Adios");
 
-echo "<h2>Funciones de variable</h2>";
-defaultVariableFunctions($var);
-echo "<h2>Funciones de cadena</h2>";
-defaultStrFunctions($varStr);
-echo "<h2>Funciones de array</h2>";
-defaultArrayFunctions($varArr);
+//echo "<h2>Funciones de variable</h2>";
+//defaultVariableFunctions($var);
+//echo "<h2>Funciones de cadena</h2>";
+//defaultStrFunctions($varStr);
+//echo "<h2>Funciones de array</h2>";
+//defaultArrayFunctions($varArr);
+
+//echo(numbersPow($_GET["n1"] ?? 1, $_GET["n2"] ?? 1));
+//echo(area($_GET["base"] ?? 1, $_GET["altura"] ?? 1));
 
 function defaultVariableFunctions($variable)
 {
@@ -70,4 +73,14 @@ function defaultArrayFunctions($variable)
     echo array_key_exists("v1", $variable) . "<br>";
     echo "var_dump<br>";
     echo count($variable) . "<br>";
+}
+
+function numbersPow($n1, $n2)
+{
+    return $n1 ** $n2;
+}
+
+function area($base, $altura)
+{
+    return $base * $altura;
 }
