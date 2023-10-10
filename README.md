@@ -18,3 +18,6 @@ Todos (o todos los que me acuerde de subir) los ejercicios del grado de desarrol
 
 ![Tema 3 ejercicio 1](resources/image-4.png)
 ![Tema 3 ejercicio 2](resources/img-5.png)
+**Ejercicio 3 Objetos**
+![Tema 3 ejercicio 3](resources/img-6.png)
+![Tema 3 ejercicio 3.2](resources/img-7.png)
