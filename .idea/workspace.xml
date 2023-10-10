@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Tema 3 ejercicio 1">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/DAW-Exercises.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023_22_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023_22_41__Changes_.xml" afterDir="false" />
+    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/bgoogle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/cwstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/drive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/gmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/gmaps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/style/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/resources/catedral.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/resources/plazaMayor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/resources/pzorrilla.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio3/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo1/Etiquetado.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo1/Etiquetado.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo3/resources/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo3/resources/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo5/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +52,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GreenLass000&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bf04f595-b0f5-4145-9275-c180a7461001" />
+        <option name="url" value="https://github.com/GreenLass000/DAW-Exercises.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -54,32 +80,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "di",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/admin/Desktop/DAW-Exercises/Primera Evaluacion",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;di&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/DAW-Exercises/Primera Evaluacion&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion\Tema1\Ejercicios\Ejercicio2\resources" />
+      <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion\Tema1\Ejercicios\Ejercicio1" />
+      <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion\Tema1\Ejercicios\Ejercicio1\resources" />
+      <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion\Tema1\Ejemplos" />
       <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion\Tema1" />
     </key>
   </component>
@@ -94,6 +124,8 @@
       <workItem from="1696538393543" duration="232000" />
       <workItem from="1696538942976" duration="913000" />
       <workItem from="1696539938502" duration="3737000" />
+      <workItem from="1696932785350" duration="112000" />
+      <workItem from="1696932917519" duration="5695000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />
@@ -103,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696543643901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ejemplo 4">
+      <option name="closed" value="true" />
+      <created>1696593927734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696593927734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Tema 3 ejercicio 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tema 3 ejercicio 1" />
+    <MESSAGE value="Ejemplo 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejemplo 4" />
   </component>
 </project>
