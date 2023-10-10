@@ -28,11 +28,8 @@ function colocarPieza(figura, tablero) {
 
     figura.moverA(x, y);
 
-    let posX = figura.x;
-    let posY = figura.y;
-
-    if (tablero[posY][posX] === 0) {
-        tablero[posY][posX] = figura.toString();
+    if (tablero[figura.y][figura.x] === 0) {
+        tablero[figura.y][figura.x] = figura.toString();
     } else {
         colocarPieza(figura, tablero);
     }
@@ -43,19 +40,7 @@ function colocarPieza(figura, tablero) {
 
 function colocarPiezas(figuras, tablero) {
     for (let figura of figuras) {
-        let posX = figura.x;
-        let posY = figura.y;
-        //console.log(figura.toString(), posX, posY);
-
-        if (tablero[posY][posX] === 0) {
-            tablero[posY][posX] = figura.toString();
-        } else {
-            //console.log("Ocupado", figura);
-            colocarPieza(figura, tablero);
-        }
-
-        /*tablero[posY][posX] = tablero[posY][posX] === 0 ?
-            figura.toString() : colocarPieza(figura, tablero);*/
+        colocarPieza(figura, tablero)
     }
 }
 
