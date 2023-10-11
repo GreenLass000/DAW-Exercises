@@ -1,1 +1,5 @@
+.vscode
 vendor
+
+composer.lock
+composer.phar
