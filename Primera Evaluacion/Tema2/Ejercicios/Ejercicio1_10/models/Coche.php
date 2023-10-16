@@ -10,6 +10,7 @@ class Coche
     private $peso;
     private $longitud;
     private $ruedas;
+    private static $genericCont;
 
     public function __construct($matricula, $color, $plazas, $peso, $longitud, $ruedas)
     {
@@ -19,22 +20,23 @@ class Coche
         $this->peso = $peso;
         $this->longitud = $longitud;
         $this->ruedas = $ruedas;
+
+        self::addCont();
     }
 
-    public function __toString()
+    private static function addCont()
     {
-        // TODO: Implement __toString() method.
-        return "$this->matricula; $this->color";
+        self::$genericCont++;
+    }
+
+    public static function showCont()
+    {
+        return self::$genericCont;
     }
 
     public function getMatricula()
     {
         return $this->matricula;
-    }
-
-    public function setMatricula($matricula): void
-    {
-        $this->matricula = $matricula;
     }
 
     public function getColor()
@@ -85,5 +87,10 @@ class Coche
     public function setRuedas($ruedas): void
     {
         $this->ruedas = $ruedas;
+    }
+
+    public function __toString()
+    {
+        return "$this->matricula; $this->color";
     }
 }

@@ -1,32 +1,46 @@
 <?php
 
 namespace Ejercicio1_10\models;
+require_once "Coche.php";
 
 class Deportivo extends Coche
 {
     private $cv;
     private $numPuertas;
-    private $sillitalsofix;
-    private $capacidadCarga;
-    private $valocidadMaxima;
 
     /**
      * @param $cv
      * @param $numPuertas
-     * @param $sillitalsofix
-     * @param $capacidadCarga
-     * @param $valocidadMaxima
      */
-    public function __construct($matricula, $color, $plazas, $peso, $longitud, $ruedas, $cv, $numPuertas, $sillitalsofix, $capacidadCarga, $valocidadMaxima)
+    public function __construct($matricula, $color, $plazas, $peso, $longitud, $ruedas, $cv, $numPuertas)
     {
         parent::__construct($matricula, $color, $plazas, $peso, $longitud, $ruedas);
-        
         $this->cv = $cv;
         $this->numPuertas = $numPuertas;
-        $this->sillitalsofix = $sillitalsofix;
-        $this->capacidadCarga = $capacidadCarga;
-        $this->valocidadMaxima = $valocidadMaxima;
     }
 
+    public function getCv()
+    {
+        return $this->cv;
+    }
 
+    public function setCv($cv): void
+    {
+        $this->cv = $cv;
+    }
+
+    public function getNumPuertas()
+    {
+        return $this->numPuertas;
+    }
+
+    public function setNumPuertas($numPuertas): void
+    {
+        $this->numPuertas = $numPuertas;
+    }
+
+    public function __toString()
+    {
+        return parent::__toString() . " deportivo";
+    }
 }

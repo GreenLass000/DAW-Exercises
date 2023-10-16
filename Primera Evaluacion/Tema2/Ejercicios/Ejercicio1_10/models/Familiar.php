@@ -1,30 +1,33 @@
 <?php
 
 namespace Ejercicio1_10\models;
+require_once "Coche.php";
 
 class Familiar extends Coche
 {
-    private $cv;
-    private $numPuertas;
     private $sillitalsofix;
-    private $capacidadCarga;
-    private $valocidadMaxima;
 
     /**
-     * @param $cv
-     * @param $numPuertas
      * @param $sillitalsofix
-     * @param $capacidadCarga
-     * @param $valocidadMaxima
      */
-    public function __construct($matricula, $color, $plazas, $peso, $longitud, $ruedas, $cv, $numPuertas, $sillitalsofix, $capacidadCarga, $valocidadMaxima)
+    public function __construct($matricula, $color, $plazas, $peso, $longitud, $ruedas, $sillitalsofix)
     {
         parent::__construct($matricula, $color, $plazas, $peso, $longitud, $ruedas);
-
-        $this->cv = $cv;
-        $this->numPuertas = $numPuertas;
         $this->sillitalsofix = $sillitalsofix;
-        $this->capacidadCarga = $capacidadCarga;
-        $this->valocidadMaxima = $valocidadMaxima;
+    }
+
+    public function getSillitalsofix()
+    {
+        return $this->sillitalsofix;
+    }
+
+    public function setSillitalsofix($sillitalsofix): void
+    {
+        $this->sillitalsofix = $sillitalsofix;
+    }
+
+    public function __toString()
+    {
+        return parent::__toString() . " familiar";
     }
 }
