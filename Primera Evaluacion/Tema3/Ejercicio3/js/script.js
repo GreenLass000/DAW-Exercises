@@ -5,7 +5,11 @@ let vehiculos = [];
 
 function capturaReloj() {
     let date = new Date();
-    return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    let hours = (date.getHours() < 10) ? "0" + date.getHours() : date.getHours();
+    let minutes = (date.getMinutes() < 10) ? "0" + date.getMinutes() : date.getMinutes();
+    let seconds = (date.getSeconds() < 10) ? "0" + date.getSeconds() : date.getSeconds();
+
+    return `${hours}:${minutes}:${seconds}`;
 }
 
 function generarVehiculos() {
@@ -14,41 +18,36 @@ function generarVehiculos() {
     const MIN_MAX_TURISMOS = [1, 4];
     const MIN_MAX_TURISMO_PASSENGERS = [1, 7];
 
-    let randomTurismos = getRandomNumber(MIN_MAX_TURISMOS);
-
-    for (let i = 0; i < randomTurismos; i++) {
-        let randomPassengers = getRandomNumber(MIN_MAX_TURISMO_PASSENGERS);
-
-        let t = new Turismo(COLORS[~~(Math.random() * COLORS.length)]);
-        t.pasajeros = randomPassengers;
-        t.hora = capturaReloj();
-
-        vehiculos.push(t);
-    }
+    createAndAdd(getRandomNumber(MIN_MAX_TURISMOS), getRandomNumber(MIN_MAX_TURISMO_PASSENGERS), COLORS, Turismo);
 
     //Generacion de Camiones
     const MIN_MAX_CAMIONES = [1, 4];
     const TARA = [0, 9999];
     const MIN_MAX_CAMION_PASSENGERS = [1, 7];
 
-    let randomCamiones = getRandomNumber(MIN_MAX_CAMIONES);
+    createAndAdd(getRandomNumber(MIN_MAX_CAMIONES), getRandomNumber(MIN_MAX_CAMION_PASSENGERS), TARA, Camion);
+}
 
-    for (let i = 0; i < randomCamiones; i++) {
-        let randomPassengers = getRandomNumber(MIN_MAX_CAMION_PASSENGERS);
-        let tara = getRandomNumber(TARA);
+function createAndAdd(num, passengers, arr, instance) {
+    for (let i = 0; i < num; i++) {
+        let v;
+        if (instance.prototype.constructor.name === "Turismo") {
+            v = new Turismo(arr[~~(Math.random() * arr.length)])
+        } else if (instance.prototype.constructor.name === "Camion") {
+            v = new Camion(getRandomNumber(arr));
+        }
 
-        let c = new Camion(tara);
-        c.pasajeros = randomPassengers;
-        c.hora = capturaReloj();
+        v.pasajeros = passengers;
+        v.hora = capturaReloj();
 
-        vehiculos.push(c);
+        vehiculos.push(v);
     }
 }
 
 function mostrarVehiculos() {
     let html = "<table border='1'>";
     for (let vehiculo of vehiculos) {
-        html += "<tr><td>" + vehiculo.hora + "</td>" +
+        html += "<tr><td>Hora: " + vehiculo.hora + "</td>" +
             "<td>Tipo: " + vehiculo.constructor.name + "</td>" +
             "<td>Pasajeros: " + vehiculo.pasajeros + "</td>";
         if (vehiculo.constructor.name === "Turismo") {
