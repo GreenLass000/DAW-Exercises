@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/bgoogle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/cwstore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/drive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/gmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/gmaps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/resources/youtube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio1/style/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/resources/catedral.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/resources/plazaMayor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/resources/pzorrilla.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio2/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio3/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023_22_41_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023_22_41__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo1/Etiquetado.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo1/Etiquetado.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo3/resources/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo3/resources/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplo5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejemplos/Ejemplo5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Ejercicio3/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="GreenLass &lt;marcosnavarromartin@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dwec" />
@@ -125,7 +114,8 @@
       <workItem from="1696538942976" duration="913000" />
       <workItem from="1696539938502" duration="3737000" />
       <workItem from="1696932785350" duration="112000" />
-      <workItem from="1696932917519" duration="5695000" />
+      <workItem from="1696932917519" duration="6189000" />
+      <workItem from="1697537001575" duration="5431000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />
@@ -143,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696593927734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ejercicios tema 1">
+      <option name="closed" value="true" />
+      <created>1696939385299</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696939385299</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +151,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Tema 3 ejercicio 1" />
     <MESSAGE value="Ejemplo 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejemplo 4" />
+    <MESSAGE value="Ejercicios tema 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicios tema 1" />
   </component>
 </project>
