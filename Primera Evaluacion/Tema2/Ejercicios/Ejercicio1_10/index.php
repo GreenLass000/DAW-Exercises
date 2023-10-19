@@ -5,9 +5,9 @@ use Ejercicio1_10\models\Deportivo;
 use Ejercicio1_10\models\Familiar;
 use Ejercicio1_10\models\Furgoneta;
 
-//require_once "models/Deportivo.php";
-//require_once "models/Familiar.php";
-//require_once "models/Furgoneta.php";
+require_once "models/Deportivo.php";
+require_once "models/Familiar.php";
+require_once "models/Furgoneta.php";
 
 $fu1 = new Furgoneta(
     "111",
