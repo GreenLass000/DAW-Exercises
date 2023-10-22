@@ -11,26 +11,33 @@ img.style.width = "80px";
 let extra = document.createElement("img");
 extra.id = "extra";
 extra.style.width = "80px";
+extra.style.position = "relative";
 
 document.body.appendChild(img);
 document.body.appendChild(extra);
 
-document.onmousemove = function (e) {
+document.addEventListener("mousemove", function (e) {
     let i = document.querySelector("#image");
-    i.style.left = e.clientX + "px";
-    i.style.top = e.clientY + "px";
-}
+    setXY(e, i);
+});
 
-document.onauxclick = function (e) {
-    let ext = document.querySelector("#extra");
-    if (flag) {
-        ext.src = "resources/luna.gif";
-        const x = e.clientX - ext.width / 2;
-        const y = e.clientY - ext.height / 2;
+document.addEventListener("auxclick", function (e) {
+    if (e.button === 1) {
+        e.preventDefault();
 
-        ext.style.left = x + "px";
-        ext.style.top = y + "px";
-    } else {
-        ext.src = "resources/sol.png";
+        let ext = document.querySelector("#extra");
+
+        ext.src = "resources/" + ((flag) ? "luna" : "sol") + ".gif"
+        setXY(e, ext);
+
+        flag = !flag;
     }
+});
+
+function setXY(event, element) {
+    const x = event.clientX - element.width / 2;
+    const y = event.clientY - element.height / 2;
+
+    element.style.left = x + "px";
+    element.style.top = y + "px";
 }
