@@ -1,21 +1,36 @@
 let items = document.querySelectorAll(".grid-item");
 let half = items.length / 2;
 
-let used = new Array(items.length);
+let used = new Array(items.length).fill(undefined);
 console.log(used);
 
-for (let i = 0; i < half; i++) {
-
-}
-
-items.forEach((item) => {
-    loadImage(item);
+items.forEach((item, i) => {
+    loadImage(item, i);
 });
 
-function loadImage(item) {
+loadArray();
+console.log(used.toString());
+
+function loadArray() {
+    /**
+     * Genero numero
+     * Compruebo que no este en el array
+     * Meto el numero en una posicion aleatoria vacia
+     * Meto el mismo numero en otra posicion aleatoria vacia
+     * Repito hasta llenar el array
+     */
+    for (let i = 0; i < used.length; i++) {
+        let number = ~~(Math.random() * 400);
+        while (!used.includes(number)) {
+            let rPos = ~~(Math.random() * used.length);
+        }
+    }
+}
+
+function loadImage(item, index) {
     console.log("Imagen generada");
-    let randomID = ~~(Math.random() * 400);
-    let imageURL = `https://picsum.photos/id/${randomID}/200`;
+    let random = ~~(Math.random() * 400);
+    let imageURL = `https://picsum.photos/id/${random}/200`;
     let image = new Image();
 
     image.onload = function () {

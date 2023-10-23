@@ -23,10 +23,6 @@ for (let i = 0; i < area; i++) {
 }
 
 let cont = document.createElement("div");
-// cont.style.display = "flex";
-cont.style.textAlign = "center";
-cont.textContent = "Parejas Encontradas: ";
-cont.style.fontSize = "30px";
 
 let text = document.createElement("div");
 cont.style.textAlign = "center";
