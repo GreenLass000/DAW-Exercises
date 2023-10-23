@@ -7,7 +7,6 @@ function login()
             Password: <input type='password' name='pass' id='pass'><br>
             <input type='submit' value='Enviar'>
         </form>
-        <a href='../index.php'>Menu</a>
     ";
 }
 
@@ -19,11 +18,11 @@ function loginCheck()
         echo "Hola Mundo, $validations[0]";
         $_POST = [];
         echo "<a href='login.php'>Re-Login</a><br>";
-        echo "<a href='../index.php'>Menu</a>";
+//        echo "<a href='../index.php'>Menu</a>";
     } else {
         echo "Error de login<br>";
         $_POST = [];
         echo "<a href='login.php'>Re-Login</a><br>";
-        echo "<a href='../index.php'>Menu</a>";
+//        echo "<a href='../index.php'>Menu</a>";
     }
 }

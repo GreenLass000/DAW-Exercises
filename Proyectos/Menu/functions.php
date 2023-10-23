@@ -72,4 +72,4 @@ defaultStrFunctions($varStr);
 echo "<h2>Funciones de array</h2>";
 defaultArrayFunctions($varArr);
 
-echo "<br><br><a href='index.php'>Menu</a>";
+//echo "<br><br><a href='index.php'>Menu</a>";

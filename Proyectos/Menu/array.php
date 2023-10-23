@@ -13,4 +13,4 @@ foreach ($array as $item) {
     echo $item . "<br>";
 }
 
-echo "<br><a href='index.php'>Menu</a>";
+//echo "<br><a href='index.php'>Menu</a>";
