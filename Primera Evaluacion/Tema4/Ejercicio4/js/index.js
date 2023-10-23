@@ -11,8 +11,12 @@ img.style.width = "80px";
 let extra = document.createElement("img");
 extra.id = "extra";
 extra.style.width = "80px";
-extra.style.position = "relative";
+extra.style.position = "absolute";
 
+
+extra.src = "resources/sol.gif";
+
+document.body.style.userSelect = "none";
 document.body.appendChild(img);
 document.body.appendChild(extra);
 
@@ -30,8 +34,23 @@ document.addEventListener("auxclick", function (e) {
         ext.src = "resources/" + ((flag) ? "luna" : "sol") + ".gif"
         setXY(e, ext);
 
+        document.body.style.backgroundColor = (flag) ? "#11152e" : "white";
+
         flag = !flag;
     }
+    console.log(e.button);
+});
+
+document.addEventListener("click", function (e) {
+    let starDiv = document.createElement("div");
+    starDiv.className = "star";
+    starDiv.style.position = "absolute";
+    starDiv.style.top = e.clientY + "px";
+    starDiv.style.left = e.clientX + "px";
+    starDiv.style.color = "white";
+
+    starDiv.textContent = "*";
+    document.body.appendChild(starDiv);
 });
 
 function setXY(event, element) {
