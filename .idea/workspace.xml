@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/resources/enviando.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/style/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/style/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +84,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -116,6 +116,7 @@
       <workItem from="1696932917519" duration="6189000" />
       <workItem from="1697537001575" duration="5560000" />
       <workItem from="1697801494128" duration="2027000" />
+      <workItem from="1698140607253" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />
