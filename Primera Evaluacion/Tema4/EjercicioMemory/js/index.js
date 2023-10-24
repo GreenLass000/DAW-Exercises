@@ -1,45 +1,99 @@
 let items = document.querySelectorAll(".grid-item");
 let half = items.length / 2;
+let contador = 0;
 
 let used = new Array(items.length).fill(undefined);
-console.log(used);
+console.log(items.length, used)
+
+loadArray();
+console.log(used.toString());
 
 items.forEach((item, i) => {
     loadImage(item, i);
 });
 
-loadArray();
-console.log(used.toString());
+createBackground();
 
 function loadArray() {
-    /**
-     * Genero numero
-     * Compruebo que no este en el array
-     * Meto el numero en una posicion aleatoria vacia
-     * Meto el mismo numero en otra posicion aleatoria vacia
-     * Repito hasta llenar el array
-     */
-    for (let i = 0; i < used.length; i++) {
-        let number = ~~(Math.random() * 400);
-        while (!used.includes(number)) {
-            let rPos = ~~(Math.random() * used.length);
+    let flag = true;
+
+    while (used.includes(undefined)) {
+        let number;
+        do {
+            number = ~~(Math.random() * 400);
+            flag = checkImage(number, flag);
+            console.log("numero");
+        } while (used.includes(number) && flag);
+
+        let nPos;
+        for (let i = 0; i < 2; i++) {
+            do {
+                nPos = ~~(Math.random() * used.length);
+            } while (used[nPos] !== undefined);
+            used[nPos] = number;
         }
     }
 }
 
+function checkImage(image, flag) {
+    let test = new Image();
+
+    test.onload = function () {
+        flag = true;
+    };
+
+    test.onerror = function () {
+        flag = false;
+    };
+
+    test.src = `url(https://picsum.photos/id/${image}/200)`;
+    return flag;
+}
+
 function loadImage(item, index) {
-    console.log("Imagen generada");
-    let random = ~~(Math.random() * 400);
-    let imageURL = `https://picsum.photos/id/${random}/200`;
     let image = new Image();
-
     image.onload = function () {
-        item.style.backgroundImage = `url(${imageURL})`;
+        item.setAttribute("data-number", `${used[index]}`);
+        item.style.backgroundImage = `url(https://picsum.photos/id/${used[index]}/200)`;
     };
+    image.src = `https://picsum.photos/id/${used[index]}/200`;
+}
 
-    image.onerror = function () {
-        loadImage(item);
-    };
+function createBackground() {
+    let cards = document.querySelectorAll(".grid-item");
+    let cardDiv = document.createElement("div");
+    cardDiv.style.width = "100%";
+    cardDiv.style.height = "100%";
+    cardDiv.style.borderRadius = "15px";
+    // cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
 
-    image.src = imageURL;
+    cards.forEach(card => {
+        let divClone = cardDiv.cloneNode();
+        card.addEventListener("click", cardClickEvent);
+        card.appendChild(divClone);
+    });
+}
+
+let numbers = [];
+
+function cardClickEvent(event) {
+    if (contador >= 2) {
+    } else {
+        if (event.target.className !== "grid-item") {
+            event.target.setAttribute("hidden", true);
+
+            console.log(event.target.parentNode.getAttribute("data-number"))
+            numbers.push(event.target.parentNode.getAttribute("data-number"));
+
+            contador++;
+        }
+        if (contador === 2) {
+            console.log(numbers);
+            if (numbers[0] === numbers[1]) {
+                console.log("Son iguales");
+            } else {
+                console.log("No son iguales");
+            }
+        }
+    }
 }

@@ -13,6 +13,7 @@ let area = ((side < 2) ? 2 : side) ** 2;
 for (let i = 0; i < area; i++) {
     let item = document.createElement("div");
     item.className = "grid-item";
+    item.id = i;
     item.style.width = "200px";
     item.style.height = "200px";
     item.style.backgroundColor = "lightgray";
