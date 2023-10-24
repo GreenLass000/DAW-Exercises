@@ -60,17 +60,18 @@ function loadImage(item, index) {
 }
 
 function createBackground() {
-    let cards = document.querySelectorAll(".grid-item");
     let cardDiv = document.createElement("div");
     cardDiv.style.width = "100%";
     cardDiv.style.height = "100%";
     cardDiv.style.borderRadius = "15px";
-    // cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
+    cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
 
-    cards.forEach(card => {
-        let divClone = cardDiv.cloneNode();
-        card.addEventListener("click", cardClickEvent);
-        card.appendChild(divClone);
+    items.forEach(card => {
+        if (card.hasAttribute("data-number")) {
+            let divClone = cardDiv.cloneNode(true);
+            card.addEventListener("click", cardClickEvent);
+            card.appendChild(divClone);
+        }
     });
 }
 
@@ -90,9 +91,31 @@ function cardClickEvent(event) {
         if (contador === 2) {
             console.log(numbers);
             if (numbers[0] === numbers[1]) {
-                console.log("Son iguales");
+                setTimeout(() => {
+                    let selected = document
+                        .querySelectorAll("[data-number='" + numbers[0] + "']")
+
+                    selected.forEach(i => {
+                        i.style.backgroundImage = "url(./resources/ok.png)"
+                    });
+
+                    contador = 0;
+                    numbers = [];
+                }, 1000);
             } else {
-                console.log("No son iguales");
+                setTimeout(() => {
+                    for (let i = 0; i < numbers.length; i++) {
+                        let cards = document.querySelectorAll("[data-number='" + numbers[i] + "']")
+                        cards.forEach(card => {
+                            if (card.children[0].hasAttribute("hidden")) {
+                                card.children[0].removeAttribute("hidden");
+                            }
+                        });
+                    }
+
+                    contador = 0;
+                    numbers = [];
+                }, 1000);
             }
         }
     }
