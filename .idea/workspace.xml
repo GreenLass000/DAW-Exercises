@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Memory update">
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/EjercicioVideo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/EjercicioVideo/resources/video/video.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/resources/cr.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" afterDir="false" />
+    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Ejercicio Video">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/Registro/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +115,7 @@
       <workItem from="1697537001575" duration="5560000" />
       <workItem from="1697801494128" duration="2027000" />
       <workItem from="1698140607253" duration="713000" />
+      <workItem from="1698148730740" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />
@@ -153,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697544006311</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ejercicio Video">
+      <option name="closed" value="true" />
+      <created>1698148628969</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698148628969</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +170,7 @@
     <MESSAGE value="Ejercicios tema 1" />
     <MESSAGE value="Contenido ejercicio 3" />
     <MESSAGE value="Memory update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Memory update" />
+    <MESSAGE value="Ejercicio Video" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio Video" />
   </component>
 </project>
