@@ -1,4 +1,10 @@
 <?php
+/**
+ * Funcion que genera una excepcion si el parametro es menor a 0
+ * @param $number
+ * @return mixed
+ * @throws Exception
+ */
 function exceptionOk($number)
 {
     if ($number < 0)
@@ -6,12 +12,20 @@ function exceptionOk($number)
     return $number;
 }
 
+/**
+ * Funcion que genera una excepcion si el parametro es menor a 0
+ * @param $number2
+ * @return mixed
+ * @throws Exception
+ */
 function exceptionError($number2)
 {
     if ($number2 < 0)
         throw new Exception("Numero menor a 0");
     return $number2;
 }
+
+include_once "vengode.php";
 
 try {
     echo exceptionOk(10);
@@ -20,4 +34,4 @@ try {
     echo "<br><br><span style='color: red'>Error: " . $e->getMessage() . "</span>";
 }
 
-//echo "<br><br><a href='index.php'>Menu</a>";
+echo "<br><br><a href='index.php?page=exceptions'>Menu</a>";

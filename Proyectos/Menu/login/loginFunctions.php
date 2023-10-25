@@ -1,4 +1,8 @@
 <?php
+/**
+ * Crea un formulario de login
+ * @return void
+ */
 function login()
 {
     echo "
@@ -10,6 +14,10 @@ function login()
     ";
 }
 
+/**
+ * Comprueba que el usuario y la contraseña sean correctos, Muestra mensaje de bienvenida o error dependiendo del caso
+ * @return void
+ */
 function loginCheck()
 {
     $validations = ["Marcos", "1234"];

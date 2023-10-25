@@ -1,4 +1,9 @@
 <?php
+/**
+ * Muestra las funciones de variable por defecto
+ * @param $variable
+ * @return void
+ */
 function defaultVariableFunctions($variable)
 {
     echo "is_null<br>";
@@ -19,6 +24,11 @@ function defaultVariableFunctions($variable)
     echo var_dump($variable) . "<br>";
 }
 
+/**
+ * Muestra las funciones de cadena por defecto
+ * @param $variable
+ * @return void
+ */
 function defaultStrFunctions($variable)
 {
     echo "strlen<br>";
@@ -37,6 +47,11 @@ function defaultStrFunctions($variable)
     echo strstr($variable, "la") . "<br>";
 }
 
+/**
+ * Muestra las funciones de los array por defecto
+ * @param $arr
+ * @return void
+ */
 function defaultArrayFunctions($arr)
 {
     echo "var_dump<br>";
@@ -65,6 +80,8 @@ $var = 1;
 $varStr = "Hola";
 $varArr = array("v1" => "Hola", "Adios");
 
+include_once "vengode.php";
+
 echo "<h2>Funciones de variable</h2>";
 defaultVariableFunctions($var);
 echo "<h2>Funciones de cadena</h2>";
@@ -72,4 +89,4 @@ defaultStrFunctions($varStr);
 echo "<h2>Funciones de array</h2>";
 defaultArrayFunctions($varArr);
 
-//echo "<br><br><a href='index.php'>Menu</a>";
+echo "<br><br><a href='index.php?page=functions'>Menu</a>";
