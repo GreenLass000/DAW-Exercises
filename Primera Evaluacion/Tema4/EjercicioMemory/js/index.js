@@ -67,11 +67,9 @@ function createBackground() {
     cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
 
     items.forEach(card => {
-        if (card.hasAttribute("data-number")) {
-            let divClone = cardDiv.cloneNode(true);
-            card.addEventListener("click", cardClickEvent);
-            card.appendChild(divClone);
-        }
+        let divClone = cardDiv.cloneNode(true);
+        card.addEventListener("click", cardClickEvent);
+        card.appendChild(divClone);
     });
 }
 
@@ -112,7 +110,6 @@ function cardClickEvent(event) {
                             }
                         });
                     }
-
                     contador = 0;
                     numbers = [];
                 }, 1000);
