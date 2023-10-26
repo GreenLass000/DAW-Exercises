@@ -21,7 +21,7 @@ function loadArray() {
         let number;
         do {
             number = ~~(Math.random() * 400);
-            flag = checkImage(number, flag);
+            flag = checkImage(number);
             console.log("numero");
         } while (used.includes(number) && flag);
 
@@ -35,19 +35,17 @@ function loadArray() {
     }
 }
 
-function checkImage(image, flag) {
+function checkImage(image) {
     let test = new Image();
 
     test.onload = function () {
-        flag = true;
+        return true;
     };
 
     test.onerror = function () {
-        flag = false;
+        return false;
     };
-
     test.src = `url(https://picsum.photos/id/${image}/200)`;
-    return flag;
 }
 
 function loadImage(item, index) {
@@ -67,6 +65,8 @@ function createBackground() {
     cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
 
     items.forEach(card => {
+        console.log(card.dataset.number);
+        console.log(card);
         let divClone = cardDiv.cloneNode(true);
         card.addEventListener("click", cardClickEvent);
         card.appendChild(divClone);

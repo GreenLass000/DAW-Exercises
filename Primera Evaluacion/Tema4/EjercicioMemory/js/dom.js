@@ -1,4 +1,4 @@
-let side = 4;
+let side = 20;
 
 let gridContainer = document.createElement("div");
 gridContainer.className = "grid-container";
