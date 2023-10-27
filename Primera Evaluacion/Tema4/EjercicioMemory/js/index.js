@@ -99,7 +99,7 @@ function cardClickEvent(event) {
             if (numbers[0] === numbers[1]) {
                 setTimeout(() => {
                     let selected = document
-                        .querySelectorAll("[data-number='" + numbers[0] + "']")
+                        .querySelectorAll("[data-numero='" + numbers[0] + "']")
 
                     selected.forEach(i => {
                         i.style.backgroundImage = "url(./resources/ok.png)"
@@ -114,7 +114,7 @@ function cardClickEvent(event) {
             } else {
                 setTimeout(() => {
                     for (let i = 0; i < numbers.length; i++) {
-                        let cards = document.querySelectorAll("[data-number='" + numbers[i] + "']")
+                        let cards = document.querySelectorAll("[data-numero='" + numbers[i] + "']")
                         cards.forEach(card => {
                             if (card.children[0].hasAttribute("hidden")) {
                                 card.children[0].removeAttribute("hidden");
