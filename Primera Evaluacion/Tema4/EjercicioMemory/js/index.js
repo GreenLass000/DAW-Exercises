@@ -1,17 +1,16 @@
 let items = document.querySelectorAll(".grid-item");
-let half = items.length / 2;
 let contador = 0;
 
 let used = new Array(items.length).fill(undefined);
-console.log(items.length, used)
+
+// console.log(items.length, used)
 
 loadArray();
-console.log(used.toString());
+// console.log(used.toString());
 
 items.forEach((item, i) => {
     loadImage(item, i);
 });
-
 createBackground();
 
 function loadArray() {
@@ -22,7 +21,7 @@ function loadArray() {
         do {
             number = ~~(Math.random() * 400);
             flag = checkImage(number);
-            console.log("numero");
+            // console.log("numero");
         } while (used.includes(number) && flag);
 
         let nPos;
@@ -37,16 +36,22 @@ function loadArray() {
 
 function checkImage(image) {
     let test = new Image();
+    let loadFlag;
 
-    test.onload = function () {
+    test.addEventListener("load", loadEvent);
+
+    function loadEvent(e) {
+        console.log(e.headers)
+        loadFlag = false;
+    }
+
+    test.onerror = function (e) {
+        e.preventDefault();
         return true;
     };
-
-    test.onerror = function () {
-        return false;
-    };
-    test.src = `url(https://picsum.photos/id/${image}/200)`;
-    return 0;
+    test.src = `url(https://picsum.photos/200)`;
+    console.log(test.src);
+    // return 0;
 }
 
 function loadImage(item, index) {
@@ -56,7 +61,8 @@ function loadImage(item, index) {
         //item.setAttribute("data-number", `${used[index]}`);
         item.style.backgroundImage = `url(https://picsum.photos/id/${used[index]}/200)`;
     });
-    image.addEventListener("error", () => {
+    image.addEventListener("error", (e) => {
+        e.preventDefault();
         item.style.backgroundColor = "red";
         item.id = "error";
     })
@@ -68,11 +74,13 @@ function createBackground() {
     cardDiv.style.width = "100%";
     cardDiv.style.height = "100%";
     cardDiv.style.borderRadius = "15px";
-    cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
+    //cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
 
+    // let datasetCards = document.querySelectorAll("[data-numero]")
+    // console.log(datasetCards);
     items.forEach(card => {
-        console.log("La id es", card.id);
-        console.log(card);
+        // console.log("El dataset es", card.dataset.numero);
+        // console.log(card);
         if (card.dataset.numero === undefined) {
             let divClone = cardDiv.cloneNode(true);
             card.addEventListener("click", cardClickEvent);
@@ -95,7 +103,7 @@ function cardClickEvent(event) {
             contador++;
         }
         if (contador === 2) {
-            console.log(numbers);
+            // console.log(numbers);
             if (numbers[0] === numbers[1]) {
                 setTimeout(() => {
                     let selected = document
@@ -107,6 +115,8 @@ function cardClickEvent(event) {
 
                     let points = document.querySelector("#points");
                     points.textContent = parseInt(points.textContent) + 1;
+
+                    checkWin();
 
                     contador = 0;
                     numbers = [];
@@ -126,5 +136,17 @@ function cardClickEvent(event) {
                 }, 1000);
             }
         }
+    }
+}
+
+function checkWin() {
+    let cardCont = 0;
+    let items = document.querySelectorAll(".grid-item");
+    items.forEach(item => {
+        if (item.children[0].getAttribute("hidden") || item.children[0] === undefined)
+            cardCont++;
+    });
+    if (cardCont === 16) {
+        document.body.appendChild("<h1>HAS GANADO</h1>");
     }
 }

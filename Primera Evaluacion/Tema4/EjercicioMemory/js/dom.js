@@ -1,4 +1,11 @@
-let side = range(parseInt(prompt("Introduce el numero de cartas por lado.\nMinimo 2, maximo 20\nSOLO NUMEROS PARES")));
+let side;
+while (true) {
+    side = parseInt(prompt("Introduce el numero de cartas por lado.\nMinimo 2, maximo 20\nSOLO NUMEROS PARES"));
+    if (!isNaN(side) && side >= 2 && side <= 20 && side % 2 === 0) {
+        break;
+    }
+}
+
 
 let gridContainer = document.createElement("div");
 gridContainer.className = "grid-container";
@@ -50,7 +57,8 @@ function getGridColumns() {
 }
 
 function range(value) {
-    console.log("El tipo de value es: " + typeof value);
+    // console.log("El tipo de value es: " + typeof value);
+    console.log(value);
     if (value < 2) {
         return 2;
     }
@@ -58,9 +66,9 @@ function range(value) {
         return 20;
     }
     if (value % 2 === 1) {
-        return value++;
-    } else {
+        return ++value;
+    } else if (value % 2 === 0) {
         return value;
     }
-    return 2;
+    return 4;
 }
