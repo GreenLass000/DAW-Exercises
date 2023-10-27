@@ -1,4 +1,4 @@
-let side = 20;
+let side = range(parseInt(prompt("Introduce el numero de cartas por lado.\nMinimo 2, maximo 20\nSOLO NUMEROS PARES")));
 
 let gridContainer = document.createElement("div");
 gridContainer.className = "grid-container";
@@ -47,4 +47,20 @@ function getGridColumns() {
         autos.push("auto");
     }
     return autos.join(" ");
+}
+
+function range(value) {
+    console.log("El tipo de value es: " + typeof value);
+    if (value < 2) {
+        return 2;
+    }
+    if (value > 20) {
+        return 20;
+    }
+    if (value % 2 === 1) {
+        return value++;
+    } else {
+        return value;
+    }
+    return 2;
 }

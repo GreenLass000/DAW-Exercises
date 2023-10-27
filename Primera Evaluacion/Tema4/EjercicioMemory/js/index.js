@@ -46,14 +46,20 @@ function checkImage(image) {
         return false;
     };
     test.src = `url(https://picsum.photos/id/${image}/200)`;
+    return 0;
 }
 
 function loadImage(item, index) {
     let image = new Image();
-    image.onload = function () {
-        item.setAttribute("data-number", `${used[index]}`);
+    image.addEventListener("load", () => {
+        item.dataset.numero = used[index];
+        //item.setAttribute("data-number", `${used[index]}`);
         item.style.backgroundImage = `url(https://picsum.photos/id/${used[index]}/200)`;
-    };
+    });
+    image.addEventListener("error", () => {
+        item.style.backgroundColor = "red";
+        item.id = "error";
+    })
     image.src = `https://picsum.photos/id/${used[index]}/200`;
 }
 
@@ -65,11 +71,13 @@ function createBackground() {
     cardDiv.style.backgroundImage = "url(./resources/fondo.jpg)";
 
     items.forEach(card => {
-        console.log(card.dataset.number);
+        console.log("La id es", card.id);
         console.log(card);
-        let divClone = cardDiv.cloneNode(true);
-        card.addEventListener("click", cardClickEvent);
-        card.appendChild(divClone);
+        if (card.dataset.numero === undefined) {
+            let divClone = cardDiv.cloneNode(true);
+            card.addEventListener("click", cardClickEvent);
+            card.appendChild(divClone);
+        }
     });
 }
 
@@ -81,8 +89,8 @@ function cardClickEvent(event) {
         if (event.target.className !== "grid-item") {
             event.target.setAttribute("hidden", true);
 
-            console.log(event.target.parentNode.getAttribute("data-number"))
-            numbers.push(event.target.parentNode.getAttribute("data-number"));
+            console.log(event.target.parentNode.dataset.numero)
+            numbers.push(event.target.parentNode.dataset.numero);
 
             contador++;
         }
@@ -96,6 +104,9 @@ function cardClickEvent(event) {
                     selected.forEach(i => {
                         i.style.backgroundImage = "url(./resources/ok.png)"
                     });
+
+                    let points = document.querySelector("#points");
+                    points.textContent = parseInt(points.textContent) + 1;
 
                     contador = 0;
                     numbers = [];
