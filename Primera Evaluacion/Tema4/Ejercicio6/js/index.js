@@ -10,107 +10,118 @@
  * Calcular letra dni
  */
 
-genForm();
+const form = document.createElement("form");
+form.classList.add("form");
+form.id = "myForm";
+form.action = "#";
+form.method = "post";
+form.addEventListener("submit", formSubmitEvent);
 
-function genForm() {
-    const form = document.createElement("form");
-    form.classList.add("form");
-    form.action = "#";
-    form.method = "post";
+newElement("text", "name", ["input-data"], "Nombre", ["error-text"], form, 20);
+newElement("text", "nif", ["input-data"], "NIF", ["error-text"], form);
+newElement("number", "age", ["input-data"], "Edad", ["error-text"], form);
+newElement("date", "date", ["input-data"], "Fecha", ["error-text"], form);
+newElement("text", "email", ["input-data"], "eMail", ["error-text"], form);
 
-    const name = document.createElement("input")
-    name.type = "text";
-    name.name = "name";
-    name.placeholder = "Nombre";
-    name.minLength = 20;
-    name.required = true;
-    const errorName = document.createElement("div");
-    errorName.classList.add("error-text");
-    errorName.textContent = "Mensaje de error de Nombre";
+const send = document.createElement("input")
+send.type = "submit";
+send.value = "Enviar";
 
-    const nif = document.createElement("input")
-    nif.type = "text";
-    nif.name = "nif";
-    nif.placeholder = "NIF";
-    nif.required = true;
-    nif.pattern = new RegExp("^\d{7,8}[A-Z]$");
-    const errorNif = document.createElement("div");
-    errorNif.classList.add("error-text");
-    errorNif.textContent = "Mensaje de error de NIF";
+form.appendChild(send);
 
-    const age = document.createElement("input")
-    age.type = "number";
-    age.name = "age";
-    age.placeholder = "Edad";
-    age.required = true;
-    const errorAge = document.createElement("div");
-    errorAge.classList.add("error-text");
-    errorAge.textContent = "Mensaje de error de Edad";
+document.body.appendChild(form);
 
-    const date = document.createElement("input")
-    date.type = "date";
-    date.name = "date";
-    date.minLength = 20;
-    date.required = true;
-    const errorDate = document.createElement("div");
-    errorDate.classList.add("error-text");
-    errorDate.textContent = "Mensaje de error de Fecha";
+function newElement(type, name, classes, placeholder, errorClasses, parentForm, minlength = -1) {
+    const itemDiv = document.createElement("div");
+    itemDiv.classList.add("item-container");
 
-    const mail = document.createElement("input")
-    mail.type = "email";
-    mail.name = "nif";
-    mail.placeholder = "eMail";
-    mail.minLength = 20;
-    mail.required = true;
-    mail.pattern = new RegExp("^\w{3}[@]\w{3,}[.](?:es|pt|fr)$");
-    const errorMail = document.createElement("div");
-    errorMail.classList.add("error-text");
-    errorMail.textContent = "Mensaje de error de Mail";
+    const item = document.createElement("input")
+    item.type = type;
+    item.name = name;
+    item.classList.add(classes);
+    item.placeholder = placeholder;
+    item.minLength = (minlength < 0) ? 0 : minlength;
+    item.required = true;
+    addInputsEventListeners(item);
 
-    const send = document.createElement("input")
-    send.type = "submit";
-    send.value = "Enviar";
+    const errorItem = document.createElement("div");
+    errorItem.classList.add(errorClasses);
+    errorItem.textContent = "Mensaje de error de " + placeholder;
+    errorItem.hidden = true;
 
-    form.appendChild(name);
-    form.appendChild(errorName);
-
-    form.appendChild(nif);
-    form.appendChild(errorNif);
-
-    form.appendChild(age);
-    form.appendChild(errorAge);
-
-    form.appendChild(date);
-    form.appendChild(errorDate);
-
-    form.appendChild(mail);
-    form.appendChild(errorMail);
-
-    form.appendChild(send);
-
-    document.body.appendChild(form);
+    itemDiv.appendChild(item);
+    itemDiv.appendChild(errorItem)
+    parentForm.appendChild(itemDiv);
 }
 
-function validate(item) {
+function addInputsEventListeners(item) {
+    item.addEventListener("focus", validate);
+    item.addEventListener("keydown", validate);
+    item.addEventListener("blur", validate);
+}
+
+function formSubmitEvent(e) {
+    e.preventDefault();
+}
+
+function submitClick(e) {
+
+    if (true) {
+        console.log("");
+    } else {
+        document.querySelector("#myForm").submit();
+    }
+}
+
+function validate(e) {
+    if (e.type === "focus" || e.type === "keydown") {
+        console.log("Evento", e.target.name)
+        switch (e.target.name) {
+            case "name":
+                vName(e.target.parentNode);
+                break;
+            case "nif":
+                vNif(e.target.parentNode);
+                break;
+            case "age":
+                vAge(e.target.parentNode);
+                break;
+            case "date":
+                vDate(e.target.parentNode);
+                break;
+            case "email":
+                vMail(e.target.parentNode);
+                break;
+        }
+    } else if (e.type === "blur" && e.target.textContent.length === 0) {
+        e.target.parentNode.childNodes[1].hidden = true;
+    }
+}
+
+function vName(container) {
+    let item = container.childNodes[0];
+    let error = container.childNodes[1];
+
+    console.log(item.innerHTML)
+
+    if (item.textContent.length < 20) {
+        error.hidden = false;
+        error.textContent = "El nombre debe tener minimo 20 caracteres. Actuales: " + item.textContent.length;
+    }
+}
+
+function vNif(container) {
 
 }
 
-function vDni(dni, err) {
+function vAge(container) {
 
 }
 
-function vName(name, err) {
+function vDate(container) {
 
 }
 
-function vAge(age, err) {
-
-}
-
-function vDate(date, err) {
-
-}
-
-function vMail(email, err) {
+function vMail(container) {
 
 }
