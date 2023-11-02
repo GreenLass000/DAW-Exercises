@@ -17,4 +17,4 @@ echo $ave1;
 echo "<br><br>";
 echo $mam1;
 
-echo "<br><br><a href='index.php?page=animales'>Menu</a>";
+echo "<br><br><a href='index.html?page=animales'>Menu</a>";
