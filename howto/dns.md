@@ -1,4 +1,5 @@
-# DNS (Domain Name Server)
+# DAW-Exercises
+Todos (o todos los que me acuerde de subir) los ejercicios del grado de desarrollo de aplicaciones web
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMDEyNDc1NV19
+eyJoaXN0b3J5IjpbLTc3ODI1MTA4OV19
 -->
