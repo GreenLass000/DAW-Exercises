@@ -1,0 +1,21 @@
+#menu {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    /*width: fit-content;*/
+}
+
+#menu li {
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    color: #007bff;
+}
