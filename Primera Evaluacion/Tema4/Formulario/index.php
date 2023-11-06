@@ -28,17 +28,17 @@ function fileForm(): string
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     echo genForm();
 } else {
-    $user = $_POST["user"] ?? "";
-    $pass = $_POST["pass"] ?? "";
+    $user = $_POST["user"] ?? null;
+    $pass = $_POST["pass"] ?? null;
 
-    if ($user === "" || $pass === "") {
+    if ($user === null || $pass === null) {
         echo genForm();
         echo "Introduce usuario o contraseña";
     } elseif ($user === "user" && $pass === "1234") {
         if (empty($_FILES)) {
             echo fileForm();
         } else {
-            
+
         }
     } else {
         echo genForm();

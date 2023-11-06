@@ -4,8 +4,25 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Primera Evaluacion/Tema2/Ejercicios" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Proyectos/Menu" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/google/apiclient" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/symfony/deprecation-contracts" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
