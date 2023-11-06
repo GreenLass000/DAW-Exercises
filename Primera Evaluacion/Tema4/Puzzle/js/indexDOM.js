@@ -1,0 +1,1 @@
+window.location = "puzzle.html?img=1";
