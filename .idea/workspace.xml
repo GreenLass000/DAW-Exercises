@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Tema 3 ejercicio 1">
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/carrito.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/catalogo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/contacto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/registro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/aside.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/Enunciado.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/pdf/Enunciado.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/aside.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/structure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/templates/aside.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/templates/header.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +97,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -139,6 +132,7 @@
       <workItem from="1698148730740" duration="595000" />
       <workItem from="1698400703331" duration="2217000" />
       <workItem from="1698775953780" duration="6348000" />
+      <workItem from="1699463454641" duration="8843000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />

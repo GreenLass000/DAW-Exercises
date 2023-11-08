@@ -1,44 +1,37 @@
+root {
+    --page-color: lightgreen;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
     grid-template-rows: auto 1fr auto;
     gap: 10px;
-    background-color: lightgreen;
+    background-color: var(--page-color);
     padding: 10px;
-    height: 96.3vh;
+    min-height: 100vh;
+    position: relative;
 }
 
 .grid-item {
-    text-align: center;
+    text-align: justify;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 header {
-    background-color: red;
-    grid-column: 1 / span 2;
     grid-row: 1;
-}
-
-.footer {
-    background-color: lightseagreen;
-    grid-column: 1 / span 2;
-    grid-row: 3;
-}
-
-.aside {
-    background-color: mediumpurple;
-    grid-column: 1;
-    grid-row: 2;
+    background-color: var(--page-color);
 }
 
 .content {
-    background-color: yellow;
-    grid-column: 2;
     grid-row: 2;
-}
-
-iframe {
-    width: 100%;
-    border: none;
+    overflow-y: auto;
+    padding-bottom: 60px;
 }
