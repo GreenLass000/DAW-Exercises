@@ -19,7 +19,7 @@ function fileForm(): string
     global $thispage;
     return "
         <form action='" . $thispage . "' method='post' enctype='multipart/form-data'>
-            <input type='file' name='file'><br>
+            <input type='resources' name='resources'><br>
             <input type='submit' value='Subir'>
         </form>
     ";
