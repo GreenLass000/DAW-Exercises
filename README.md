@@ -32,3 +32,8 @@ Todos (o todos los que me acuerde de subir) los ejercicios del grado de desarrol
 ![img_4.png](resources/img_4.png)
 ![img_5.png](resources/img_5.png)
 ![img_6.png](resources/img_6.png)
+
+## Ejercicios Tema 5
+
+![img.png](resources/img_7.png)
+![img.png](resources/img_8.png)
