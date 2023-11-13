@@ -1,0 +1,21 @@
+:root {
+    --color-page-background: #23233C;
+    --color-calc-background: #292942;
+    --color-result-background: #1A1A2A;
+    --color-text: #FFFFFF;
+    --color-equals: #C61D1B;
+    --color-shadow: rgba(164, 164, 164, 0.25);
+}
+
+body {
+    background-color: var(--color-page-background);
+    overflow: hidden;
+}
+
+.calculator {
+    background-color: var(--color-calc-background);
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 100px var(--color-shadow);
+}
