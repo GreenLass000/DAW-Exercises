@@ -64,6 +64,8 @@ domain [dominio]
 nameserver 127.0.0.1
 ```
 
+Configurar la zona directa `
+
 ## DDNS
 
 Para configurar un ddns hay que instalar el cliente de un servicio ddns
@@ -75,5 +77,6 @@ Una vez instalado hay que configurarlo siguiendo los pasos
 ![Seleccion de servicio ddns](https://cdn.discordapp.com/attachments/1173632725031338025/1173685119282860143/image.png?ex=6564da72&is=65526572&hm=0a28d9d1dbc15cd76e8a1260fbaebd81f06e1c861e4dd33351ff2d0d6c6218ba&)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl19
+eyJoaXN0b3J5IjpbMTMxOTcyOTg2MSwxMjQxNTE0MzA4LC0xMD
+AyNTQzNTY2XX0=
 -->
