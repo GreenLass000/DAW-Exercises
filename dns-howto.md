@@ -112,11 +112,9 @@ Para configurar un ddns hay que instalar el cliente de un servicio ddns
 ```bash
 apt install ddclient
 ```
-Una vez instalado hay que configurarlo siguiendo los pasos
-![Seleccion de servicio ddns](https://cdn.discordapp.com/attachments/1173632725031338025/1173685119282860143/image.png?ex=6564da72&is=65526572&hm=0a28d9d1dbc15cd76e8a1260fbaebd81f06e1c861e4dd33351ff2d0d6c6218ba&)
-
+Se puede cambiar la configuración desde 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDcyMzI3MzEsLTIxMDExMjQ2OTMsMT
-g5MjQyMDQ4NSwtMzg4MzMwNDk1LDEyNDE1MTQzMDgsLTEwMDI1
-NDM1NjZdfQ==
+eyJoaXN0b3J5IjpbOTIwNDM5NDA4LC0yMTQ3MjMyNzMxLC0yMT
+AxMTI0NjkzLDE4OTI0MjA0ODUsLTM4ODMzMDQ5NSwxMjQxNTE0
+MzA4LC0xMDAyNTQzNTY2XX0=
 -->
