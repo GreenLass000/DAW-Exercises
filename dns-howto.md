@@ -124,8 +124,9 @@ login=[usuario] \
 password=[contraseña] \
 [ddns hostname]
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2NjQzNDY4LC0yMTQ3MjMyNzMxLC0yMT
-AxMTI0NjkzLDE4OTI0MjA0ODUsLTM4ODMzMDQ5NSwxMjQxNTE0
-MzA4LC0xMDAyNTQzNTY2XX0=
+eyJoaXN0b3J5IjpbMTU0NjUyMzE5NCwtMjE0NzIzMjczMSwtMj
+EwMTEyNDY5MywxODkyNDIwNDg1LC0zODgzMzA0OTUsMTI0MTUx
+NDMwOCwtMTAwMjU0MzU2Nl19
 -->
