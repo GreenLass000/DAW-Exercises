@@ -78,9 +78,7 @@ Por último para instalar LAMP
 ```bash
 apt install php libapache2-mod-php php-mysql phpmyadmin
 ```
-Las siguientes imagenes muestran las opciones
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NTQzNDk4MSw4MzkwODQ4MjMsOTM2MD
-E5ODE4XX0=
+eyJoaXN0b3J5IjpbLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNj
+AxOTgxOF19
 -->
