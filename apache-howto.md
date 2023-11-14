@@ -11,6 +11,7 @@ apt install apache2 mariadb-server
 ```bash
 mysql_secure_installation
 ```
+```
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
       SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
 
@@ -71,7 +72,8 @@ All done!  If you've completed all of the above steps, your MariaDB
 installation should now be secure.
 
 Thanks for using MariaDB!
+``` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMzU1ODQ3Myw5MzYwMTk4MThdfQ==
+eyJoaXN0b3J5IjpbODM5MDg0ODIzLDkzNjAxOTgxOF19
 -->
