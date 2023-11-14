@@ -81,7 +81,8 @@ zone "a01.com" {
 };
 ```
 
-Y crear archivo de zona directa `/etc/bind/db.
+Y crear archivo de zona directa `/etc/bind/db.[nombre]`
+
 
 ## DDNS
 
@@ -94,6 +95,6 @@ Una vez instalado hay que configurarlo siguiendo los pasos
 ![Seleccion de servicio ddns](https://cdn.discordapp.com/attachments/1173632725031338025/1173685119282860143/image.png?ex=6564da72&is=65526572&hm=0a28d9d1dbc15cd76e8a1260fbaebd81f06e1c861e4dd33351ff2d0d6c6218ba&)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzAxMzMwODgsLTM4ODMzMDQ5NSwxMj
-QxNTE0MzA4LC0xMDAyNTQzNTY2XX0=
+eyJoaXN0b3J5IjpbMTg5MjQyMDQ4NSwtMzg4MzMwNDk1LDEyND
+E1MTQzMDgsLTEwMDI1NDM1NjZdfQ==
 -->
