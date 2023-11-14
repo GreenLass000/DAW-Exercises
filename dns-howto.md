@@ -82,7 +82,28 @@ zone "a01.com" {
 ```
 
 Y crear archivo de zona directa `/etc/bind/db.[nombre]`
+```
+;
+; archivo BIND para zona [name]
+;
 
+$TTL    604800
+@       IN      SOA     [name].        hostmaster.[name].    (
+                1               ; Serial
+                86400           ; Refresh
+                7200            ; Retry
+                1209600         ; Expire
+                10800 )         ; Negative Cache TTL
+
+[name].         IN      NS      ns1.a01.com.
+[name].         IN      MX      1        ns1.a01.com.
+[name].         IN      A       27.0.175.226
+ns1             IN      A       27.0.175.226
+www             IN      A       127.0.0.1
+#smtp           IN      A       127.0.0.1
+
+status          IN      CNAME   [ddns hostname]
+```
 
 ## DDNS
 
@@ -95,6 +116,6 @@ Una vez instalado hay que configurarlo siguiendo los pasos
 ![Seleccion de servicio ddns](https://cdn.discordapp.com/attachments/1173632725031338025/1173685119282860143/image.png?ex=6564da72&is=65526572&hm=0a28d9d1dbc15cd76e8a1260fbaebd81f06e1c861e4dd33351ff2d0d6c6218ba&)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjQyMDQ4NSwtMzg4MzMwNDk1LDEyND
-E1MTQzMDgsLTEwMDI1NDM1NjZdfQ==
+eyJoaXN0b3J5IjpbLTIxMDExMjQ2OTMsMTg5MjQyMDQ4NSwtMz
+g4MzMwNDk1LDEyNDE1MTQzMDgsLTEwMDI1NDM1NjZdfQ==
 -->
