@@ -3,14 +3,19 @@
 ## Instalación 
 
 Lo primero que hay que hacer siempre es actualizar las dependencias
+
 ```bash
 apt update
 ```
+
 Instala dns `bind9` y programas extras `dnsutils`
+
 ```bash
 apt install bind9 dnsutils
 ```
+
 Para comprobar la sintaxis de los archivos de configuración de bind9
+
 ```bash
 # Puedes especificar un archivo que quieras comprobar
 named-checkconf [fichero]
@@ -70,5 +75,5 @@ Una vez instalado hay que configurarlo siguiendo los pasos
 ![Seleccion de servicio ddns](https://cdn.discordapp.com/attachments/1173632725031338025/1173685119282860143/image.png?ex=6564da72&is=65526572&hm=0a28d9d1dbc15cd76e8a1260fbaebd81f06e1c861e4dd33351ff2d0d6c6218ba&)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDI1NDM1NjZdfQ==
+eyJoaXN0b3J5IjpbMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl19
 -->
