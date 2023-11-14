@@ -74,8 +74,13 @@ installation should now be secure.
 
 Thanks for using MariaDB!
 ``` 
+Por último para instalar LAMP
+```bash
+apt install php libapache2-mod-php php-mysql phpmyadmin
+```
+Las siguientes imagenes muestran las opciones
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzU4NDY3Niw4MzkwODQ4MjMsOTM2MD
+eyJoaXN0b3J5IjpbLTU1NTQzNDk4MSw4MzkwODQ4MjMsOTM2MD
 E5ODE4XX0=
 -->
