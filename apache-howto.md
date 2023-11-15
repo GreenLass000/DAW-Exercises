@@ -78,7 +78,15 @@ Por último para instalar LAMP
 ```bash
 apt install php libapache2-mod-php php-mysql phpmyadmin
 ```
+
+## Certbot
+
+## Certificado Autofirmado
+Instalar openssh-client
+```bash
+apt install openssh-client
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
-M5MDg0ODIzLDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbMzQ1MzU5NDc3LC0xNjM1ODk4MDYwLC0xMz
+gyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
 -->
