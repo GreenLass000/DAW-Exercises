@@ -1,6 +1,6 @@
 # Apache
 
-Para instalar unicamente apache
+Para instalar únicamente apache
 ```bash
 apt install apache2
 ```
@@ -79,6 +79,6 @@ Por último para instalar LAMP
 apt install php libapache2-mod-php php-mysql phpmyadmin
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNj
-AxOTgxOF19
+eyJoaXN0b3J5IjpbLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
+M5MDg0ODIzLDkzNjAxOTgxOF19
 -->
