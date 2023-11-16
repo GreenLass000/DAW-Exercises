@@ -87,10 +87,10 @@ Instalar openssh-client
 apt install openssh-client
 ```
 ```bash
-openssl req -new -nodes -keyout clave.key -out request.cs
+openssl req -new -nodes -keyout clave.key -out request.csr
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ3ODM2OTYsMzQ1MzU5NDc3LC0xNj
-M1ODk4MDYwLC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4
-MThdfQ==
+eyJoaXN0b3J5IjpbMTA1OTk1ODcxNCwzNDUzNTk0NzcsLTE2Mz
+U4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgx
+OF19
 -->
