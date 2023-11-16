@@ -89,8 +89,36 @@ apt install openssh-client
 ```bash
 openssl req -new -nodes -keyout clave.key -out request.csr
 ```
+```
+Generating a RSA private key
+..............+++++
+.........................+++++
+writing new private key to 'clave.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:es
+State or Province Name (full name) [Some-State]:Valladolid
+Locality Name (eg, city) []:Valladolid
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:IES Julian Marias
+Organizational Unit Name (eg, section) []:DAW
+Common Name (e.g. server FQDN or YOUR name) []:www.a01.com
+Email Address []:marcos.navarro.martin@iesjulianmarias.es
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTk1ODcxNCwzNDUzNTk0NzcsLTE2Mz
-U4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgx
-OF19
+eyJoaXN0b3J5IjpbLTExNzQwMzE0MTAsMzQ1MzU5NDc3LC0xNj
+M1ODk4MDYwLC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4
+MThdfQ==
 -->
