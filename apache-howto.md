@@ -116,12 +116,13 @@ A challenge password []:
 An optional company name []:
 ```
 
-Se firma el certificado con una duracion de un año
+Se firma el certificado con una duración de un año
 ```bash
 openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 365
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDczMzkxNywzNDUzNTk0NzcsLTE2Mz
-U4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgx
-OF19
+eyJoaXN0b3J5IjpbNTc2MDkyMzAxLDM0NTM1OTQ3NywtMTYzNT
+g5ODA2MCwtMTM4MjI3Nzk5MSw4MzkwODQ4MjMsOTM2MDE5ODE4
+XX0=
 -->
