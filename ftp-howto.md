@@ -22,8 +22,11 @@ Enter the new value, or press ENTER for the default
         Other []: 
 Is the information correct? [Y/n] y
 ```
-
+Para dar permisos de adminstrador al usuario
+```bash
+usermod -aG sudo invitado
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDkwNzcwMywtMjA4ODc0NjYxMiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MjI2NDc2NjMsLTIwODg3NDY2MTIsNz
+MwOTk4MTE2XX0=
 -->
