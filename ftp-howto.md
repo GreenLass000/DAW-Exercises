@@ -58,7 +58,8 @@ Enviamos las claves al servidor
 ```bash
 ssh-copy-id [usuario]@[ip]
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjI5Nzk5OTcsLTE4MjI2NDc2NjMsLT
-IwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbODg1NzQ1ODczLC0xODIyNjQ3NjYzLC0yMD
+g4NzQ2NjEyLDczMDk5ODExNl19
 -->
