@@ -31,8 +31,32 @@ Para crear un par de claves
 ```bash
 ssh-keygen
 ```
+Respondemos las preguntas
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:2LmbDRA5UCe4aUI0eadq3hbcNnZEU+K5ckxJ3ZNB4dg root@srv
+The key's randomart image is:
++---[RSA 3072]----+
+| .o..oo +o.o++   |
+|  o.o..*o+.++    |
+| . . =+.=.. E.   |
+|  . =  B.o       |
+|   = .+.S        |
+|  o o =+..       |
+| o . + oo        |
+|  . o    =       |
+|   .    o .      |
++----[SHA256]-----+
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY0OTYwODMzLC0xODIyNjQ3NjYzLC0yMD
-g4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTMyNzE0MzEwMywtMTgyMjY0NzY2MywtMj
+A4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
 -->
