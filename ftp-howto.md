@@ -64,7 +64,10 @@ Instalar ftp en el servidor
 ```bash
 apt install vsftpd
 ```
+Se inicia y se activa el servicio de ftp
+```bash
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNTQ1NDE4MCw4ODU3NDU4NzMsLTE4Mj
+eyJoaXN0b3J5IjpbLTIyMzM3NjcxMiw4ODU3NDU4NzMsLTE4Mj
 I2NDc2NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
