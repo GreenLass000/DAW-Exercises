@@ -22,6 +22,7 @@ function functionalButtons(button, result) {
     switch (button) {
         case "C":
             result.textContent = "0";
+            glowOperator();
             break;
         case "←":
             if (result.textContent !== "0") {
@@ -52,11 +53,13 @@ function functionalButtons(button, result) {
     }
 }
 
-function glowOperator(operator) {
+function glowOperator(operator = "") {
     const checkers = document.querySelectorAll(".checker");
     for (const checker of checkers) {
         checker.classList.remove("checker-glow");
     }
-    const actual = document.querySelector("div[data-operator='" + operator + "']")
-    actual.classList.add("checker-glow");
+    if (operator !== "") {
+        const actual = document.querySelector("div[data-operator='" + operator + "']")
+        actual.classList.add("checker-glow");
+    }
 }
