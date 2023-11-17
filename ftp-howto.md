@@ -59,7 +59,12 @@ Enviamos las claves al servidor
 ssh-copy-id [usuario]@[ip]
 ```
 
+## FTP
+Instalar ftp en el servidor
+```bash
+apt install vsftpd
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1NzQ1ODczLC0xODIyNjQ3NjYzLC0yMD
-g4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTMxNTQ1NDE4MCw4ODU3NDU4NzMsLTE4Mj
+I2NDc2NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
