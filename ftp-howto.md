@@ -53,10 +53,12 @@ The key's randomart image is:
 |  . o    =       |
 |   .    o .      |
 +----[SHA256]-----+
-
 ```
-
+Enviamos las claves al servidor
+```bash
+ssh-copy-id [usuario]@[ip]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzE0MzEwMywtMTgyMjY0NzY2MywtMj
-A4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5MjI5Nzk5OTcsLTE4MjI2NDc2NjMsLT
+IwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
