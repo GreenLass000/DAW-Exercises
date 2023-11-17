@@ -66,8 +66,17 @@ apt install vsftpd
 ```
 Se inicia y se activa el servicio de ftp
 ```bash
+systemctl start vsftpd
 ```
+```bash
+systemctl enable vsftpd
+```
+Se crea una copia de seguridad del archivo de configuracion de ftp
+```bash
+cp /etc/vsftpd.conf /etc/vsftpd.conf.old
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzM3NjcxMiw4ODU3NDU4NzMsLTE4Mj
-I2NDc2NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNDg0MDgzNTEsODg1NzQ1ODczLC0xOD
+IyNjQ3NjYzLC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
