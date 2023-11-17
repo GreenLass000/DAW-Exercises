@@ -81,6 +81,7 @@ anonymous_enable=NO
 local_enable=YES
 write_enable=YES
 chroot_local_user=YES
+allow_writeable_chroot=YES
 ```
 Despues de hacer los cambios hay que reiniciar el servicio de ftp
 ```bash
@@ -92,10 +93,21 @@ apt install ftp
 ```
 Nos conectamos al servidor desde ftp
 ```bash
-
+ftp [ip]
 ```
+```
+Connected to 27.0.175.226.
+220 (vsFTPd 3.0.3)
+Name (27.0.175.226:root): invitado
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTEzMjk1NiwxNzIyOTI4NDcsODg1Nz
-Q1ODczLC0xODIyNjQ3NjYzLC0yMDg4NzQ2NjEyLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTI3OTg0OTUyOSwtNjE5MTMyOTU2LDE3Mj
+I5Mjg0Nyw4ODU3NDU4NzMsLTE4MjI2NDc2NjMsLTIwODg3NDY2
+MTIsNzMwOTk4MTE2XX0=
 -->
