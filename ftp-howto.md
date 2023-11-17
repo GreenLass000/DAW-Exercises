@@ -75,8 +75,15 @@ Se crea una copia de seguridad del archivo de configuracion de ftp
 ```bash
 cp /etc/vsftpd.conf /etc/vsftpd.conf.old
 ```
-Al 
+Al editar el archivo de configuracion, hay que comprobar las siguientes lineas
+```
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+chroot_local_user=YES
+```
+Despues de hacer los cambios hay q
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MjU5OTIzNCw4ODU3NDU4NzMsLTE4Mj
+eyJoaXN0b3J5IjpbMTIxMDU4NzE3Niw4ODU3NDU4NzMsLTE4Mj
 I2NDc2NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
