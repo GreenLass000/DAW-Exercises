@@ -90,9 +90,12 @@ En el cliente hay que descargar ftp
 ```bash
 apt install ftp
 ```
-Nos conectamos 
+Nos conectamos al servidor desde ftp
+```bash
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzU4MTAwMCwxNzIyOTI4NDcsODg1Nz
+eyJoaXN0b3J5IjpbLTYxOTEzMjk1NiwxNzIyOTI4NDcsODg1Nz
 Q1ODczLC0xODIyNjQ3NjYzLC0yMDg4NzQ2NjEyLDczMDk5ODEx
 Nl19
 -->
