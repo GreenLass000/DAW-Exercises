@@ -82,8 +82,12 @@ local_enable=YES
 write_enable=YES
 chroot_local_user=YES
 ```
-Despues de hacer los cambios hay q
+Despues de hacer los cambios hay que reiniciar el servicio de ftp
+```bash
+systemctl restart vsftpd.service
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMDU4NzE3Niw4ODU3NDU4NzMsLTE4Mj
-I2NDc2NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTcyMjkyODQ3LDg4NTc0NTg3MywtMTgyMj
+Y0NzY2MywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
 -->
