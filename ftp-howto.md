@@ -1,4 +1,4 @@
-# FTP
+# Acceso Remoto
 Para crear un usuario
 ```bash
 adduser invitado
@@ -26,7 +26,13 @@ Para dar permisos de adminstrador al usuario
 ```bash
 usermod -aG sudo invitado
 ```
+
+Para crear un par de claves
+```bash
+ssh-keygen
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjI2NDc2NjMsLTIwODg3NDY2MTIsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNzY0OTYwODMzLC0xODIyNjQ3NjYzLC0yMD
+g4NzQ2NjEyLDczMDk5ODExNl19
 -->
