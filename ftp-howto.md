@@ -86,8 +86,13 @@ Despues de hacer los cambios hay que reiniciar el servicio de ftp
 ```bash
 systemctl restart vsftpd.service
 ```
-
+En el cliente hay que descargar ftp
+```bash
+apt install ftp
+```
+Nos conectamos 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjkyODQ3LDg4NTc0NTg3MywtMTgyMj
-Y0NzY2MywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTM4NzU4MTAwMCwxNzIyOTI4NDcsODg1Nz
+Q1ODczLC0xODIyNjQ3NjYzLC0yMDg4NzQ2NjEyLDczMDk5ODEx
+Nl19
 -->
