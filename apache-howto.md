@@ -199,9 +199,21 @@ Y probar
 lynx [name]
 ```
 Se repiten los mismos pasos para todos los VirtualHost que quieras
+
+### HTTPS
+Primero hay que habilitar el modulo ssl para que funcione todo
+
+Actualizar las dependencias
+```bash
+apt update
+```
+```bash
+a2enmod ssl
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODc2NTUzMDIsMTc0NDQyMDcwNywxOD
-M2Nzk0MTcyLDkzMDY3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3
-LC0xNjM1ODk4MDYwLC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5Mz
-YwMTk4MThdfQ==
+eyJoaXN0b3J5IjpbMTMxNjgzNzE2MSwtMTc4NzY1NTMwMiwxNz
+Q0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMw
+MSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
+M5MDg0ODIzLDkzNjAxOTgxOF19
 -->
