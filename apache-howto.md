@@ -366,11 +366,19 @@ Una vez todo configurado, hay que habilitar el sitio https
 ```bash
 a2ensite [name]https.conf
 ```
-Y
+Y se recarga `apache2`
+```bash
+systemctl reload apache2
+```
+Se comprueba con `lynx`
+```bash
+lynx https://[domain]
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODY3OTIyNTgsODk4MDE5MDc3LDI1Nz
-gxNTY4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3LDE4MzY3OTQx
-NzIsOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2Mz
-U4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgx
-OF19
+eyJoaXN0b3J5IjpbNzU5NzI5MTksODk4MDE5MDc3LDI1NzgxNT
+Y4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3LDE4MzY3OTQxNzIs
+OTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OT
+gwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
+
 -->
