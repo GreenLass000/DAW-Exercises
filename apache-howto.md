@@ -381,10 +381,18 @@ Hay que crear un nuevo usuario para poder acceder a través de él
 ```bash
 adduser [name]
 ```
+Se crea un archivo con la contraseña del usuario
+```bash
+htpasswd -c /etc/apache2/.permisos [usuario]
+```
+Se habilitan los modulos `auth_basic` y `authz_host`
+```bash
+htpasswd -c /etc/apache2/.permisos [usuario]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDc3NDkwODAsNzU5NzI5MTksODk4MD
-E5MDc3LDI1NzgxNTY4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3
-LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNT
-k0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIz
-LDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbLTE0NjM2MzM5NTksLTE1MDc3NDkwODAsNz
+U5NzI5MTksODk4MDE5MDc3LDI1NzgxNTY4NywtMTc4NzY1NTMw
+MiwxNzQ0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3Nj
+A5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5
+OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
 -->
