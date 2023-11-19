@@ -254,11 +254,12 @@ openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 
 
 Una vez tienes el certificado generado, hay que hacer un VirtualHost para https
 ```bash
-cp /etc/apache2/sites-available/default
+cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/[name]https.conf
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTQ0OTEzLC0xNzg3NjU1MzAyLDE3ND
-Q0MjA3MDcsMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MDkyMzAx
-LDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5MSw4Mz
-kwODQ4MjMsOTM2MDE5ODE4XX0=
+eyJoaXN0b3J5IjpbLTc5MjA0MTM3MiwtMTc4NzY1NTMwMiwxNz
+Q0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMw
+MSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
+M5MDg0ODIzLDkzNjAxOTgxOF19
 -->
