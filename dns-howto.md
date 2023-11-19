@@ -112,7 +112,30 @@ status          IN      CNAME   [ddns hostname].
 ```
 
 Se puede comprobar si el dns funciona correctamente con `dig`
+```bash
+dig www.a01.com
+```
+```
+; <<>> DiG 9.16.44-Debian <<>> www.a01.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28189
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
 
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 8c66e500c14cd13d01000000655a5e6a7a3e679851f1b4bb (good)
+;; QUESTION SECTION:
+;www.a01.com.                   IN      A
+
+;; ANSWER SECTION:
+www.a01.com.            604800  IN      A       127.0.0.1        
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Sun Nov 19 20:13:46 CET 2023
+;; MSG SIZE  rcvd: 84
+```
 
 ## DDNS
 
@@ -137,7 +160,7 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDgxMDExOSw3NDg4NjAwNywxNTQ2NT
+eyJoaXN0b3J5IjpbMjAyNDcxMzY4NCw3NDg4NjAwNywxNTQ2NT
 IzMTk0LC0yMTQ3MjMyNzMxLC0yMTAxMTI0NjkzLDE4OTI0MjA0
 ODUsLTM4ODMzMDQ5NSwxMjQxNTE0MzA4LC0xMDAyNTQzNTY2XX
 0=
