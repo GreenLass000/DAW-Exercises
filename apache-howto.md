@@ -139,9 +139,14 @@ Se firma el certificado con una duración de un año
 ```bash
 openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 365
 ```
-### Virtual
+### VirtualHosts
+Hacer una copia de `000-default.conf` para hacer tu propio VirtualHost
+```bash
+cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/[nombre].conf
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODQxMjE2MiwxODM2Nzk0MTcyLDkzMD
+eyJoaXN0b3J5IjpbLTc2NDcyNDU1MywxODM2Nzk0MTcyLDkzMD
 Y3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3LC0xNjM1ODk4MDYw
 LC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
 -->
