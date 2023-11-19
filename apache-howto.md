@@ -375,10 +375,16 @@ Se comprueba con `lynx`
 lynx https://[domain]
 ```
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU5NzI5MTksODk4MDE5MDc3LDI1NzgxNT
-Y4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3LDE4MzY3OTQxNzIs
-OTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OT
-gwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
+### Control de Acceso
 
+Hay que crear un nuevo usuario para poder acceder a través de él
+```bash
+
+```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwNzMxMDEyNTEsNzU5NzI5MTksODk4MD
+E5MDc3LDI1NzgxNTY4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3
+LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNT
+k0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIz
+LDkzNjAxOTgxOF19
 -->
