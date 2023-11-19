@@ -4,21 +4,6 @@ Actualizar las dependencias
 ```bash
 apt update
 ```
-Para poder utilizar sentencias SQL desde la terminal
-```bash
-mysql -u root -p
-```
-Para crear un usuario
-```sql
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'cl4ve2022';
-```
-```sql
-GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
-```
-```sql
-FLUSH PRIVILEGES;
-```
-
 Para instalar únicamente apache
 ```bash
 apt install apache2
@@ -98,6 +83,21 @@ Por último para instalar LAMP
 apt install php libapache2-mod-php php-mysql phpmyadmin
 ```
 
+Para poder utilizar sentencias SQL desde la terminal
+```bash
+mysql -u root -p
+```
+Para crear un usuario
+```sql
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'cl4ve2022';
+```
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+```
+```sql
+FLUSH PRIVILEGES;
+```
+
 ## Certbot
 
 ## Certificado Autofirmado
@@ -141,7 +141,7 @@ openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MD
-kyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5
-MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
+eyJoaXN0b3J5IjpbOTU5ODEyNjEyLDE4MzY3OTQxNzIsOTMwNj
+c3MjQ0LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAs
+LTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
 -->
