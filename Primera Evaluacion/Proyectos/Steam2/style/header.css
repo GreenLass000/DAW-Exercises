@@ -1,13 +1,7 @@
 header {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+    background-color: var(--secondary_color_alpha);
+    backdrop-filter: blur(5px);
+    user-select: none;
 }
 
 #menu-toggle {
@@ -36,12 +30,11 @@ header {
 
 #menu a {
     text-decoration: none;
-    color: #333;
     font-weight: bold;
 }
 
 #menu a:hover {
-    color: #007bff;
+    color: var(--hover-primary);
 }
 
 @media (max-width: 599px) {
@@ -51,10 +44,10 @@ header {
         position: absolute;
         top: 50px;
         right: 10px;
-        background-color: rgba(173, 216, 230, 0.7);
+        background-color: var(--secondary_color);
         border: 1px solid #ccc;
         padding: 10px;
-        backdrop-filter: blur(5px);
+        /*backdrop-filter: blur(5px);*/
     }
 
     .menu-icon {

@@ -1,0 +1,7 @@
+* {
+    color: var(--text-color);
+}
+
+::selection {
+    background-color: var(--select-color);
+}

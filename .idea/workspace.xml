@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Proyecto">
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/structure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/templates/footer.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -126,7 +133,10 @@
       <workItem from="1698400703331" duration="2217000" />
       <workItem from="1698775953780" duration="6348000" />
       <workItem from="1699463454641" duration="10006000" />
-      <workItem from="1700169869212" duration="697000" />
+      <workItem from="1700169869212" duration="1308000" />
+      <workItem from="1700320949383" duration="4594000" />
+      <workItem from="1700328999975" duration="6158000" />
+      <workItem from="1700429277769" duration="665000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />
@@ -176,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699479185413</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Proyecto">
+      <option name="closed" value="true" />
+      <created>1700176092610</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700176092610</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

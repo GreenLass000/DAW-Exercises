@@ -1,8 +1,4 @@
 .footer {
-    background-color: rgba(173, 216, 230, 0.7);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
+    background-color: var(--secondary_color_alpha);
     backdrop-filter: blur(5px);
 }
