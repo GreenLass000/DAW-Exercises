@@ -9,7 +9,15 @@ Para poder utilizar sentencias SQL desde la terminal
 mysql -u root -p
 ```
 Para crear un usuario
-
+```sql
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'cl4ve2022';
+```
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+```
+```sql
+FLUSH PRIVILEGES;
+```
 
 Para instalar únicamente apache
 ```bash
@@ -133,7 +141,7 @@ openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTM3MTU3MCw5MzA2NzcyNDQsNTc2MD
+eyJoaXN0b3J5IjpbMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MD
 kyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5
 MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
 -->
