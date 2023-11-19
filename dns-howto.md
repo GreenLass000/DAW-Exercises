@@ -167,9 +167,12 @@ systemctl restart bind9
 systemctl restart ddclient
 ```
 
-Para comprobarlo desde 
+Para comprobarlo desde otra maquina, hay que poner en dns en el archivo `/etc/resolv.conf`
+```
+nameserver 27.0.175.226
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTIzMTQ1NjUsNzQ4ODYwMDcsMTU0Nj
+eyJoaXN0b3J5IjpbLTE4MzUzNzkxNDcsNzQ4ODYwMDcsMTU0Nj
 UyMzE5NCwtMjE0NzIzMjczMSwtMjEwMTEyNDY5MywxODkyNDIw
 NDg1LC0zODgzMzA0OTUsMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl
 19
