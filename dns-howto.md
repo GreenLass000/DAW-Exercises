@@ -29,7 +29,6 @@ Cambiar `/etc/resolv.conf`
 ```
 nameserver 127.0.0.1
 ```
-
 Escribir el siguiente comando para que al reiniciar no se sobreescriba
 ```bash
 chattr +i /etc/resolv.conf
@@ -70,12 +69,6 @@ options {
         auth-nxdomain no;
         listen-on-v6 { any; };
 };
-```
-Añadir el dominio al resolv en `/etc/resolv.conf`
-```
-search [dominio]
-domain [dominio]
-nameserver 127.0.0.1
 ```
 
 Configurar la zona directa en el archivo `/etc/bind/named.conf.local`
@@ -142,7 +135,7 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTA5OTY1Nyw3NDg4NjAwNywxNTQ2NT
+eyJoaXN0b3J5IjpbMjA3NTUzMjYxNCw3NDg4NjAwNywxNTQ2NT
 IzMTk0LC0yMTQ3MjMyNzMxLC0yMTAxMTI0NjkzLDE4OTI0MjA0
 ODUsLTM4ODMzMDQ5NSwxMjQxNTE0MzA4LC0xMDAyNTQzNTY2XX
 0=
