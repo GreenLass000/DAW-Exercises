@@ -1,5 +1,11 @@
 # Apache
 
+Actualizar las dependencias
+```bash
+apt update
+```
+
+
 Para instalar únicamente apache
 ```bash
 apt install apache2
@@ -122,7 +128,7 @@ openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2MDkyMzAxLDM0NTM1OTQ3NywtMTYzNT
-g5ODA2MCwtMTM4MjI3Nzk5MSw4MzkwODQ4MjMsOTM2MDE5ODE4
-XX0=
+eyJoaXN0b3J5IjpbOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNT
+k0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIz
+LDkzNjAxOTgxOF19
 -->
