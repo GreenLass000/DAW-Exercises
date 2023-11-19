@@ -221,10 +221,36 @@ Generar clave privada
 ```bash
 openssl req -new -nodes -keyout clave.key -out request.csr
 ```
+```
+Generating a RSA private key
+.........+++++
+...............................+++++
+writing new private key to 'clave.key'
+-----
+You are about to be asked to enter information that will be incorporated   
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:ES
+State or Province Name (full name) [Some-State]:Valladolid
+Locality Name (eg, city) []:Valladolid
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Empresa
+Organizational Unit Name (eg, section) []:
+Common Name (e.g. server FQDN or YOUR name) []: [FQDN]
+Email Address []:
 
+Please enter the following 'extra' attributes
+to be sent with your certificate request     
+A challenge password []:
+An optional company name []:
+```
+Generar el certificado con la clave genera
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA5OTUwMjEwLC0xNzg3NjU1MzAyLDE3ND
-Q0MjA3MDcsMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MDkyMzAx
-LDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5MSw4Mz
-kwODQ4MjMsOTM2MDE5ODE4XX0=
+eyJoaXN0b3J5IjpbLTU3Njc0NzQwMywtMTc4NzY1NTMwMiwxNz
+Q0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMw
+MSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
+M5MDg0ODIzLDkzNjAxOTgxOF19
 -->
