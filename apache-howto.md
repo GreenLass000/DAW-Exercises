@@ -4,6 +4,11 @@ Actualizar las dependencias
 ```bash
 apt update
 ```
+Para poder utilizar sentencias SQL desde la terminal
+```bash
+mysql -u root -p
+```
+Para crear un usuario
 
 
 Para instalar únicamente apache
@@ -128,7 +133,7 @@ openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNT
-k0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIz
-LDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbMTQ1NTM3MTU3MCw5MzA2NzcyNDQsNTc2MD
+kyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5
+MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
 -->
