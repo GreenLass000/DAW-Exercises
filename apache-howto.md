@@ -201,18 +201,23 @@ lynx [name]
 Se repiten los mismos pasos para todos los VirtualHost que quieras
 
 ### HTTPS
-Primero hay que habilitar el modulo ssl para que funcione todo
 
 Actualizar las dependencias
 ```bash
 apt update
 ```
+
+Primero hay que habilitar el modulo ssl para que funcione todo
 ```bash
 a2enmod ssl
 ```
-
+Instalar openssh
+```bash
+apt install openssh-client
+```
+El siguiente pa
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjgzNzE2MSwtMTc4NzY1NTMwMiwxNz
+eyJoaXN0b3J5IjpbLTU5ODAwMjIyNCwtMTc4NzY1NTMwMiwxNz
 Q0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMw
 MSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
 M5MDg0ODIzLDkzNjAxOTgxOF19
