@@ -402,10 +402,17 @@ Hay que editar el VirtualHost al que queramos que se aplique el control de acces
 </Location>
 ```
 
+Hay que recargar el servicio de `apache2` y probar
+```bash
+systemctl reload apache2
+```
+```bash
+lynx [domain]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxMzM2OTk0LC0xNTA3NzQ5MDgwLDc1OT
-cyOTE5LDg5ODAxOTA3NywyNTc4MTU2ODcsLTE3ODc2NTUzMDIs
-MTc0NDQyMDcwNywxODM2Nzk0MTcyLDkzMDY3NzI0NCw1NzYwOT
-IzMDEsMzQ1MzU5NDc3LC0xNjM1ODk4MDYwLC0xMzgyMjc3OTkx
-LDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
+eyJoaXN0b3J5IjpbMTUyODU4NjIxNSwtMTUwNzc0OTA4MCw3NT
+k3MjkxOSw4OTgwMTkwNzcsMjU3ODE1Njg3LC0xNzg3NjU1MzAy
+LDE3NDQ0MjA3MDcsMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MD
+kyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5
+MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
 -->
