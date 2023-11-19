@@ -172,10 +172,8 @@ Hay que editar el nuevo archivo creado
         # modules, e.g.
         #LogLevel info ssl:warn
 
-        ErrorLog ${APACHE_LOG_DIR}/error_a01.log
-        CustomLog ${APACHE_LOG_DIR}/access_a01.log combined
-
-#       Alias /www.a01.com/phpmyadmin /usr/share/phpmyadmin
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
 
         # For most configuration files from conf-available/, which are
         # enabled or disabled at a global level, it is possible to
@@ -187,8 +185,12 @@ Hay que editar el nuevo archivo creado
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
+Hay que habilitar el sitio para que funcione (no h)
+```bash
+a2ensite [name].conf
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjUwMTY1NCwxODM2Nzk0MTcyLDkzMD
-Y3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3LC0xNjM1ODk4MDYw
-LC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
+eyJoaXN0b3J5IjpbLTIxMDI4OTU3MTksMTgzNjc5NDE3Miw5Mz
+A2NzcyNDQsNTc2MDkyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2
+MCwtMTM4MjI3Nzk5MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
 -->
