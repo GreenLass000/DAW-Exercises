@@ -23,6 +23,8 @@ named-checkconf [fichero]
 named-checkconf
 ```
 
+## Configuración
+
 Cambiar `/etc/resolv.conf` 
 ```
 nameserver 127.0.0.1
@@ -36,8 +38,6 @@ Para poder editar el archivo hay que desbloquearlo
 ```bash
 chattr -i /etc/resolv.conf
 ```
-
-## Configuración
 
 Configurar los forwarders para añadir la ip en el archivo `/etc/bind/named.conf.options`
 Hay que añadir la línea `auth-nxdomain no`
@@ -142,7 +142,8 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4ODYwMDcsMTU0NjUyMzE5NCwtMjE0Nz
-IzMjczMSwtMjEwMTEyNDY5MywxODkyNDIwNDg1LC0zODgzMzA0
-OTUsMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl19
+eyJoaXN0b3J5IjpbMjA5OTA5OTY1Nyw3NDg4NjAwNywxNTQ2NT
+IzMTk0LC0yMTQ3MjMyNzMxLC0yMTAxMTI0NjkzLDE4OTI0MjA0
+ODUsLTM4ODMzMDQ5NSwxMjQxNTE0MzA4LC0xMDAyNTQzNTY2XX
+0=
 -->
