@@ -159,9 +159,18 @@ password=[contraseña] \
 [ddns hostname]
 ```
 
+Hay que reiniciar los servicios de `bind9` y `ddclient`
+```bash
+systemctl restart bind9
+```
+```bash
+systemctl restart ddclient
+```
+
+Para comprobarlo desde 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNDcxMzY4NCw3NDg4NjAwNywxNTQ2NT
-IzMTk0LC0yMTQ3MjMyNzMxLC0yMTAxMTI0NjkzLDE4OTI0MjA0
-ODUsLTM4ODMzMDQ5NSwxMjQxNTE0MzA4LC0xMDAyNTQzNTY2XX
-0=
+eyJoaXN0b3J5IjpbLTE4OTIzMTQ1NjUsNzQ4ODYwMDcsMTU0Nj
+UyMzE5NCwtMjE0NzIzMjczMSwtMjEwMTEyNDY5MywxODkyNDIw
+NDg1LC0zODgzMzA0OTUsMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl
+19
 -->
