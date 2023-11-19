@@ -139,9 +139,9 @@ Se firma el certificado con una duración de un año
 ```bash
 openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 365
 ```
-
+### Virtual
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5ODEyNjEyLDE4MzY3OTQxNzIsOTMwNj
-c3MjQ0LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAs
-LTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbMTQxODQxMjE2MiwxODM2Nzk0MTcyLDkzMD
+Y3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3LC0xNjM1ODk4MDYw
+LC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
 -->
