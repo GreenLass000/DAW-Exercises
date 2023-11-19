@@ -23,6 +23,12 @@ named-checkconf [fichero]
 named-checkconf
 ```
 
+Cambiar `/etc/resolv.conf` 
+Escribir el siguiente comando para 
+```bash
+chattr +i /etc/resolv.conf
+```
+
 ## Configuración
 
 Configurar los forwarders para añadir la ip en el archivo `/etc/bind/named.conf.options`
@@ -126,7 +132,7 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjUyMzE5NCwtMjE0NzIzMjczMSwtMj
-EwMTEyNDY5MywxODkyNDIwNDg1LC0zODgzMzA0OTUsMTI0MTUx
-NDMwOCwtMTAwMjU0MzU2Nl19
+eyJoaXN0b3J5IjpbLTEzMTAwMjkzNjUsMTU0NjUyMzE5NCwtMj
+E0NzIzMjczMSwtMjEwMTEyNDY5MywxODkyNDIwNDg1LC0zODgz
+MzA0OTUsMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl19
 -->
