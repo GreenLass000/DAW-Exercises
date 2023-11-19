@@ -392,10 +392,17 @@ a2enmod auth_basic
 ```bash
 a2enmod authz_host
 ```
-Hay que editar el VirtualHost al que queramos que se aplique el control de acceso, 
-
+Hay que editar el VirtualHost al que queramos que se aplique el control de acceso, y añadir las siguientes lineas
+```
+<Location "/">
+        AuthName "Sección Privada: Prueba de acceso"
+		AuthType Basic
+		AuthUserFile /etc/apache2/.htpasswd
+		Require valid-user
+</Location>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDcwMDQ1NiwtMTUwNzc0OTA4MCw3NT
+eyJoaXN0b3J5IjpbMTYyNDY4OTA4NiwtMTUwNzc0OTA4MCw3NT
 k3MjkxOSw4OTgwMTkwNzcsMjU3ODE1Njg3LC0xNzg3NjU1MzAy
 LDE3NDQ0MjA3MDcsMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MD
 kyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5
