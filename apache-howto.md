@@ -361,9 +361,16 @@ El archivo quedaria de la siguiente forma
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
+
+Una vez todo configurado, hay que habilitar el sitio https
+```bash
+a2ensite [name]https.conf
+```
+Y
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4MDE5MDc3LDI1NzgxNTY4NywtMTc4Nz
-Y1NTMwMiwxNzQ0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0
-LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzOD
-IyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbLTIwODY3OTIyNTgsODk4MDE5MDc3LDI1Nz
+gxNTY4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3LDE4MzY3OTQx
+NzIsOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNTk0NzcsLTE2Mz
+U4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIzLDkzNjAxOTgx
+OF19
 -->
