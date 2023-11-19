@@ -81,9 +81,9 @@ Configurar la zona directa en el archivo `/etc/bind/named.conf.local`
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "a01.com" { 
+zone "[nombre]" { 
         type master;
-        file "/etc/bind/db.a01.com";
+        file "/etc/bind/db.[nombre]";
         allow-query { any; };
 };
 ```
@@ -93,7 +93,6 @@ Y crear archivo de zona directa `/etc/bind/db.[nombre]`
 ;
 ; archivo BIND para zona [name]
 ;
-
 $TTL    604800
 @       IN      SOA     [name].        hostmaster.[name].    (
                 1               ; Serial
@@ -135,7 +134,7 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NTUzMjYxNCw3NDg4NjAwNywxNTQ2NT
+eyJoaXN0b3J5IjpbLTI1OTgzMjUxOCw3NDg4NjAwNywxNTQ2NT
 IzMTk0LC0yMTQ3MjMyNzMxLC0yMTAxMTI0NjkzLDE4OTI0MjA0
 ODUsLTM4ODMzMDQ5NSwxMjQxNTE0MzA4LC0xMDAyNTQzNTY2XX
 0=
