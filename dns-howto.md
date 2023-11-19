@@ -102,7 +102,7 @@ $TTL    604800
                 10800 )         ; Negative Cache TTL
 
 [name].         IN      NS      ns1.a01.com.
-[name].         IN      MX      1        ns1.a01.com.
+[name].         IN      MX      1        ns1.[name].
 [name].         IN      A       27.0.175.226
 ns1             IN      A       27.0.175.226
 www             IN      A       127.0.0.1
@@ -110,6 +110,9 @@ www             IN      A       127.0.0.1
 
 status          IN      CNAME   [ddns hostname].
 ```
+
+Se puede comprobar si el dns funciona correctamente con `dig`
+
 
 ## DDNS
 
@@ -134,7 +137,7 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1OTgzMjUxOCw3NDg4NjAwNywxNTQ2NT
+eyJoaXN0b3J5IjpbMTQxNDgxMDExOSw3NDg4NjAwNywxNTQ2NT
 IzMTk0LC0yMTQ3MjMyNzMxLC0yMTAxMTI0NjkzLDE4OTI0MjA0
 ODUsLTM4ODMzMDQ5NSwxMjQxNTE0MzA4LC0xMDAyNTQzNTY2XX
 0=
