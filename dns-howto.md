@@ -24,10 +24,15 @@ named-checkconf
 ```
 
 Cambiar `/etc/resolv.conf` 
-Escribir el siguiente comando para 
+```
+nameserver 127.0.0.1
+```
+
+Escribir el siguiente comando para que al reiniciar no se sobre escriba
 ```bash
 chattr +i /etc/resolv.conf
 ```
+Para poder editar el archivo hay que desbloquear 
 
 ## Configuración
 
@@ -132,7 +137,7 @@ password=[contraseña] \
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTAwMjkzNjUsMTU0NjUyMzE5NCwtMj
+eyJoaXN0b3J5IjpbLTE4OTA3OTQ0MDUsMTU0NjUyMzE5NCwtMj
 E0NzIzMjczMSwtMjEwMTEyNDY5MywxODkyNDIwNDg1LC0zODgz
 MzA0OTUsMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl19
 -->
