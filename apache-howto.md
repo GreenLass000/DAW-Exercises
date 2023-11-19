@@ -98,48 +98,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
-## Certbot
-
-## Certificado Autofirmado
-Instalar openssh-client
-```bash
-apt install openssh-client
-```
-```bash
-openssl req -new -nodes -keyout clave.key -out request.csr
-```
-```
-Generating a RSA private key
-..............+++++
-.........................+++++
-writing new private key to 'clave.key'
------
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) [AU]:es
-State or Province Name (full name) [Some-State]:Valladolid
-Locality Name (eg, city) []:Valladolid
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:IES Julian Marias
-Organizational Unit Name (eg, section) []:DAW
-Common Name (e.g. server FQDN or YOUR name) []:www.a01.com
-Email Address []:marcos.navarro.martin@iesjulianmarias.es
-
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []:
-An optional company name []:
-```
-
-Se firma el certificado con una duración de un año
-```bash
-openssl x509 -in request.csr -req -signkey clave.key -out certificate.crt -days 365
-```
 ### VirtualHosts
+
 Hacer una copia de `000-default.conf` para hacer tu propio VirtualHost
 ```bash
 cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/[nombre].conf
@@ -258,8 +218,8 @@ cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/[n
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjA0MTM3MiwtMTc4NzY1NTMwMiwxNz
-Q0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMw
-MSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
-M5MDg0ODIzLDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbMjU3ODE1Njg3LC0xNzg3NjU1MzAyLDE3ND
+Q0MjA3MDcsMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MDkyMzAx
+LDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5MSw4Mz
+kwODQ4MjMsOTM2MDE5ODE4XX0=
 -->
