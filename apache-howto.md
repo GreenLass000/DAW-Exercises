@@ -387,12 +387,17 @@ htpasswd -c /etc/apache2/.permisos [usuario]
 ```
 Se habilitan los modulos `auth_basic` y `authz_host`
 ```bash
-htpasswd -c /etc/apache2/.permisos [usuario]
+a2enmod auth_basic
 ```
+```bash
+a2enmod authz_host
+```
+Hay que editar el VirtualHost al que queramos que se aplique el control de acceso, 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM2MzM5NTksLTE1MDc3NDkwODAsNz
-U5NzI5MTksODk4MDE5MDc3LDI1NzgxNTY4NywtMTc4NzY1NTMw
-MiwxNzQ0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3Nj
-A5MjMwMSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5
-OTEsODM5MDg0ODIzLDkzNjAxOTgxOF19
+eyJoaXN0b3J5IjpbMTM2MDcwMDQ1NiwtMTUwNzc0OTA4MCw3NT
+k3MjkxOSw4OTgwMTkwNzcsMjU3ODE1Njg3LC0xNzg3NjU1MzAy
+LDE3NDQ0MjA3MDcsMTgzNjc5NDE3Miw5MzA2NzcyNDQsNTc2MD
+kyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2MCwtMTM4MjI3Nzk5
+MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
 -->
