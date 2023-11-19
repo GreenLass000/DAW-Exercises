@@ -1,4 +1,5 @@
 # Acceso Remoto
+
 Para crear un usuario
 ```bash
 adduser invitado
@@ -107,7 +108,7 @@ Using binary mode to transfer files.
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTg0OTUyOSwtNjE5MTMyOTU2LDE3Mj
-I5Mjg0Nyw4ODU3NDU4NzMsLTE4MjI2NDc2NjMsLTIwODg3NDY2
-MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE4MzUwMzkzMDcsLTI3OTg0OTUyOSwtNj
+E5MTMyOTU2LDE3MjI5Mjg0Nyw4ODU3NDU4NzMsLTE4MjI2NDc2
+NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
