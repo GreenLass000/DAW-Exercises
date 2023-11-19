@@ -379,10 +379,10 @@ lynx https://[domain]
 
 Hay que crear un nuevo usuario para poder acceder a través de él
 ```bash
-
+adduser [name]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzMxMDEyNTEsNzU5NzI5MTksODk4MD
+eyJoaXN0b3J5IjpbLTE1MDc3NDkwODAsNzU5NzI5MTksODk4MD
 E5MDc3LDI1NzgxNTY4NywtMTc4NzY1NTMwMiwxNzQ0NDIwNzA3
 LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMwMSwzNDUzNT
 k0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsODM5MDg0ODIz
