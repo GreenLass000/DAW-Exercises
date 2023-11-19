@@ -162,6 +162,7 @@ Hay que editar el nuevo archivo creado
         DocumentRoot /usr/share/phpmyadmin
         DirectoryIndex index.html
 
+		#Si la ruta acaba en /phpmyadmin , redirige a www.a01.com
         <Location "/phpmyadmin">
                 Redirect "/phpmyadmin" "http://www.a01.com"
         </Location>
@@ -197,9 +198,10 @@ Y probar
 ```bash
 lynx [name]
 ```
-
+Se repiten los mismos pasos para todos los VirtualHost que quieras
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDQyMDcwNywxODM2Nzk0MTcyLDkzMD
-Y3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3LC0xNjM1ODk4MDYw
-LC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
+eyJoaXN0b3J5IjpbLTE3ODc2NTUzMDIsMTc0NDQyMDcwNywxOD
+M2Nzk0MTcyLDkzMDY3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3
+LC0xNjM1ODk4MDYwLC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5Mz
+YwMTk4MThdfQ==
 -->
