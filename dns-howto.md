@@ -171,9 +171,20 @@ Para comprobarlo desde otra maquina, hay que poner en dns en el archivo `/etc/re
 ```
 nameserver 27.0.175.226
 ```
+Y probamos que funcione con `nslookup`
+```bash
+nslookup www.a01.com
+```
+```
+Server:		27.0.175.226
+Address:	27.0.175.226#53
+
+Name:	www.a01.com
+Address: 127.0.0.1
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUzNzkxNDcsNzQ4ODYwMDcsMTU0Nj
-UyMzE5NCwtMjE0NzIzMjczMSwtMjEwMTEyNDY5MywxODkyNDIw
-NDg1LC0zODgzMzA0OTUsMTI0MTUxNDMwOCwtMTAwMjU0MzU2Nl
-19
+eyJoaXN0b3J5IjpbLTEwODkyMTk2NDEsLTE4MzUzNzkxNDcsNz
+Q4ODYwMDcsMTU0NjUyMzE5NCwtMjE0NzIzMjczMSwtMjEwMTEy
+NDY5MywxODkyNDIwNDg1LC0zODgzMzA0OTUsMTI0MTUxNDMwOC
+wtMTAwMjU0MzU2Nl19
 -->
