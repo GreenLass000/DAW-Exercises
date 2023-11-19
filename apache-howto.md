@@ -215,9 +215,11 @@ Instalar openssh
 ```bash
 apt install openssh-client
 ```
-El siguiente pa
+El siguiente paso es crear los certificados, los puedes crear en otra carpeta con `mkdir` para que esté mas organizado
+
+Generar clave privada
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODAwMjIyNCwtMTc4NzY1NTMwMiwxNz
+eyJoaXN0b3J5IjpbMTI1MjUzNTU2NywtMTc4NzY1NTMwMiwxNz
 Q0NDIwNzA3LDE4MzY3OTQxNzIsOTMwNjc3MjQ0LDU3NjA5MjMw
 MSwzNDUzNTk0NzcsLTE2MzU4OTgwNjAsLTEzODIyNzc5OTEsOD
 M5MDg0ODIzLDkzNjAxOTgxOF19
