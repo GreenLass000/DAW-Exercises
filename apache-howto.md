@@ -185,12 +185,21 @@ Hay que editar el nuevo archivo creado
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
-Hay que habilitar el sitio para que funcione (no h)
+Hay que habilitar el sitio para que funcione (no hay que poner la ruta absoluta, solo el nombre del archivo `.conf`)
 ```bash
 a2ensite [name].conf
 ```
+Por ultimo hay que recargar `apache2`
+```bash
+systemctl reload apache2
+```
+Y probar
+```bash
+lynx [name]
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDI4OTU3MTksMTgzNjc5NDE3Miw5Mz
-A2NzcyNDQsNTc2MDkyMzAxLDM0NTM1OTQ3NywtMTYzNTg5ODA2
-MCwtMTM4MjI3Nzk5MSw4MzkwODQ4MjMsOTM2MDE5ODE4XX0=
+eyJoaXN0b3J5IjpbMTc0NDQyMDcwNywxODM2Nzk0MTcyLDkzMD
+Y3NzI0NCw1NzYwOTIzMDEsMzQ1MzU5NDc3LC0xNjM1ODk4MDYw
+LC0xMzgyMjc3OTkxLDgzOTA4NDgyMyw5MzYwMTk4MThdfQ==
 -->
