@@ -18,6 +18,10 @@ function buttonClick(e) {
     }
 }
 
+let operator = null;
+let n1 = null;
+let n2 = null;
+
 function functionalButtons(button, result) {
     switch (button) {
         case "C":
@@ -34,16 +38,32 @@ function functionalButtons(button, result) {
             }
             break;
         case "/":
-            glowOperator("÷");
+            if (n2 !== null) {
+                glowOperator("÷");
+                operator = "/";
+                n1 = result.textContent;
+            }
             break;
         case "*":
-            glowOperator("x");
+            if (n2 !== null) {
+                glowOperator("x");
+                operator = "*";
+                n1 = result.textContent;
+            }
             break;
         case "-":
-            glowOperator("-");
+            if (n2 !== null) {
+                glowOperator("-");
+                operator = "-";
+                n1 = result.textContent;
+            }
             break;
         case "+":
-            glowOperator("+");
+            if (n2 !== null) {
+                glowOperator("+");
+                operator = "+";
+                n1 = result.textContent;
+            }
             break;
         case ".":
             if (!result.textContent.includes(".")) result.textContent += button;
