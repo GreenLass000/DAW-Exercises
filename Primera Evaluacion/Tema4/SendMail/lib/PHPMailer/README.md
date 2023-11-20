@@ -127,7 +127,7 @@ dependencies for the services you wish to authenticate with. Really, it's much e
 ```php
 <?php
 //Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
+//These must be at the top of your js, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;

@@ -1219,7 +1219,7 @@ class PHPMailer
         if ($useimap && function_exists('imap_rfc822_parse_adrlist')) {
             //Use this built-in parser if it's available
             $list = imap_rfc822_parse_adrlist($addrstr, '');
-            // Clear any potential IMAP errors to get rid of notices being thrown at end of script.
+            // Clear any potential IMAP errors to get rid of notices being thrown at end of js.
             imap_errors();
             foreach ($list as $address) {
                 if (
@@ -2264,7 +2264,7 @@ class PHPMailer
      *
      * @param string $langcode ISO 639-1 2-character language code (e.g. French is "fr")
      *                          Optionally, the language code can be enhanced with a 4-character
-     *                          script annotation and/or a 2-character country annotation.
+     *                          js annotation and/or a 2-character country annotation.
      * @param string $lang_path Path to the language resources directory, with trailing separator (slash)
      *                          Do not set this from user input!
      *
@@ -2328,7 +2328,7 @@ class PHPMailer
         $foundlang = true;
         $langcode = strtolower($langcode);
         if (
-            !preg_match('/^(?P<lang>[a-z]{2})(?P<script>_[a-z]{4})?(?P<country>_[a-z]{2})?$/', $langcode, $matches)
+            !preg_match('/^(?P<lang>[a-z]{2})(?P<js>_[a-z]{4})?(?P<country>_[a-z]{2})?$/', $langcode, $matches)
             && $langcode !== 'en'
         ) {
             $foundlang = false;
@@ -2338,14 +2338,14 @@ class PHPMailer
         //There is no English translation resources
         if ('en' !== $langcode) {
             $langcodes = [];
-            if (!empty($matches['script']) && !empty($matches['country'])) {
-                $langcodes[] = $matches['lang'] . $matches['script'] . $matches['country'];
+            if (!empty($matches['js']) && !empty($matches['country'])) {
+                $langcodes[] = $matches['lang'] . $matches['js'] . $matches['country'];
             }
             if (!empty($matches['country'])) {
                 $langcodes[] = $matches['lang'] . $matches['country'];
             }
-            if (!empty($matches['script'])) {
-                $langcodes[] = $matches['lang'] . $matches['script'];
+            if (!empty($matches['js'])) {
+                $langcodes[] = $matches['lang'] . $matches['js'];
             }
             $langcodes[] = $matches['lang'];
 
@@ -4406,7 +4406,7 @@ class PHPMailer
         }
 
         return html_entity_decode(
-            trim(strip_tags(preg_replace('/<(head|title|style|script)[^>]*>.*?<\/\\1>/si', '', $html))),
+            trim(strip_tags(preg_replace('/<(head|title|style|js)[^>]*>.*?<\/\\1>/si', '', $html))),
             ENT_QUOTES,
             $this->CharSet
         );
