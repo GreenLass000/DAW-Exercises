@@ -127,8 +127,5 @@ Y mueves todos los archivos
 mput *
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTQ2NDc3MywtMTgzNTAzOTMwNywtMj
-c5ODQ5NTI5LC02MTkxMzI5NTYsMTcyMjkyODQ3LDg4NTc0NTg3
-MywtMTgyMjY0NzY2MywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMTgyNTQ2NDc3M119
 -->
