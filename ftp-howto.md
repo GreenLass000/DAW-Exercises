@@ -106,9 +106,14 @@ Password:
 Remote system type is UNIX.
 Using binary mode to transfer files.
 ```
+Hay que entrar en modo pasivo
+```bash
+passive
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUwMzkzMDcsLTI3OTg0OTUyOSwtNj
-E5MTMyOTU2LDE3MjI5Mjg0Nyw4ODU3NDU4NzMsLTE4MjI2NDc2
-NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTE4MTE5NjQ2MSwtMTgzNTAzOTMwNywtMj
+c5ODQ5NTI5LC02MTkxMzI5NTYsMTcyMjkyODQ3LDg4NTc0NTg3
+MywtMTgyMjY0NzY2MywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
+==
 -->
