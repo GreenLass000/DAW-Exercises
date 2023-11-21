@@ -110,10 +110,18 @@ Hay que entrar en modo pasivo
 ```bash
 passive
 ```
-
+Se crea una carpeta en el servidor
+```bash
+mkdir [ruta]
+```
+Te mueves a la carpeta que acabas de crear
+```bash
+cd [ruta]
+```
+Te mueves a la carpeta que quieres pasar 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTE5NjQ2MSwtMTgzNTAzOTMwNywtMj
-c5ODQ5NTI5LC02MTkxMzI5NTYsMTcyMjkyODQ3LDg4NTc0NTg3
-MywtMTgyMjY0NzY2MywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbLTEyMjkzNDg2MzIsLTE4MzUwMzkzMDcsLT
+I3OTg0OTUyOSwtNjE5MTMyOTU2LDE3MjI5Mjg0Nyw4ODU3NDU4
+NzMsLTE4MjI2NDc2NjMsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX
+0=
 -->
