@@ -1,6 +1,6 @@
 <?php
 
-namespace dao;
+namespace models;
 
 use PDO;
 use PDOException;
@@ -143,6 +143,7 @@ class Connection
         try {
             $this->_connection = new PDO($this->getConnectionStr(),
                 $this->getUsername(), $this->getPassword());
+            $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $this->getConnection();
         } catch (PDOException $e) {
             $msg = $err_message;

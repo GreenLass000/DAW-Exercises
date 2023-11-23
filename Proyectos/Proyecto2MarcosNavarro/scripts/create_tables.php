@@ -6,12 +6,12 @@ use models\Query;
 include_once "../models/Connection.php";
 include_once "../models/Query.php";
 
-$credentials = ["root", "", ""];
+$credentials = ["root", "", "proyecto"];
 $conn = new Connection(...$credentials);
 $conn->connect();
 $query = new Query($conn);
 
-$sqlCommands = file_get_contents("../sql/reset.sql");
+$sqlCommands = file_get_contents("../sql/database.sql");
 $sqlCommandsArray = explode(";", $sqlCommands);
 
 foreach ($sqlCommandsArray as $sqlCommand) {
@@ -20,8 +20,8 @@ foreach ($sqlCommandsArray as $sqlCommand) {
     }
 }
 
-echo "Se ha reiniciado la base de datos correctamente<br>";
-echo "<a href='create_tables.php'>Crear las tablas</a>";
+echo "Se han creado las tablas correctamente<br>";
+echo "<a href='fill_data.php'>Crear las tablas</a>";
 
 
 $conn->close();

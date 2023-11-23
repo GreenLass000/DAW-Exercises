@@ -1,0 +1,16 @@
+:root {
+    --color-0: #020024;
+    --color-1: #0D406D;
+    --color-2: #12588A;
+    --color-3: #1980B6;
+    --color-4: #AF4F9B;
+    --color-5: #FD267A;
+}
+
+body {
+    background: var(--color-0);
+    background: linear-gradient(126deg,
+    var(--color-0) 0%,
+    var(--color-3) 30%,
+    var(--color-5) 87%);
+}
