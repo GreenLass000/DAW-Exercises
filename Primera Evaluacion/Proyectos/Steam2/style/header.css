@@ -33,6 +33,10 @@ header {
     font-weight: bold;
 }
 
+#menu:hover {
+    color: var(--select-color);
+}
+
 #menu a:hover {
     color: var(--hover-primary);
 }

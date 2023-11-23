@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Proyecto" />
+    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Proyecto">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_10_2023_22_42__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/structure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/theme.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,7 +60,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="bf04f595-b0f5-4145-9275-c180a7461001" />
+        <option name="accountId" value="541129ab-2c5d-4daf-b276-d6925b02761f" />
         <option name="url" value="https://github.com/GreenLass000/DAW-Exercises.git" />
       </UrlAndAccount>
     </option>
