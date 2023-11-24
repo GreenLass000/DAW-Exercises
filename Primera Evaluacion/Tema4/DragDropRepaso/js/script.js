@@ -37,6 +37,7 @@ function dragStart() {
     setTimeout(() => (this.className = ""), 0);
 }
 
+
 /**
  * Se llama cuando termina al final del t-odo cuando acaba el evento de drag&drop
  */

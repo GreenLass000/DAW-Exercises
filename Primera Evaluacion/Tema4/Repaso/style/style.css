@@ -1,0 +1,9 @@
+.link {
+    color: red;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: deeppink;
+}
