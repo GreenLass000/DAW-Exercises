@@ -1,0 +1,26 @@
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.price-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}

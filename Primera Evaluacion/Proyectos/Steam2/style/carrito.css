@@ -1,0 +1,48 @@
+.content {
+    display: grid;
+    height: 40%;
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 200px;
+}
+
+th {
+    font-size: 25px;
+    border-bottom: 2px solid var(--table-border-color);
+}
+
+th,
+td {
+    width: 250px;
+    overflow: hidden;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#comprar {
+    width: 20%;
+    margin-left: 1%;
+}
+
+input[type="number"] {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Muestra las flechas up y down aunque el input no este en focus o hover */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
