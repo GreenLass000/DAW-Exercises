@@ -8,3 +8,4 @@ xhr.addEventListener("readystatechange", () => {
 
 const uriComponent = encodeURIComponent("Segunda Evaluacion");
 xhr.open("get", `http://localhost:63342/${uriComponent}/Tema6/Ejemplos/Ejemplo6/datos.json`);
+xhr.send();
