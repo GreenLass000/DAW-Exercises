@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+table {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    background: black;
+    color: white;
+    height: 4vh;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content input {
+    height: 4vh;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content label {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
