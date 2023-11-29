@@ -18,4 +18,4 @@ foreach ($array as $item) {
     echo $item . "<br>";
 }
 
-echo "<br><a href='index.html?page=array'>Menu</a>";
+echo "<br><a href='index.php?page=array'>Menu</a>";

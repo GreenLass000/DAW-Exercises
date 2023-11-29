@@ -7,7 +7,7 @@ include_once "vengode.php";
 
 //Muestra el area
 echo "El area de un rectangulo con base $base y altura $altura es: " . area($base, $altura);
-echo "<br><br><a href='index.html?page=area'>Menu</a>";
+echo "<br><br><a href='index.php?page=area'>Menu</a>";
 
 /**
  * Calcula el area usando base y altura

@@ -13,7 +13,6 @@ printHeader();
 
 if (empty($_SESSION["user"])) {
     echo "Debes loguearte para añadir una pelicula";
-    echo "<br><a href='login.php?option=0'>Logearse</a>";
 } else {
     echo "Nueva pelicula logueado";
 }

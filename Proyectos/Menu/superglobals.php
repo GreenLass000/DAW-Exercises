@@ -9,4 +9,4 @@ foreach ($GLOBALS as $key => $value) {
     echo "$key => " . print_r($value, true) . "<br><br>";
 }
 
-echo "<br><a href='index.html?page=superglobals'>Menu</a>";
+echo "<br><a href='index.php?page=superglobals'>Menu</a>";

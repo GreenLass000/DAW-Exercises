@@ -34,4 +34,4 @@ try {
     echo "<br><br><span style='color: red'>Error: " . $e->getMessage() . "</span>";
 }
 
-echo "<br><br><a href='index.html?page=exceptions'>Menu</a>";
+echo "<br><br><a href='index.php?page=exceptions'>Menu</a>";

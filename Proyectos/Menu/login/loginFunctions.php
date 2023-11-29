@@ -26,11 +26,11 @@ function loginCheck()
         echo "Hola Mundo, $validations[0]";
         $_POST = [];
         echo "<a href='login.php'>Re-Login</a><br>";
-//        echo "<a href='../index.html'>Menu</a>";
+//        echo "<a href='../index.php'>Menu</a>";
     } else {
         echo "Error de login<br>";
         $_POST = [];
         echo "<a href='login.php'>Re-Login</a><br>";
-//        echo "<a href='../index.html'>Menu</a>";
+//        echo "<a href='../index.php'>Menu</a>";
     }
 }

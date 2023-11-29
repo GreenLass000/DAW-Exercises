@@ -20,8 +20,6 @@ VALUES ('El Nombre del Viento', 5230, 153, 1);
 INSERT INTO peliculas(Titulo, Anio, Duracion, idDirector)
 VALUES ('The Witcher: La pesadilla del lobo', 2021, 83, 2);
 INSERT INTO peliculas(Titulo, Anio, Duracion, idDirector)
-VALUES ('El Nombre del Viento', 5230, 153, 1);
-INSERT INTO peliculas(Titulo, Anio, Duracion, idDirector)
 VALUES ('Alerta Roja', 2021, 118, 1);
 INSERT INTO peliculas(Titulo, Anio, Duracion, idDirector)
 VALUES ('Scooby-Doo: La maldicion del Monstruo del Lago', 2010, 85, 2);

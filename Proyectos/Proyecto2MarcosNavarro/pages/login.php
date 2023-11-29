@@ -15,7 +15,7 @@ include_once "../templates/header.php";
 $login_form = '
 <fieldset>
     <legend>Formulario de Login</legend>
-    <form action="login.php?option=2" method="post">
+    <form action="login.php?option=1" method="post">
         <label for="user">Usuario</label><br>
         <input type="text" id="user" name="user"><br><br>
         <label for="pass">Contraseña</label><br>
@@ -29,14 +29,20 @@ printHeader();
 
 $option = $_GET["option"] ?? "0";
 
-if ($option === "0") {
-    echo $login_form;
-    echo "<br><a href='login.php?option=1'>Acceder sin login</a>";
-} elseif ($option === "1") {
-    $_SESSION["user"] = "";
-    header("Location: ../index.php");
-} elseif ($option === "2") {
+//if ($option === "0") {
+//    echo $login_form;
+//    echo "<br><a href='login.php?option=1'>Acceder sin login</a>";
+//} elseif ($option === "1") {
+//    $_SESSION["user"] = "";
+//    header("Location: ../index.php");
+//} elseif ($option === "2") {
 
+if (!isset($_GET["option"])) {
+    echo $login_form;
+    if (isset($_GET["error"])) {
+        echo "<br>Las credenciales no son correctas";
+    }
+} else {
     $result = getUser($_POST["user"]);
 
     if ($result->rowCount() === 1) {
@@ -45,12 +51,15 @@ if ($option === "0") {
         }
         header("Location: ../index.php");
     } else {
-        header("Location: login.php");
+        header("Location: login.php?error=1");
     }
-} else {
-    $_SESSION["user"] = "";
-    header("Location: ../index.php");
 }
+
+//}
+//else {
+//    $_SESSION["user"] = "";
+//    header("Location: ../index.php");
+//}
 
 // ----------------------------------------------------------------
 echo "

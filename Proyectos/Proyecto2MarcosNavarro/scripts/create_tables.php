@@ -11,7 +11,7 @@ $conn = new Connection(...$credentials);
 $conn->connect();
 $query = new Query($conn);
 
-$sqlCommands = file_get_contents("../sql/dao.sql");
+$sqlCommands = file_get_contents("../sql/database.sql");
 $sqlCommandsArray = explode(";", $sqlCommands);
 
 foreach ($sqlCommandsArray as $sqlCommand) {

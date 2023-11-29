@@ -18,3 +18,36 @@ body {
     flex-flow: row;
     gap: 30px;
 }
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+}
+
+.clasificacion {
+    font-size: 30px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+    color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
+textarea {
+    width: 100%;
+}

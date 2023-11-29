@@ -1,17 +1,16 @@
 <?php
 
 session_start();
-function isLogged(): bool
-{
-    if (!empty($_SESSION["user"])) {
-        return true;
-    }
-    return false;
-}
-
 function printHeader($isIndex = false): void
 {
     $path = (!$isIndex) ? "../" : "./";
+    $cuenta = "";
+
+    if (empty($_SESSION["user"])) {
+        $cuenta = "Login";
+    } else {
+        $cuenta = "Cuenta";
+    }
 
     echo '
     <header>
@@ -27,15 +26,11 @@ function printHeader($isIndex = false): void
             </div>
             <div class="menu-item">
                 <a href="' . $path . "pages/nuevaPelicula.php" . '">Nueva Película</a>
-            </div>';
-
-    if (!isLogged()) {
-        echo '
+            </div>
             <div class="menu-item">
-                <a href="' . $path . "pages/nuevaPelicula.php" . '"></a>
+                <a href="' . $path . "pages/cuenta.php" . '">' . $cuenta . '</a>
             </div>
         ';
-    }
 
     echo '
         </div>

@@ -18,7 +18,8 @@ if (isset($_SESSION["user"])) {
         echo "Bienvenida con login";
     }
 } else {
-    header("Location: ./pages/login.php");
+    $_SESSION["user"] = "";
+    header("Location: index.php");
 }
 // ----------------------------------------------------------------
 echo "

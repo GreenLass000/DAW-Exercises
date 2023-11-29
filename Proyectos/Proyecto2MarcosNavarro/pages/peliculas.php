@@ -15,15 +15,20 @@ printHeader();
 $peliculas = getPeliculas();
 
 echo "
-<table>
+<table border='1'>
     <tr>
         <th>Nombre</th>
+        <th>Nota media</th>
     </tr>
 ";
 
 foreach ($peliculas as $pelicula) {
-    echo "<tr><td><a href='infoPelicula.php?id=1'>" .
-        $pelicula["Titulo"] . "</a></td></tr>";
+    echo "
+        <tr>
+            <td><a href='infoPelicula.php?id=1'>" . $pelicula["titulo"] . "</a></td>
+            <td>" . round($pelicula["media"], 1) . "/5</td>
+        </tr>
+    ";
 }
 
 echo "

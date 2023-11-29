@@ -40,7 +40,18 @@ function getDirectorById($id): false|PDOStatement
  */
 function getPeliculas(): false|PDOStatement
 {
-    $sql = "select Titulo from peliculas";
+    $sql = "
+        SELECT
+            peliculas.Titulo AS 'titulo',
+            AVG(valoraciones.valorNumerico) AS 'media'
+        FROM 
+            peliculas,
+            valoraciones
+        WHERE
+            valoraciones.idPelicula = peliculas.id
+        GROUP BY 
+            peliculas.Titulo
+    ";
     return generic($sql);
 }
 
@@ -67,11 +78,30 @@ function getPeliculaById($id): false|PDOStatement
     return generic($sql);
 }
 
-function getValorations($id) {
+/**
+ * @param $id
+ * @return false|PDOStatement
+ */
+function getValorations($id): false|PDOStatement
+{
     $sql = "
     SELECT
         
     ";
+    return generic($sql);
+}
+
+/**
+ * @param $id
+ * @return false|PDOStatement
+ */
+function getMediaValorations($id): false|PDOStatement
+{
+    $sql = "
+    SELECT
+        
+    ";
+    return generic($sql);
 }
 
 /**
