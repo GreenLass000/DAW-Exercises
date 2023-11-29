@@ -29,7 +29,7 @@ input[type="radio"] {
     display: none;
 }
 
-label {
+.labelStar {
     color: grey;
 }
 
@@ -39,12 +39,12 @@ label {
     unicode-bidi: bidi-override;
 }
 
-label:hover,
-label:hover ~ label {
+.labelStar:hover,
+.labelStar:hover ~ label {
     color: orange;
 }
 
-input[type="radio"]:checked ~ label {
+input[type="radio"]:checked ~ .labelStar {
     color: orange;
 }
 

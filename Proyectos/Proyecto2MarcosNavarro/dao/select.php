@@ -13,7 +13,7 @@ $conn = new Connection("root", "", "proyecto");
 function getUser($user): false|PDOStatement
 {
     $sql = "select * from usuarios where nombre = '" . $user . "'";
-    return generic($sql);
+    return get_generic($sql);
 }
 
 /**
@@ -22,7 +22,7 @@ function getUser($user): false|PDOStatement
 function getDirectors(): false|PDOStatement
 {
     $sql = "select * from directores";
-    return generic($sql);
+    return get_generic($sql);
 }
 
 /**
@@ -31,8 +31,8 @@ function getDirectors(): false|PDOStatement
  */
 function getDirectorById($id): false|PDOStatement
 {
-    $sql = "select * from directores where id = '" . $id . "'";
-    return generic($sql);
+    $sql = "select * from directores where id = " . $id;
+    return get_generic($sql);
 }
 
 /**
@@ -43,16 +43,11 @@ function getPeliculas(): false|PDOStatement
     $sql = "
         SELECT
             peliculas.Titulo AS 'titulo',
-            AVG(valoraciones.valorNumerico) AS 'media'
+            peliculas.id AS 'id'
         FROM 
-            peliculas,
-            valoraciones
-        WHERE
-            valoraciones.idPelicula = peliculas.id
-        GROUP BY 
-            peliculas.Titulo
+            peliculas
     ";
-    return generic($sql);
+    return get_generic($sql);
 }
 
 /**
@@ -63,6 +58,7 @@ function getPeliculaById($id): false|PDOStatement
 {
     $sql = "
     SELECT
+        peliculas.id as 'id',
         peliculas.Titulo AS 'titulo',
         peliculas.Anio AS 'año',
         peliculas.Duracion AS 'duracion',
@@ -73,9 +69,8 @@ function getPeliculaById($id): false|PDOStatement
     WHERE
         peliculas.idDirector = directores.id
     AND
-        peliculas.id = '" . $id . "';
-    ";
-    return generic($sql);
+        peliculas.id = " . $id;
+    return get_generic($sql);
 }
 
 /**
@@ -86,29 +81,27 @@ function getValorations($id): false|PDOStatement
 {
     $sql = "
     SELECT
-        
-    ";
-    return generic($sql);
-}
-
-/**
- * @param $id
- * @return false|PDOStatement
- */
-function getMediaValorations($id): false|PDOStatement
-{
-    $sql = "
-    SELECT
-        
-    ";
-    return generic($sql);
+        usuarios.nombre AS 'usuario',
+        valoraciones.valorNumerico AS 'nota',
+        valoraciones.comentario AS 'comentario'
+    FROM
+        usuarios,
+        valoraciones,
+        peliculas
+    WHERE
+        valoraciones.idUsuario = usuarios.id
+    AND
+        peliculas.id = valoraciones.idPelicula
+    AND
+        peliculas.id = " . $id;
+    return get_generic($sql);
 }
 
 /**
  * @param $sql
  * @return false|PDOStatement
  */
-function generic($sql): false|PDOStatement
+function get_generic($sql): false|PDOStatement
 {
     global $conn;
     $conn->connect();

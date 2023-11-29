@@ -18,15 +18,17 @@ echo "
 <table border='1'>
     <tr>
         <th>Nombre</th>
-        <th>Nota media</th>
     </tr>
 ";
 
 foreach ($peliculas as $pelicula) {
     echo "
         <tr>
-            <td><a href='infoPelicula.php?id=1'>" . $pelicula["titulo"] . "</a></td>
-            <td>" . round($pelicula["media"], 1) . "/5</td>
+            <td>
+                <a href='infoPelicula.php?id=" . $pelicula["id"] . "'>
+                    " . $pelicula["titulo"] . "
+                </a>
+            </td>
         </tr>
     ";
 }
