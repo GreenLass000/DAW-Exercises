@@ -1,3 +1,7 @@
+* {
+    user-select: none;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,12 +13,41 @@ table {
     font-size: 20px;
     width: 100%;
     table-layout: fixed;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c7c7c7;
+}
+
+table:first-child {
+    /*background-color: transparent;*/
+}
+
+tr {
+    height: 4vh;
+    cursor: pointer;
+}
+
+thead tr {
+    height: 4vh;
+    cursor: auto;
+}
+
+td {
+    border: 1px solid rgb(128, 128, 128);
+    padding: 2px;
 }
 
 th {
     background: black;
     color: white;
-    height: 4vh;
+    border-radius: 8px;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+thead {
+    border: none;
 }
 
 .content {

@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Title</title>
 </head>
 <body>
 <div class="grid-container">
     <div class="grid-item data">
+        <div id="error-message"></div>
         <table>
-            <tbody class="table">
+            <thead id="table-head">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Nombre de Usuario</th>
                 <th>email</th>
             </tr>
-            </tbody>
+            </thead>
+            <tbody id="table-body"></tbody>
         </table>
     </div>
     <div class="grid-item content">
