@@ -1,6 +1,6 @@
 <?php
 
-namespace connection;
+namespace Tema4\EjercicioConjuntoPHPAsincronoJavaScriptAjax\model;
 
 use PDO;
 use PDOException;

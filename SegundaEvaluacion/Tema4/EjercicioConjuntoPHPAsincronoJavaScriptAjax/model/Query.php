@@ -1,8 +1,7 @@
 <?php
 
-namespace query;
+namespace Tema4\EjercicioConjuntoPHPAsincronoJavaScriptAjax\model;
 
-use connection\Connection;
 use PDOStatement;
 
 class Query
