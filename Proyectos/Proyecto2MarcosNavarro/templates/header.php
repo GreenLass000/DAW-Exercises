@@ -16,19 +16,19 @@ function printHeader($isIndex = false): void
     <header>
         <div class="navbar">
             <div class="menu-item">
-                <a href="' . $path . "index.php" . '">Inicio</a>
+                <a href="' . $path . "index.controller" . '">Inicio</a>
             </div>
             <div class="menu-item">
-                <a href="' . $path . "pages/peliculas.php" . '">Peliculas</a>
+                <a href="' . $path . "pages/peliculas.controller" . '">Peliculas</a>
             </div>
             <div class="menu-item">
-                <a href="' . $path . "pages/directores.php" . '">Directores</a>
+                <a href="' . $path . "pages/directores.controller" . '">Directores</a>
             </div>
             <div class="menu-item">
-                <a href="' . $path . "pages/nuevaPelicula.php" . '">Nueva Película</a>
+                <a href="' . $path . "pages/nuevaPelicula.controller" . '">Nueva Película</a>
             </div>
             <div class="menu-item">
-                <a href="' . $path . "pages/cuenta.php" . '">' . $cuenta . '</a>
+                <a href="' . $path . "pages/cuenta.controller" . '">' . $cuenta . '</a>
             </div>
         ';
 

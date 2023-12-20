@@ -21,7 +21,7 @@ foreach ($sqlCommandsArray as $sqlCommand) {
 }
 
 echo "Se ha reiniciado la base de datos correctamente<br>";
-echo "<a href='create_tables.php'>Crear las tablas</a>";
+echo "<a href='create_tables.controller'>Crear las tablas</a>";
 
 
 $conn->close();

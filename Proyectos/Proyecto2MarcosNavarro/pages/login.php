@@ -15,7 +15,7 @@ include_once "../templates/header.php";
 $login_form = '
 <fieldset>
     <legend>Formulario de Login</legend>
-    <form action="login.php?option=1" method="post">
+    <form action="login.controller?option=1" method="post">
         <label for="user">Usuario</label><br>
         <input type="text" id="user" name="user"><br><br>
         <label for="pass">Contraseña</label><br>
@@ -31,10 +31,10 @@ $option = $_GET["option"] ?? "0";
 
 //if ($option === "0") {
 //    echo $login_form;
-//    echo "<br><a href='login.php?option=1'>Acceder sin login</a>";
+//    echo "<br><a href='login.controller?option=1'>Acceder sin login</a>";
 //} elseif ($option === "1") {
 //    $_SESSION["user"] = "";
-//    header("Location: ../index.php");
+//    header("Location: ../index.controller");
 //} elseif ($option === "2") {
 
 if (!isset($_GET["option"])) {
@@ -49,16 +49,16 @@ if (!isset($_GET["option"])) {
         foreach ($result as $r) {
             $_SESSION["user"] = $r["nombre"];
         }
-        header("Location: ../index.php");
+        header("Location: ../index.controller");
     } else {
-        header("Location: login.php?error=1");
+        header("Location: login.controller?error=1");
     }
 }
 
 //}
 //else {
 //    $_SESSION["user"] = "";
-//    header("Location: ../index.php");
+//    header("Location: ../index.controller");
 //}
 
 // ----------------------------------------------------------------

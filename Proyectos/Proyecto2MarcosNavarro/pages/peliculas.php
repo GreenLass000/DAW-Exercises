@@ -25,7 +25,7 @@ foreach ($peliculas as $pelicula) {
     echo "
         <tr>
             <td>
-                <a href='infoPelicula.php?id=" . $pelicula["id"] . "'>
+                <a href='infoPelicula.controller?id=" . $pelicula["id"] . "'>
                     " . $pelicula["titulo"] . "
                 </a>
             </td>

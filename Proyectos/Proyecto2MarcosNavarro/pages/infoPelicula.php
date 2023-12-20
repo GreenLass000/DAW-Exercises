@@ -20,10 +20,10 @@ $username = $_SESSION["user"];
 $id = $_GET["id"];
 
 if (!isset($_GET["id"])) {
-    header("Location: peliculas.php");
+    header("Location: peliculas.controller");
 } elseif ($pelicula->rowCount() === 0) {
     echo "No existe una película con ese id";
-    echo "<br><a href='peliculas.php'>Volver a la lista de películas</a>";
+    echo "<br><a href='peliculas.controller'>Volver a la lista de películas</a>";
 } else {
 
     if (isset($_GET["option"])) {
@@ -56,7 +56,7 @@ if (!isset($_GET["id"])) {
                 echo "Error al publicar";
             }
         }
-        header("Location: infoPelicula.php?id='" . $id . "'");
+        header("Location: infoPelicula.controller?id='" . $id . "'");
     }
 
     echo "
@@ -85,7 +85,7 @@ if (!isset($_GET["id"])) {
         <div>
             <fieldset>
                 <legend>Nueva valoración</legend>
-                <form action="infoPelicula.php?id=' . $id . '&option=0" method="post">
+                <form action="infoPelicula.controller?id=' . $id . '&option=0" method="post">
                     <textarea name="comment" id="comment" rows="10" placeholder="Escribe tu comentario aqui"></textarea><br>
                     <p class="clasificacion">
                         nóicautnuP <br>

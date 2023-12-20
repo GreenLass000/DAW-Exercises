@@ -21,7 +21,7 @@ foreach ($sqlCommandsArray as $sqlCommand) {
 }
 
 echo "Se han creado las tablas correctamente<br>";
-echo "<a href='fill_data.php'>Crear las tablas</a>";
+echo "<a href='fill_data.controller'>Crear las tablas</a>";
 
 
 $conn->close();

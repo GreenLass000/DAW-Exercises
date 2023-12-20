@@ -18,7 +18,7 @@ if (empty($_SESSION["user"])) {
 } else {
 
     $form = '
-    <form method="post" action="nuevaPelicula.php?insert=1">
+    <form method="post" action="nuevaPelicula.controller?insert=1">
         <label for="title">Titulo</label><br>
         <input type="text" id="title" name="title" required><br>
         
@@ -54,7 +54,7 @@ if (empty($_SESSION["user"])) {
         ];
         $result = postPelicula($data);
 
-        header("Location: ../index.php");
+        header("Location: ../index.controller");
     }
 }
 

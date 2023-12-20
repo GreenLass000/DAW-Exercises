@@ -10,14 +10,14 @@ session_start();
 if (!isset($_SESSION["color"])) {
     if (isset($_POST["color"])) {
         $_SESSION["color"] = $_POST["color"];
-        header("Location:index.php");
+        header("Location:index.controller");
     } else {
         echo $colorForm;
     }
 } else {
     if (isset($_POST["color"])) {
         $_SESSION["color"] = $_POST["color"];
-        header("Location:index.php");
+        header("Location:index.controller");
     } else {
         echo "<h1 style='color: " . $_SESSION["color"] . "'>Título</h1>";
         echo $colorForm;

@@ -16,10 +16,10 @@ printHeader();
 $director = getDirectorById($_GET["id"]);
 
 if (!isset($_GET["id"])) {
-    header("Location: directores.php");
+    header("Location: directores.controller");
 } elseif ($director->rowCount() === 0) {
     echo "No existe un director con ese id";
-    echo "<br><a href='directores.php'>Volver a la lista de directores</a>";
+    echo "<br><a href='directores.controller'>Volver a la lista de directores</a>";
 } else {
     foreach ($director as $d) {
         echo "ID del director: " . $d["id"];

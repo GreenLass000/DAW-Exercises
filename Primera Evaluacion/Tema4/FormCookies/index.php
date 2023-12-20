@@ -1,6 +1,6 @@
 <?php
 $colorForm = "
-<form action='sesion1.php' method='post'>
+<form action='sesion1.controller' method='post'>
     Rojo <input type='radio' name='color' value='red' id='' checked><br>
     Amarillo <input type='radio' name='color' value='yellow' id=''><br>
     <input type='submit' value='Enviar'>
@@ -9,14 +9,14 @@ $colorForm = "
 if (!isset($_COOKIE["color"])) {
     if (isset($_POST["color"])) {
         setcookie("color", $_POST["color"], time() + 10);
-        header("Location:sesion1.php");
+        header("Location:sesion1.controller");
     } else {
         echo $colorForm;
     }
 } else {
     if (isset($_POST["color"])) {
         setcookie("color", $_POST["color"], time() + 10);
-        header("Location:sesion1.php");
+        header("Location:sesion1.controller");
     } else {
         echo "<h1 style='color: " . $_COOKIE["color"] . "'>Título</h1>";
         echo $colorForm;

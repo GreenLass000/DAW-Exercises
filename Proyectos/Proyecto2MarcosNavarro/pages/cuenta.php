@@ -12,9 +12,9 @@ include_once "../templates/header.php";
 printHeader();
 
 if (empty($_SESSION["user"])) {
-    header("Location: login.php");
+    header("Location: login.controller");
 } else {
-    echo "<br><a href='cuenta.php?logout=1'>Logout</a>";
+    echo "<br><a href='cuenta.controller?logout=1'>Logout</a>";
     echo "<br>Eres " . $_SESSION["user"];
     echo "<br><h3>Ultima valoracion: </h3>";
 
@@ -30,7 +30,7 @@ if (empty($_SESSION["user"])) {
 if (isset($_GET["logout"])) {
     session_destroy();
     setcookie(session_name(), "", time() - 1);
-    header("Location: ../index.php");
+    header("Location: ../index.controller");
 }
 
 // ----------------------------------------------------------------

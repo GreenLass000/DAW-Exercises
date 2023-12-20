@@ -13,7 +13,7 @@ if (is_null($_POST["user"] ?? null) || is_null($_POST["pass"] ?? null)) {
     loginCheck();
 }
 
-echo "<br><br><a href='../index.php?page=login'>Menu</a>";
+echo "<br><br><a href='../index.controller?page=login'>Menu</a>";
 ?>
 
 </body>

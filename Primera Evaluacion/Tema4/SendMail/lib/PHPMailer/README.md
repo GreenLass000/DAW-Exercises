@@ -89,9 +89,9 @@ the `include_path` directories specified in your PHP configuration and load each
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
+require 'path/to/PHPMailer/src/Exception.controller';
+require 'path/to/PHPMailer/src/PHPMailer.controller';
+require 'path/to/PHPMailer/src/SMTP.controller';
 ```
 
 If you're not using the `SMTP` class explicitly (you're probably not), you don't need a `use` line for the SMTP class.
@@ -133,7 +133,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require 'vendor/autoload.controller';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);

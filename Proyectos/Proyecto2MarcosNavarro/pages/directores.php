@@ -24,7 +24,7 @@ echo "
 ";
 
 foreach ($directores as $director) {
-    echo "<tr><td><a href='infoDirector.php?id=" . $director["id"] . "'>" .
+    echo "<tr><td><a href='infoDirector.controller?id=" . $director["id"] . "'>" .
         $director["nombre"] . "</a></td></tr>";
 }
 

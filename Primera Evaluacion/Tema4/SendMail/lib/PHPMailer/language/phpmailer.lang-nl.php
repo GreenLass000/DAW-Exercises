@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Dutch PHPMailer language resources: refer to PHPMailer.php for definitive list.
+ * Dutch PHPMailer language resources: refer to PHPMailer.controller for definitive list.
  * @package PHPMailer
  * @author Tuxion <team@tuxion.nl>
  */
 
 $PHPMAILER_LANG['authenticate'] = 'SMTP-fout: authenticatie mislukt.';
-$PHPMAILER_LANG['buggy_php'] = 'PHP versie gededecteerd die onderhavig is aan een bug die kan resulteren in gecorrumpeerde berichten. Om dit te voorkomen, gebruik SMTP voor het verzenden van berichten, zet de mail.add_x_header optie in uw php.ini resources uit, gebruik MacOS of Linux, of pas de gebruikte PHP versie aan naar versie 7.0.17+ or 7.1.3+.';
+$PHPMAILER_LANG['buggy_php'] = 'PHP versie gededecteerd die onderhavig is aan een bug die kan resulteren in gecorrumpeerde berichten. Om dit te voorkomen, gebruik SMTP voor het verzenden van berichten, zet de mail.add_x_header optie in uw controller.ini resources uit, gebruik MacOS of Linux, of pas de gebruikte PHP versie aan naar versie 7.0.17+ or 7.1.3+.';
 $PHPMAILER_LANG['connect_host'] = 'SMTP-fout: kon niet verbinden met SMTP-host.';
 $PHPMAILER_LANG['data_not_accepted'] = 'SMTP-fout: data niet geaccepteerd.';
 $PHPMAILER_LANG['empty_message'] = 'Berichttekst is leeg';

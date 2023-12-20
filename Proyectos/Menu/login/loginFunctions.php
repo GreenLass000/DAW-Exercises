@@ -6,7 +6,7 @@
 function login()
 {
     echo "
-        <form action='login.php' method='post'>
+        <form action='login.controller' method='post'>
             Username: <input type='text' name='user' id='user'><br>
             Password: <input type='password' name='pass' id='pass'><br>
             <input type='submit' value='Enviar'>
@@ -25,12 +25,12 @@ function loginCheck()
     if ($_POST["user"] === $validations[0] && $_POST["pass"] === $validations[1]) {
         echo "Hola Mundo, $validations[0]";
         $_POST = [];
-        echo "<a href='login.php'>Re-Login</a><br>";
-//        echo "<a href='../index.php'>Menu</a>";
+        echo "<a href='login.controller'>Re-Login</a><br>";
+//        echo "<a href='../index.controller'>Menu</a>";
     } else {
         echo "Error de login<br>";
         $_POST = [];
-        echo "<a href='login.php'>Re-Login</a><br>";
-//        echo "<a href='../index.php'>Menu</a>";
+        echo "<a href='login.controller'>Re-Login</a><br>";
+//        echo "<a href='../index.controller'>Menu</a>";
     }
 }

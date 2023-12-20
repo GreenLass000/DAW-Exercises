@@ -21,7 +21,7 @@
 /**
  * Get an OAuth2 token from an OAuth2 provider.
  * * Install this js on your server so that it's accessible
- * as [https/http]://<yourdomain>/<folder>/get_oauth_token.php
+ * as [https/http]://<yourdomain>/<folder>/get_oauth_token.controller
  * e.g.: http://localhost/phpmailer/get_oauth_token.php
  * * Ensure dependencies are installed with 'composer install'
  * * Set up an app in your Google/Yahoo/Microsoft account
@@ -80,7 +80,7 @@ if (!isset($_GET['code']) && !isset($_POST['provider'])) {
     exit;
 }
 
-require 'vendor/autoload.php';
+require 'vendor/autoload.controller';
 
 session_start();
 
