@@ -1,15 +1,17 @@
 <?php
 
-namespace ConnectorLib;
+namespace query;
 
+use ConnectorLib\Connection;
+use PDO;
 use PDOStatement;
-use Tema4\EjercicioConjuntoPHPAsincronoJavaScriptAjax\model\Connection;
 
 class Query
 {
     private Connection $_connection;
     private string $_sqlQuery;
     private PDOStatement $_result;
+    private PDO $_pdo;
 
     /**
      * @param Connection $_connection
@@ -17,6 +19,15 @@ class Query
     public function __construct(Connection $_connection)
     {
         $this->_connection = $_connection;
+
+        $host = $_connection->getHost();
+        $dbname = $_connection->getDatabase();
+        $port = $_connection->getPort();
+        $user = $_connection->getUsername();
+        $pass = $_connection->getPassword();
+
+        $dsn = "mysql:host=$host;dbname=$dbname;port=$port";
+        $this->_pdo = new PDO($dsn, $user, $pass);
     }
 
     /**
@@ -25,6 +36,23 @@ class Query
     public function getConnection(): Connection
     {
         return $this->_connection;
+    }
+
+    /**
+     * @return PDO
+     */
+    public function getPdo(): PDO
+    {
+        return $this->_pdo;
+    }
+
+    /**
+     * @param PDO $pdo
+     * @return void
+     */
+    public function setPdo(PDO $pdo): void
+    {
+        $this->_pdo = $pdo;
     }
 
     /**
@@ -51,51 +79,6 @@ class Query
         return $this->_result;
     }
 
-    public function get(string $query)
-    {
-
-    }
-
-    public function post(string $query)
-    {
-
-    }
-
-    public function put(string $query)
-    {
-
-    }
-
-    public function delete(string $query)
-    {
-
-    }
-
-    public function patch(string $query)
-    {
-
-    }
-
-    public function head(string $query)
-    {
-
-    }
-
-    public function trace(string $query)
-    {
-
-    }
-
-    public function connect(string $query)
-    {
-
-    }
-
-    public function options(string $query)
-    {
-
-    }
-
     /**
      * @param string $query
      * @param array $params
@@ -103,8 +86,14 @@ class Query
      */
     public function makeQuery(string $query, array $params = []): bool
     {
+        $this->getConnection()->connect();
+
         $this->_result = $this->_connection->getConnection()->prepare($query);
-        return $this->_result->execute($params);
+        $return = $this->_result->execute($params);
+
+        $this->getConnection()->close();
+
+        return $return;
     }
 
     /**

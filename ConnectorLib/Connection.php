@@ -1,6 +1,6 @@
 <?php
 
-namespace ConnectorLib;
+namespace connection;
 
 use PDO;
 use PDOException;
