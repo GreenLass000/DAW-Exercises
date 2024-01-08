@@ -79,6 +79,26 @@ class Query
         return $this->_result;
     }
 
+    public function select(string $query, array $params)
+    {
+
+    }
+
+    public function insert(string $query, array $params)
+    {
+
+    }
+
+    public function update(string $query, array $params)
+    {
+
+    }
+
+    public function delete(string $query, array $params)
+    {
+
+    }
+
     /**
      * @param string $query
      * @param array $params
