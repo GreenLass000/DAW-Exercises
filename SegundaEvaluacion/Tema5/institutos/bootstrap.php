@@ -17,7 +17,7 @@ $dbParams = [
     'driver' => 'pdo_mysql',
     'user' => 'root',
     'password' => '',
-    'dbname' => 'doctrine',
+    'dbname' => 'institutos',
     'host' => 'localhost'
 ];
 

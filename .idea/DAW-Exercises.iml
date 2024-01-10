@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Primera Evaluacion/Tema2/Ejercicios" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Proyectos/Menu" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SegundaEvaluacion/Tema5/institutos" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/firebase/php-jwt" />
       <excludeFolder url="file://$MODULE_DIR$/Proyectos/Daw2023/vendor/google/apiclient" />
