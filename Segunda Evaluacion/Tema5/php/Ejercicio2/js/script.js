@@ -1,7 +1,7 @@
 const xhr = new XMLHttpRequest();
 xhr.addEventListener("load", (e) => {
     if (xhr.status === 200) {
-        document.querySelector("#images").innerHTML += "<img width='300' src=" + encodeURIComponent(xhr.responseText) + ">";
+        document.querySelector("#resources").innerHTML += "<img width='300' src=" + encodeURIComponent(xhr.responseText) + ">";
     } else {
         alert(`Error: [${xhr.status}] ${xhr.statusText}`);
     }
