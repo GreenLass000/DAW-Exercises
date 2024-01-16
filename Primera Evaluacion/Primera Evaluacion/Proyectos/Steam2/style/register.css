@@ -1,0 +1,51 @@
+::placeholder {
+    color: var(--input-placeholder-color);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 12%;
+}
+
+.register {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+    width: 30%;
+}
+
+.register input {
+    height: 4vh;
+    text-align: center;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+#reg {
+    width: 100%;
+}
+
+h4 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="password"] {
+    border-image-source: var(--border-gradient);
+    border-width: 2pt;
+    border-image-slice: 1;
+    border-radius: 15px;
+}
+
+.register input[type="text"]:focus,
+.register input[type="email"]:focus,
+.register input[type="password"]:focus {
+    outline: none;
+    border-color: transparent;
+}

@@ -1,0 +1,55 @@
+* {
+    color: var(--text-color);
+}
+
+::selection {
+    color: var(--color-black);
+    background-color: var(--select-color);
+}
+
+body {
+    background: var(--main-gradient-background);
+    background: var(--main-gradient);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.grid-item {
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.content {
+    grid-row: 2;
+    overflow-y: auto;
+    padding-bottom: 60px;
+}
+
+input[type="button"],
+input[type="submit"] {
+    width: 50%;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: var(--button-background-color);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background: var(--button-gradient-background);
+    background: var(--button-gradient)
+}

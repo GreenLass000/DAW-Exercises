@@ -1,0 +1,84 @@
+body {
+    margin-bottom: 80px;
+}
+
+nav {
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+nav a {
+    display: flex;
+    float: right;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#logoname {
+    top: 20px;
+    left: 20px;
+    width: 10%;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    padding: 15px 30px 15px 30px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+figure {
+    margin-top: 30px;
+    width: fit-content;
+}
+
+#imagefigure {
+    width: 15%;
+}
+
+aside {
+    padding: 15px 0 15px 0;
+    margin-top: 50px;
+    width: 20%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 -5px 5px lightgray;
+}
+
+video {
+    width: 100%;
+}
+
+article {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+article:first-child {
+    margin-top: 0;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}

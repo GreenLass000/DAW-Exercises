@@ -1,0 +1,35 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    background-color: var(--secondary_color_alpha);
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 4.5em;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 30px;
+}
+
+.address table {
+    width: 50%;
+}
+
+.address table:nth-child(even) {
+    margin-left: 20%;
+}

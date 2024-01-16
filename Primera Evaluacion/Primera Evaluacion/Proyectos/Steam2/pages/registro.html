@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/colors.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/register.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="shortcut icon" href="../resources/icons/logo.svg" type="image/x-icon">
+    <title>Registro</title>
+</head>
+<body>
+<div class="grid-container">
+    <header class="grid-item">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul id="menu">
+            <li class="menu-item current"><a href="../index.html">Inicio</a></li>
+            <li class="menu-item"><a href="catalogo.html">Catálogo</a></li>
+            <li class="menu-item"><a href="carrito.html">Carrito</a></li>
+            <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+            <li class="menu-item"><a href="">Registro</a></li>
+        </ul>
+    </header>
+    <div class="grid-item content">
+        <form action="registro.html" method="post" class="register">
+            <h4>Formulario de Registro</h4>
+            <input type="text" name="name" id="name" placeholder="Nombre" required>
+            <input type="text" name="surname" id="surname" placeholder="Apellidos" required>
+            <input type="text" name="username" id="username" placeholder="Nombre de Usuario" required>
+            <input type="password" name="username" id="pass" placeholder="Contraseña" required>
+            <input type="password" name="username" id="confirmPass" placeholder="Confirmar Contraseña" required>
+            <input type="email" name="email" id="email" placeholder="Correo Electrónico" required>
+            <input type="email" name="email" id="confirmEmail" placeholder="Confirmar Correo Electrónico" required>
+            <input type="submit" value="Registrarse" id="reg">
+        </form>
+    </div>
+</div>
+<footer class="grid-item">Este es el footer</footer>
+</body>
+</html>

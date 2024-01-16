@@ -1,0 +1,18 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  gap: 10px; }
+
+.perro, .gato {
+  position: relative;
+  overflow: hidden; }
+  .perro img, .gato img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; }
+  .perro p, .gato p {
+    margin: 10px 0; }
+
+/*# sourceMappingURL=perros.css.map */

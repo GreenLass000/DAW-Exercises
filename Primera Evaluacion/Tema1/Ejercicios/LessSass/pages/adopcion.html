@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Protectora de Animales Amigos de los Peludos - Adopción</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet/less" type="text/css" href="../style/adopcion.less"/>
+    <link rel="stylesheet/less" type="text/css" href="../style/footer.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<img src="https://i.giphy.com/3o6gEfa287w4UzXppS.webp" alt="" id="bkg">
+<header>
+    <div class="logo">
+        <img src="https://www.anaaweb.org/wp-content/uploads/2019/01/logo-anaa.png" alt="Logo de la protectora">
+    </div>
+    <div class="titulo">
+        <h1>Protectora de Animales Amigos de los Peludos</h1>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="perros.html">Perros</a></li>
+        <li><a href="gatos.html">Gatos</a></li>
+        <li><a href="adopcion.html">Adopción</a></li>
+        <li><a href="perreras.html">Nuestras perreras</a></li>
+        <li><a href="quienes_somos.html">Quienes somos</a></li>
+        <li><a href="contacto.html">Contacta con nosotros</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="adopcion">
+        <h2>¿Quieres adoptar un perro o un gato?</h2>
+        <p>Si has decidido darle una oportunidad a un animal que ha sido abandonado o maltratado, te felicitamos por tu
+            generosidad y responsabilidad. Adoptar un perro o un gato es una decisión muy importante que implica un
+            compromiso a largo plazo. Por eso, queremos informarte de las condiciones y los pasos que debes seguir para
+            adoptar un animal en nuestra protectora.</p>
+        <h3>Condiciones para adoptar</h3>
+        <ul>
+            <li>Ser mayor de edad y disponer de DNI o NIE.</li>
+            <li>Rellenar un cuestionario de preadopción donde nos cuentes tu situación personal, familiar y económica,
+                así como tus motivaciones y expectativas para adoptar.
+            </li>
+            <li>Aceptar una visita previa a tu domicilio por parte de uno de nuestros voluntarios, para comprobar que el
+                animal tendrá unas condiciones adecuadas de espacio, seguridad y convivencia.
+            </li>
+            <li>Firmar un contrato de adopción donde te comprometas a cuidar al animal, proporcionarle los cuidados
+                veterinarios necesarios, esterilizarlo si no lo está, no utilizarlo para la cría o la explotación,
+                notificarnos cualquier cambio de domicilio o teléfono, y no abandonarlo ni cederlo a terceros sin
+                nuestro consentimiento.
+            </li>
+            <li>Pagar una cuota de adopción que cubra los gastos de identificación, vacunación, desparasitación y
+                esterilización del animal. La cuota es de 100 euros para los perros y de 50 euros para los gatos.
+            </li>
+        </ul>
+        <h3>Formulario de solicitud de información</h3>
+        <p>Si estás interesado en adoptar un perro o un gato de nuestra protectora, puedes rellenar este formulario para
+            solicitar más información sobre el animal que te ha gustado. Te responderemos lo antes posible y te daremos
+            los detalles para iniciar el proceso de adopción.</p>
+        <form action="solicitar.php" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="animal">Animal que te interesa:</label>
+                <select id="animal" name="animal" required>
+                    <option value="">Selecciona un animal</option>
+                    <option value="Rex">Rex (perro)</option>
+                    <option value="Luna">Luna (perro)</option>
+                    <option value="Toby">Toby (perro)</option>
+                    <option value="Max">Max (perro)</option>
+                    <option value="Coco">Coco (perro)</option>
+                    <option value="Nala">Nala (gato)</option>
+                    <option value="Simba">Simba (gato)</option>
+                    <option value="Luna">Luna (gato)</option>
+                    <option value="Tom">Tom (gato)</option>
+                    <option value="Coco">Coco (gato)</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="10" cols="50" required></textarea>
+            </div>
+            <div class="boton">
+                <button type="submit">Solicitar información</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Protectora de Animales Amigos de los Peludos © 2024</p>
+    <ul>
+        <li>Calle Falsa 123, Valladolid, España</li>
+        <li>Teléfono: 555-123-456</li>
+        <li>Email: amigosdelospeludos@gmail.com</li>
+    </ul>
+</footer>
+</body>
+</html>

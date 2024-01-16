@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Protectora de Animales Amigos de los Peludos - Contacta con nosotros</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet/less" type="text/css" href="../style/contacto.less"/>
+    <link rel="stylesheet/less" type="text/css" href="../style/footer.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<img src="https://i.giphy.com/3o6gEfa287w4UzXppS.webp" alt="" id="bkg">
+<header>
+    <div class="logo">
+        <img src="https://www.anaaweb.org/wp-content/uploads/2019/01/logo-anaa.png" alt="Logo de la protectora">
+    </div>
+    <div class="titulo">
+        <h1>Protectora de Animales Amigos de los Peludos</h1>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="perros.html">Perros</a></li>
+        <li><a href="gatos.html">Gatos</a></li>
+        <li><a href="adopcion.html">Adopción</a></li>
+        <li><a href="perreras.html">Nuestras perreras</a></li>
+        <li><a href="quienes_somos.html">Quienes somos</a></li>
+        <li><a href="contacto.html">Contacta con nosotros</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="contacto">
+        <h2>Contacta con nosotros</h2>
+        <p>Si tienes alguna consulta, sugerencia o comentario sobre nuestra protectora de animales, puedes enviarnos un
+            mensaje a través de este formulario. Te responderemos lo antes posible. También puedes contactarnos por
+            teléfono o email, o visitarnos en nuestra sede. Estaremos encantados de atenderte.</p>
+        <form action="enviar.php" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="10" cols="50" required></textarea>
+            </div>
+            <div class="boton">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Protectora de Animales Amigos de los Peludos &copy; 2024</p>
+    <ul>
+        <li>Calle Falsa 123, Valladolid, España</li>
+        <li>Teléfono: 555-123-456</li>
+        <li>Email: amigosdelospeludos@gmail.com</li>
+    </ul>
+</footer>
+</body>
+</html>

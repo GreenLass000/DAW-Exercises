@@ -1,0 +1,42 @@
+<contactos>
+    <contacto id="1">
+        <nombre>Persona 1</nombre>
+        <apellidos>personina persona</apellidos>
+        <telefonos>
+            <fijo>987654321</fijo>
+            <movil>123456789</movil>
+        </telefonos>
+        <email>sdasdads@asdad.com</email>
+        <direccion></direccion>
+    </contacto>
+    <contacto id="2">
+        <nombre>Persona 2</nombre>
+        <apellidos>personina persona</apellidos>
+        <telefonos>
+            <fijo>987654321</fijo>
+            <movil>123456789</movil>
+        </telefonos>
+        <email>sdasdads@asdad.com</email>
+        <direccion></direccion>
+    </contacto>
+    <contacto id="3">
+        <nombre>Persona 3</nombre>
+        <apellidos>personina persona</apellidos>
+        <telefonos>
+            <fijo>987654321</fijo>
+            <movil>123456789</movil>
+        </telefonos>
+        <email>sdasdads@asdad.com</email>
+        <direccion>Calle algo numero lo que sea</direccion>
+    </contacto>
+    <contacto id="4">
+        <nombre>Persona 4</nombre>
+        <apellidos>personina persona</apellidos>
+        <telefonos>
+            <fijo>987654321</fijo>
+            <movil>123456789</movil>
+        </telefonos>
+        <email>sdasdads@asdad.com</email>
+        <direccion></direccion>
+    </contacto>
+</contactos>
