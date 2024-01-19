@@ -5,18 +5,15 @@ input[type="email"] {
   height: 30px;
   margin: 5px;
 }
-
 ul {
   list-style-type: "→";
 }
-
 button {
   font-size: 20px;
   border-radius: 5px;
   border: none;
   background-color: yellow;
-
-  &:hover {
-    background-color: lime;
-  }
+}
+button:hover {
+  background-color: lime;
 }
