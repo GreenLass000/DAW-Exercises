@@ -1,0 +1,32 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "",
+      "description": "",
+      "sub-category": {
+        "id": "",
+        "name": "",
+        "category": {
+          "id": "",
+          "name": ""
+        }
+      },
+      "price": {
+        "type": "",
+        "market": [
+          {
+            "id": "",
+            "name": "",
+            "value": ""
+          },
+          {
+            "id": "",
+            "name": "",
+            "value": ""
+          }
+        ]
+      }
+    }
+  ]
+}
