@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/estilos.css">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav>
+        <img src="../resources/images/seminci.jpg" alt="Imagen No Cargada" id="logoname">
+        <a href=""><input type="search">&nbsp;&nbsp;<img src="../resources/icons/search.png"></a>
+        <a href="contact.html">Contacto</a>
+        <a href="">Entradas</a>
+        <a href="program.html">Programación</a>
+        <a href="../index.html">Inicio</a>
+    </nav>
+</header>
+<div class="content">
+    <table class="ticket-table">
+        <thead>
+        <tr>
+            <th>Pelicula</th>
+            <th>Numero de niños (entre 5 y 12 años)</th>
+            <th>Numero de adultos (menores de 65 años)</th>
+            <th>Numero de personas que no pagan (menores de 5 años y mayores de 65 años)</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Los juegos del hambre: balada de pajaros cantores y serpientes</td>
+            <td><input type="number" name="child" value="0" min="0"></td>
+            <td><input type="number" name="adult" value="1" min="0"></td>
+            <td><input type="number" name="no" value="0" min="0"></td>
+            <td><input type="button" value="Comprar tickets"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

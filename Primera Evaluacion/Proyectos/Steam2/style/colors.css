@@ -1,0 +1,36 @@
+:root {
+    --primary_color: white;
+    --secondary_color: rgb(138, 186, 181);
+    --secondary_color_alpha: rgba(138, 186, 181, 0.2);
+    --select-color: rgb(173, 194, 221);
+    --hover-primary: rgb(255, 255, 162);
+    --text-color: white;
+    --button-background-color: transparent;
+    --table-border-color: rgba(128, 128, 128, 0.48);
+
+    --input-placeholder-color: rgba(255, 255, 255, 0.68);
+    --color-black: rgb(0, 0, 0);
+
+    --main-gradient-background: rgb(0, 0, 0);
+    --main-gradient: linear-gradient(
+            120deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(60, 14, 99, 1) 35%,
+            rgba(9, 66, 119, 1) 65%,
+            rgba(9, 119, 80, 1) 100%
+    );
+
+    --button-gradient-background: rgb(63, 94, 251);
+    --button-gradient: radial-gradient(
+            circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%
+    );
+
+    --border-gradient: linear-gradient(
+            90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%
+    );
+}

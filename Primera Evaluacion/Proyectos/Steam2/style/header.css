@@ -1,6 +1,14 @@
 header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    grid-row: 1;
     background-color: var(--secondary_color_alpha);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     user-select: none;
 }
 
@@ -33,8 +41,19 @@ header {
     font-weight: bold;
 }
 
+#menu:hover {
+    color: var(--select-color);
+}
+
 #menu a:hover {
     color: var(--hover-primary);
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5em;
 }
 
 @media (max-width: 599px) {

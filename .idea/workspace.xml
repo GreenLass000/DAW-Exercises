@@ -4,35 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Proyecto">
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/colaboradores.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/tienda.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/adopcion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/adopcion.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/colaboradores.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/colaboradores.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/contacto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/contacto.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/footer.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/main.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/qsomos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/qsomos.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/tienda.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/tienda.styl" afterDir="false" />
+    <list default="true" id="1202e6d2-7cb8-49eb-b837-583a8634ce7c" name="Changes" comment="Less y Sass y Stylus">
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/pages/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/pages/program.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/pages/tiket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/audio/seminci.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/icons/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/icons/gorjeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/icons/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/icons/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/icons/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/images/seminci.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/resources/videos/seminci.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Seminci/style/estilos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/games/animal-crossing-new-leaf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/games/bloons-td6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/games/minecraft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/games/the-binding-of-isaac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/games/the-legend-of-zelda-majoras-mask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/images/animalcrossing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/images/btd6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/images/majora.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/images/minecraft.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/images/tboi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/resources/videos/atardecer.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/carrito.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/catalogo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/colors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/games.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/adopcion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/adopcion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/contacto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/gatos.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/gatos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/perreras.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/perreras.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/perros.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/perros.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/quienes_somos.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/pages/quienes_somos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/adopcion.less" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/adopcion.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/contacto.less" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/contacto.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/qsomos.less" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Tema1/Ejercicios/LessSass/style/qsomos.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/carrito.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/carrito.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/catalogo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/catalogo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/pages/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Primera Evaluacion/Proyectos/Steam2/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +122,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "di",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Program Files/nodejs/node.exe",
+    "last_opened_file_path": "C:/Users/admin/Desktop/DAW-Exercises/Primera Evaluacion/Proyectos",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -122,6 +135,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion\Proyectos" />
       <recent name="C:\Users\admin\Desktop\DAW-Exercises\Primera Evaluacion" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -156,7 +170,8 @@
       <workItem from="1700320949383" duration="4594000" />
       <workItem from="1700328999975" duration="6158000" />
       <workItem from="1700429277769" duration="1323000" />
-      <workItem from="1705656917524" duration="7167000" />
+      <workItem from="1705656917524" duration="7716000" />
+      <workItem from="1706004927386" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="Tema 3 ejercicio 1">
       <option name="closed" value="true" />
@@ -222,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700431401990</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Less y Sass y Stylus">
+      <option name="closed" value="true" />
+      <created>1705665358891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705665358891</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +271,7 @@
     <MESSAGE value="Memory update" />
     <MESSAGE value="Ejercicio Video" />
     <MESSAGE value="Proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proyecto" />
+    <MESSAGE value="Less y Sass y Stylus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Less y Sass y Stylus" />
   </component>
 </project>
