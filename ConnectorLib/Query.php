@@ -1,8 +1,7 @@
 <?php
 
-namespace query;
+namespace lib\connector;
 
-use ConnectorLib\Connection;
 use PDO;
 use PDOStatement;
 
@@ -79,40 +78,79 @@ class Query
         return $this->_result;
     }
 
-    public function select(string $query, array $params)
+    public function select(string $query, array $params): false|array
     {
+        $this->getConnection()->connect();
 
+        $this->_result = $this->getConnection()->getConnection()->prepare($query);
+        foreach ($params as $key => $value) {
+            $this->_result->bindValue($key, $value);
+        }
+
+        $this->_result->execute();
+        $return = $this->_result->fetchAll(PDO::FETCH_ASSOC);
+
+        $this->getConnection()->close();
+        return $return;
     }
 
-    public function insert(string $query, array $params)
+    public function insert(string $query, array $params): false|PDOStatement
     {
+        $this->getConnection()->connect();
 
+        $this->_result = $this->getConnection()->getConnection()->prepare($query);
+        foreach ($params as $key => $value) {
+            $this->_result->bindParam($key, $value);
+        }
+        $return = $this->_result->execute();
+
+        $this->getConnection()->close();
+        return $return;
     }
 
-    public function update(string $query, array $params)
+    public function update(string $query, array $params): bool
     {
+        $this->getConnection()->connect();
 
+        $this->_result = $this->getConnection()->getConnection()->prepare($query);
+        foreach ($params as $key => $value) {
+            $this->_result->bindParam($key, $value);
+        }
+        $return = $this->_result->execute();
+
+        $this->getConnection()->close();
+        return $return;
     }
 
     public function delete(string $query, array $params)
     {
-
+        return null;
     }
 
     /**
      * @param string $query
      * @param array $params
-     * @return bool
      */
-    public function makeQuery(string $query, array $params = []): bool
+    public function makeQuery(string $query, array $params = []): PDOStatement|array|bool|null
     {
-        $this->getConnection()->connect();
-
-        $this->_result = $this->_connection->getConnection()->prepare($query);
-        $return = $this->_result->execute($params);
-
-        $this->getConnection()->close();
-
+        $type = strtolower(explode(" ", $query)[0]);
+        $return = null;
+        switch ($type) {
+            case "select":
+                $return = $this->select($query, $params);
+                break;
+            case "insert":
+                $return = $this->insert($query, $params);
+                break;
+            case "update":
+                $return = $this->update($query, $params);
+                break;
+            case "delete":
+                $return = $this->delete($query, $params);
+                break;
+            default:
+                break;
+        }
         return $return;
     }
 

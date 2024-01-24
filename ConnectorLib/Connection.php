@@ -1,13 +1,10 @@
 <?php
 
-namespace connection;
+namespace lib\connector;
 
 use PDO;
 use PDOException;
 
-/**
- * Objeto Connection, crea y gestiona tod o lo necesario para crear y cerrar una conexion a una base de datos PHPMyAdmin
- */
 class Connection
 {
     private string $_username;
@@ -18,13 +15,11 @@ class Connection
     private PDO|null $_connection;
 
     /**
-     * Crea una instancia de <code>Connection</code>
-     *
-     * @param string $_username Usuario de PHPMyAdmin
-     * @param string $_password Contraseña de PHPMyAdmin
-     * @param string $_database Nombre de la base de datos a la que quieres acceder
-     * @param string $_host Dirección del servidor donde se aloja PHPMyAdmin, por defecto es <code>localhost</code>
-     * @param string $_port Puerto en el que se está ejecutando PHPMyAmin, por defecto es <code>3306</code>
+     * @param string $_username
+     * @param string $_password
+     * @param string $_database
+     * @param string $_host
+     * @param string $_port
      */
     public function __construct(string $_username, string $_password, string $_database,
                                 string $_host = "localhost", string $_port = "3306")
@@ -37,8 +32,6 @@ class Connection
     }
 
     /**
-     * Devuelve el usuario de PHPMyAdmin
-     *
      * @return string
      */
     public function getUsername(): string
@@ -47,20 +40,16 @@ class Connection
     }
 
     /**
-     * Modifica el usuario de PHPMyAdmin
-     *
-     * @param string $username Nuevo username que quieres asignar
+     * @param $username
      * @return void
      */
-    public function setUsername(string $username): void
+    public function setUsername($username): void
     {
         $this->_username = $username;
     }
 
     /**
-     * Devuelve la contraseña de PHPMyAdmin
-     *
-     * @return string Contraseña de PHPMyAdmin
+     * @return string
      */
     public function getPassword(): string
     {
@@ -68,20 +57,16 @@ class Connection
     }
 
     /**
-     * Modifica la contraseña de PHPMyAdmin
-     *
-     * @param string $password Nueva contraseña que quieres asignar
+     * @param $password
      * @return void
      */
-    public function setPassword(string $password): void
+    public function setPassword($password): void
     {
         $this->_password = $password;
     }
 
     /**
-     * Devuelve el nombre de la base de datos de PHPMyAdmin
-     *
-     * @return string Nombre de base de datos de PHPMyAdmin
+     * @return string
      */
     public function getDatabase(): string
     {
@@ -89,20 +74,16 @@ class Connection
     }
 
     /**
-     * Modifica el nombre de la base de datos de PHPMyAdmin
-     *
-     * @param string $database Nuevo nombre de base de datos que quieres asignar
+     * @param $database
      * @return void
      */
-    public function setDatabase(string $database): void
+    public function setDatabase($database): void
     {
         $this->_database = $database;
     }
 
     /**
-     * Devuelve el host de PHPMyAdmin
-     *
-     * @return string Host de PHPMyAdmin
+     * @return string
      */
     public function getHost(): string
     {
@@ -110,20 +91,16 @@ class Connection
     }
 
     /**
-     * Modifica el host de PHPMyAdmin
-     *
-     * @param string $host Nuevo host que quieres asignar
+     * @param mixed $host
      * @return void
      */
-    public function setHost(string $host): void
+    public function setHost(mixed $host): void
     {
         $this->_host = $host;
     }
 
     /**
-     * Devuelve el puerto de PHPMyAdmin
-     *
-     * @return string Puerto de PHPMyAdmin
+     * @return string
      */
     public function getPort(): string
     {
@@ -131,19 +108,15 @@ class Connection
     }
 
     /**
-     * Modifica el puerto de PHPMyAdmin
-     *
-     * @param int $port Nuevo puerto que quieres asignar
+     * @param mixed $port
      * @return void
      */
-    public function setPort(int $port): void
+    public function setPort(mixed $port): void
     {
         $this->_port = $port;
     }
 
     /**
-     * Devuelve el objeto PDO de la conexión
-     *
      * @return PDO
      */
     public function getConnection(): PDO
