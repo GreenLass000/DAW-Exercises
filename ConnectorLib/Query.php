@@ -5,32 +5,41 @@ namespace lib\connector;
 use PDO;
 use PDOStatement;
 
+/**
+ * @author Marcos Navarro
+ * @version 1.2
+ */
 class Query
 {
+    /**
+     * @var Connection Objeto de conexion a la base de datos
+     * @see Connection
+     */
     private Connection $_connection;
-    private string $_sqlQuery;
-    private PDOStatement $_result;
-    private PDO $_pdo;
 
     /**
-     * @param Connection $_connection
+     * @var PDOStatement Resultado de las consultas a base de datos realizadas
+     * @see PDOStatement
+     */
+    private PDOStatement $_result;
+
+    /**
+     * Crea un objeto <code>Query</code> pasando como parametro la conexion a la base de datos
+     * donde quieres hacer las consultas
+     *
+     * @param Connection $_connection Conexion a la base de datos
+     * @see Connection
      */
     public function __construct(Connection $_connection)
     {
         $this->_connection = $_connection;
-
-        $host = $_connection->getHost();
-        $dbname = $_connection->getDatabase();
-        $port = $_connection->getPort();
-        $user = $_connection->getUsername();
-        $pass = $_connection->getPassword();
-
-        $dsn = "mysql:host=$host;dbname=$dbname;port=$port";
-        $this->_pdo = new PDO($dsn, $user, $pass);
     }
 
     /**
-     * @return Connection
+     * Devuelve la conexion a la base de datos
+     *
+     * @return Connection Conexion a la base de datos
+     * @see Connection
      */
     public function getConnection(): Connection
     {
@@ -38,46 +47,23 @@ class Query
     }
 
     /**
-     * @return PDO
-     */
-    public function getPdo(): PDO
-    {
-        return $this->_pdo;
-    }
-
-    /**
-     * @param PDO $pdo
-     * @return void
-     */
-    public function setPdo(PDO $pdo): void
-    {
-        $this->_pdo = $pdo;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSqlQuery(): string
-    {
-        return $this->_sqlQuery;
-    }
-
-    /**
-     * @param string $sqlQuery
-     */
-    public function setSqlQuery(string $sqlQuery): void
-    {
-        $this->_sqlQuery = $sqlQuery;
-    }
-
-    /**
-     * @return PDOStatement
+     * Devuelve el resultado de la consulta realizada
+     *
+     * @return PDOStatement Resultado de consulta realizada
+     * @see PDOStatement
      */
     public function getResult(): PDOStatement
     {
         return $this->_result;
     }
 
+    /**
+     *
+     *
+     * @param string $query
+     * @param array $params
+     * @return false|array
+     */
     public function select(string $query, array $params): false|array
     {
         $this->getConnection()->connect();
@@ -94,6 +80,11 @@ class Query
         return $return;
     }
 
+    /**
+     * @param string $query
+     * @param array $params
+     * @return false|PDOStatement
+     */
     public function insert(string $query, array $params): false|PDOStatement
     {
         $this->getConnection()->connect();
@@ -108,6 +99,11 @@ class Query
         return $return;
     }
 
+    /**
+     * @param string $query
+     * @param array $params
+     * @return bool
+     */
     public function update(string $query, array $params): bool
     {
         $this->getConnection()->connect();
@@ -122,16 +118,27 @@ class Query
         return $return;
     }
 
-    public function delete(string $query, array $params)
+    /**
+     * @param string $query
+     * @param array $params
+     * @return null
+     * @todo Implementar metodo para borrar datos
+     */
+    public function delete(string $query, array $params): null
     {
         return null;
     }
 
     /**
+     * En base a la consulta, ejecuta un metodo u otro
+     *
      * @param string $query
      * @param array $params
+     * @return PDOStatement|array|bool|null
+     * @deprecated Usar los metodos <code>insert</code>, <code>select</code>,
+     * <code>update</code> y <code>delete</code> en su lugar
      */
-    public function makeQuery(string $query, array $params = []): PDOStatement|array|bool|null
+    public function makeQuery(string $query, array $params): PDOStatement|array|bool|null
     {
         $type = strtolower(explode(" ", $query)[0]);
         $return = null;
@@ -159,9 +166,10 @@ class Query
      *
      * @return string
      * @link https://php.net/manual/en/language.oop5.magic.php#language.oop5.magic.tostring
+     * @todo Añadir un toString
      */
     public function __toString(): string
     {
-        return "Statement: " . $this->_sqlQuery;
+        return "";
     }
 }

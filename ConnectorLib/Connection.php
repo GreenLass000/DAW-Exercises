@@ -5,21 +5,50 @@ namespace lib\connector;
 use PDO;
 use PDOException;
 
+/**
+ * @author Marcos Navarro
+ * @version 1.2
+ */
 class Connection
 {
+    /**
+     * @var string Nombre del usuario de phpMyAdmin
+     */
     private string $_username;
+
+    /**
+     * @var string Contraseña de phpMyAdmin
+     */
     private string $_password;
+
+    /**
+     * @var string Nombre de la base de datos de phpMyAdmin
+     */
     private string $_database;
+
+    /**
+     * @var string Host de phpMyAdmin
+     */
     private string $_host;
+
+    /**
+     * @var string Puerto de phpMyAdmin
+     */
     private string $_port;
+
+    /**
+     * @var PDO|null Objeto PDO que almacena la conexion a la base de datos
+     */
     private PDO|null $_connection;
 
     /**
-     * @param string $_username
-     * @param string $_password
-     * @param string $_database
-     * @param string $_host
-     * @param string $_port
+     * Crea una nueva conexión a phpMyAdmin
+     *
+     * @param string $_username Nombre del usuario
+     * @param string $_password Contraseña
+     * @param string $_database Nombre de la base de datos
+     * @param string $_host Direccion donde se aloja el servidor, por defecto <code>localhost</code>
+     * @param string $_port Puerto del servidor, por defecto <code>3306</code>
      */
     public function __construct(string $_username, string $_password, string $_database,
                                 string $_host = "localhost", string $_port = "3306")
@@ -32,7 +61,9 @@ class Connection
     }
 
     /**
-     * @return string
+     * Devuelve el nombre de usuario
+     *
+     * @return string Nombre de usuario
      */
     public function getUsername(): string
     {
@@ -40,16 +71,19 @@ class Connection
     }
 
     /**
-     * @param $username
-     * @return void
+     * Cambia el valor de <code>username</code>
+     *
+     * @param string $username Nuevo valor de <code>username</code>
      */
-    public function setUsername($username): void
+    public function setUsername(string $username): void
     {
         $this->_username = $username;
     }
 
     /**
-     * @return string
+     * Devuelve la contraseña
+     *
+     * @return string Contraseña
      */
     public function getPassword(): string
     {
@@ -57,16 +91,19 @@ class Connection
     }
 
     /**
-     * @param $password
-     * @return void
+     * Cambia el valor de <code>password</code>
+     *
+     * @param string $password Nuevo valor de <code>password</code>
      */
-    public function setPassword($password): void
+    public function setPassword(string $password): void
     {
         $this->_password = $password;
     }
 
     /**
-     * @return string
+     * Devuelve el nombre de la base de datos
+     *
+     * @return string Nombre de la base de datos
      */
     public function getDatabase(): string
     {
@@ -74,16 +111,19 @@ class Connection
     }
 
     /**
-     * @param $database
-     * @return void
+     * Cambia el valor de <code>database</code>
+     *
+     * @param string $database Nuevo valor de <code>database</code>
      */
-    public function setDatabase($database): void
+    public function setDatabase(string $database): void
     {
         $this->_database = $database;
     }
 
     /**
-     * @return string
+     * Devuelve el <code>host</code>
+     *
+     * @return string <code>Host</code>
      */
     public function getHost(): string
     {
@@ -91,16 +131,19 @@ class Connection
     }
 
     /**
-     * @param mixed $host
-     * @return void
+     * Cambia el valor de <code>host</code>
+     *
+     * @param string $host Nuevo valor de <code>host</code>
      */
-    public function setHost(mixed $host): void
+    public function setHost(string $host): void
     {
         $this->_host = $host;
     }
 
     /**
-     * @return string
+     * Devuelve el puerto
+     *
+     * @return string Puerto
      */
     public function getPort(): string
     {
@@ -108,16 +151,19 @@ class Connection
     }
 
     /**
-     * @param mixed $port
-     * @return void
+     * Cambia el valor de <code>port</code>
+     *
+     * @param string $port Nuevo valor de <code>port</code>
      */
-    public function setPort(mixed $port): void
+    public function setPort(string $port): void
     {
         $this->_port = $port;
     }
 
     /**
-     * @return PDO
+     * Devuele la conexion a la base de datos
+     *
+     * @return PDO Conexion
      */
     public function getConnection(): PDO
     {
@@ -125,7 +171,9 @@ class Connection
     }
 
     /**
-     * @return string
+     * Devuelve un <code>string</code> de la cadena de conexion a la base de datos
+     *
+     * @return string Cadena de conexion
      */
     private function getConnectionStr(): string
     {
@@ -133,9 +181,11 @@ class Connection
     }
 
     /**
-     * @param string $err_message
-     * @param bool $stackTrace
-     * @return PDO|int
+     * Crea una conexion usando un objeto <code>PDO</code> y los datos de conexión almacenados en <code>conection</code>
+     *
+     * @param string $err_message Mensaje de error que aparecera si ocurre alguna clase de error, por defecto 'Error en la base de datos'
+     * @param bool $stackTrace Activa o desactiva el <code>stackTrace</code> de errores, por defecto <code>true</code>
+     * @return PDO|int Devuelve una conexion si no ha habido errores, en caso contrario devuelve un numero con el codigo de error
      */
     function connect(string $err_message = "Error con la base de datos: ",
                      bool   $stackTrace = true): PDO|int
@@ -155,7 +205,7 @@ class Connection
     }
 
     /**
-     * @return void
+     * Cierra la conexion
      */
     function close(): void
     {
@@ -163,7 +213,10 @@ class Connection
     }
 
     /**
-     * @return string
+     * Devuelve la cadena de conexion de la base de datos
+     *
+     * @return string Cadena de conexion
+     * @see getConnectionStr()
      */
     public function __toString(): string
     {
