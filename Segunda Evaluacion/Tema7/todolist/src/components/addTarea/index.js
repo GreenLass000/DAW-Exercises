@@ -1,22 +1,40 @@
-import {useState} from "react";
-import "./add-tarea.css";
+import React, { Component } from 'react';
 
-const AddTarea = ({add}) => {
-    const [name, setName] = useState("");
+class AddTask extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            nombreComponente: ''
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-    const handleChange = (event) => {
-        setName(event.target.value);
-    };
-    const handleSubmit = (event) => {
+    handleChange(event) {
+        this.setState({ nombreComponente: event.target.value });
+    }
+
+    handleSubmit(event) {
         event.preventDefault();
-        add(name);
-        setName("");
-    };
+        this.props.onFormSubmit(this.state.nombreComponente);
+        this.setState({ nombreComponente: '' }); // Limpiar el campo después de enviar
+    }
 
-    return (<form onSubmit={handleSubmit}>
-        <input type={"text"} value={name} onChange={handleChange}/>
-        <button type={"submit"}>Añadir</button>
-    </form>);
-};
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    Nombre del Componente:
+                    <input
+                        type="text"
+                        value={this.state.nombreComponente}
+                        onChange={this.handleChange}
+                    />
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        );
+    }
+}
 
-export default AddTarea;
+export default AddTask;
