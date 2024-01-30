@@ -1,0 +1,12 @@
+.image {
+    width: 70px;
+}
+
+.new {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.title {
+    font-weight: bold;
+}
