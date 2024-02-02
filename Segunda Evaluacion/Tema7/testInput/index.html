@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Input</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="active">
+
+<div class="container">
+    <div class="input-container">
+        <label for="inputField">
+            <input type="text" id="inputField" class="input-field">
+        </label>
+        <button id="hideButton" class="button hidden" onclick="hideInput()">Ocultar</button>
+    </div>
+
+    <div class="floating">
+        <div class="thickness"></div>
+        <div class="thickness"></div>
+        <div class="thickness"></div>
+        <div class="card_body">
+            <div class="paypal_center svg"></div>
+            <div class="logo svg"></div>
+            <div class="paywave svg"></div>
+            <div class="chips svg"></div>
+            <div class="card_no text" onclick="showInput('1234-5678-9012-3456')">
+                1234-5678-9012-3456
+            </div>
+            <div class="valid text">
+                VALID <br> THUR
+            </div>
+            <div class="valid_date text">
+                12/20
+            </div>
+            <div class="holder text">JOHN DOE</div>
+            <div class="mastercard_icon svg"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
