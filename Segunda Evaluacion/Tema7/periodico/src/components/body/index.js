@@ -20,7 +20,7 @@ const Body = () => {
     if (dataCatched) {
         return (<div className={"grid-container"}>
             {news.map(_new => {
-                return (<New key={_new.IdNoticia} image={_new.Imagen} author={_new.Titulo} content={_new.Noticia}/>);
+                return (<New key={_new.id} image={_new.Imagen} author={_new.Titulo} content={_new.Noticia}/>);
             })}
         </div>);
     } else {

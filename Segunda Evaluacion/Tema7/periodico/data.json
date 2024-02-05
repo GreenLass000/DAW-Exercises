@@ -1,52 +1,70 @@
 {
   "Noticias": [
     {
-      "IdNoticia": 1,
+      "id": 1,
       "Titulo": "Reunión propietarios",
       "Noticia": "El próximo martes 17 de mayo se llevará a cabo la asamblea de propietarios en la Universidad de Medellín. Hora 6:00pm Aula Enfasis 3. No falten",
       "Imagen": "http://blog.arrentum.com/wp-content/uploads/2015/03/Fotolia_60883958_XS.jpg"
     },
     {
-      "IdNoticia": 2,
+      "id": 2,
       "Titulo": "El profesor vicman se compadece de sus estudiantes y les sube 2 unidades en el trabajo final",
       "Noticia": "El profesor victor cataño, ha decidido que los estudiantes del curso enfasis 3 tendran 2 unidades en el trabajo final o en el examen final dependiendo su caso.",
       "Imagen": "https://avatars1.githubusercontent.com/u/1145208?v=3&s=400"
     },
     {
-      "IdNoticia": 3,
+      "id": 3,
       "Titulo": "Reunión propietarios",
       "Noticia": "El próximo martes 17 de mayo se llevará a cabo la asamblea de propietarios en la Universidad de Medellín. Hora 6:00pm Aula Enfasis 3. No falten",
       "Imagen": "http://blog.arrentum.com/wp-content/uploads/2015/03/Fotolia_60883958_XS.jpg"
     },
     {
-      "IdNoticia": 4,
+      "id": 4,
       "Titulo": "El profesor vicman se compadece de sus estudiantes y les sube 2 unidades en el trabajo final",
       "Noticia": "El profesor victor cataño, ha decidido que los estudiantes del curso enfasis 3 tendran 2 unidades en el trabajo final o en el examen final dependiendo su caso.",
       "Imagen": "https://avatars1.githubusercontent.com/u/1145208?v=3&s=400"
     },
     {
-      "IdNoticia": 5,
+      "id": 5,
       "Titulo": "Reunión propietarios",
       "Noticia": "El próximo martes 17 de mayo se llevará a cabo la asamblea de propietarios en la Universidad de Medellín. Hora 6:00pm Aula Enfasis 3. No falten",
       "Imagen": "http://blog.arrentum.com/wp-content/uploads/2015/03/Fotolia_60883958_XS.jpg"
     },
     {
-      "IdNoticia": 6,
+      "id": 6,
       "Titulo": "El profesor vicman se compadece de sus estudiantes y les sube 2 unidades en el trabajo final",
       "Noticia": "El profesor victor cataño, ha decidido que los estudiantes del curso enfasis 3 tendran 2 unidades en el trabajo final o en el examen final dependiendo su caso.",
       "Imagen": "https://avatars1.githubusercontent.com/u/1145208?v=3&s=400"
     },
     {
-      "IdNoticia": 7,
+      "id": 7,
       "Titulo": "Reunión propietarios",
       "Noticia": "El próximo martes 17 de mayo se llevará a cabo la asamblea de propietarios en la Universidad de Medellín. Hora 6:00pm Aula Enfasis 3. No falten",
       "Imagen": "http://blog.arrentum.com/wp-content/uploads/2015/03/Fotolia_60883958_XS.jpg"
     },
     {
-      "IdNoticia": 8,
+      "id": 8,
       "Titulo": "El profesor vicman se compadece de sus estudiantes y les sube 2 unidades en el trabajo final",
       "Noticia": "El profesor victor cataño, ha decidido que los estudiantes del curso enfasis 3 tendran 2 unidades en el trabajo final o en el examen final dependiendo su caso.",
       "Imagen": "https://avatars1.githubusercontent.com/u/1145208?v=3&s=400"
+    },
+    {
+      "id": "0f54",
+      "Imagen": "https://picsum.photos/200",
+      "Titulo": "aptata",
+      "Noticia": "ohla"
+    },
+    {
+      "id": "a773",
+      "Imagen": "https://picsum.photos/200",
+      "Titulo": "Esto es una noticia",
+      "Noticia": "SOSYYYY"
+    },
+    {
+      "id": "9d49",
+      "Imagen": "https://picsum.photos/200",
+      "Titulo": "asdf",
+      "Noticia": "fdsa"
     }
   ]
 }
