@@ -1,0 +1,134 @@
+{
+    "peliculas": [
+        {
+            "id": 1,
+            "titulo": "La sociedad de la nieve",
+            "descripcion": "La sociedad de la nieve es una película dramática española de 2023, dirigida y escrita por J. A. Bayona, basada en el libro homónimo de Pablo Vierci",
+            "director": "Bayona",
+            "caratula": "https://okdiario.com/img/2024/01/03/sociedad-de-la-nieve.jpeg"
+        },
+        {
+            "id": 2,
+            "titulo": "Mi soledad tiene alas",
+            "descripcion": "Mi soledad tiene alas es una película dirigida por Mario Casas con Óscar Casas, Candela González, Farid Bechara, Fran Boira, Marta Bayarri .... Año: 2023",
+            "director": "Mario Casas",
+            "caratula": "https://pics.filmaffinity.com/Mi_soledad_tiene_alas-227809860-large.jpg"
+        },
+        {
+            "id": 3,
+            "titulo": "Nowhere",
+            "descripcion": "Una historia de supervivencia brutal protagonizada por una joven embarazada que intenta escapar de un país totalitario",
+            "director": "Albert Pintó",
+            "caratula": "https://pics.filmaffinity.com/Nowhere-253002170-large.jpg"
+        },
+        {
+            "id": 4,
+            "titulo": "Mal ajeno",
+            "descripcion": "Diego es un médico acostumbrado a manejar situaciones límite, que se ha inmunizado ante el dolor ajeno",
+            "director": "Oskar Santos",
+            "caratula": "https://pics.filmaffinity.com/El_mal_ajeno-882573753-mmed.jpg"
+        },
+        {
+            "id": 5,
+            "titulo": "El laberinto del fauno",
+            "descripcion": "Ofelia es una niña solitaria que conoce a un fauno en un antiguo laberinto. El fauno, una extraña criatura, le hace una sorprendente revelación: ella es en realidad una princesa, la última de su estirpe, y los suyos la esperan desde hace mucho tiempo.",
+            "director": "Guillermo del Toro",
+            "caratula": "https://pics.filmaffinity.com/El_laberinto_del_fauno-222302534-large.jpg"
+        },
+        {
+            "id": 6,
+            "titulo": "Lo imposible",
+            "descripcion": "María, Henry y sus tres hijos pequeños vuelan desde Japón a Tailandia para pasar las vacaciones de Navidad en la playa. La mañana después de Navidad, mientras se bañan en la piscina, un tsunami destroza el hotel y gran parte de la costa del sudeste asiático.",
+            "director": "Bayona",
+            "caratula": "https://pics.filmaffinity.com/Lo_imposible-554801449-large.jpg"
+        }
+    ],
+    "series": [
+        {
+            "id": 1,
+            "titulo": "Los elegidos",
+            "descripcion": "Serie que narra la vida de Jesucristo y de los apóstoles, buscando mostrar a Jesús de Nazaret de una manera ...",
+            "genero": "Drama, Drama histórico",
+            "caratula": "https://pics.filmaffinity.com/The_Chosen_Los_elegidos_Serie_de_TV-879358962-large.jpg"
+        },
+        {
+            "id": 2,
+            "titulo": "Engaños",
+            "descripcion": "Cuando su marido es brutalmente asesinado, Maya ve a alguien en la cámara que ha instalado para vigilar a su pequeña hija, alguien que se supone que está muerta",
+            "genero": "Suspense, Drama, Misterio",
+            "caratula": "https://es.web.img2.acsta.net/pictures/24/01/02/11/55/3027391.jpg"
+        },
+        {
+            "id": 3,
+            "titulo": "El marginal",
+            "descripcion": "El marginal es una serie de televisión argentina de drama policial creada por Sebastián Ortega, escrita por Adrián Caetano, Guillermo Salmerón y Silvina Olschansky, y dirigida por Luis Ortega, con Sebastián Ortega como productor ejecutivo",
+            "genero": "Acción, Drama, Suspense",
+            "caratula": "pics.filmaffinity.com/El_marginal_Serie_de_TV-379397521-large.jpg"
+        },
+        {
+            "id": 4,
+            "titulo": "Griselda",
+            "descripcion": "La astuta y ambiciosa empresaria colombiana Griselda Blanco crea uno de los cárteles más rentables de la historia",
+            "genero": "Drama, Suspense, Crimen, Novela policiaca",
+            "caratula": "https://pics.filmaffinity.com/Griselda_Miniserie_de_TV-389257636-large.jpg"
+        },
+        {
+            "id": 5,
+            "titulo": "Los soprano",
+            "descripcion": "Cuando Tony Soprano colapsa después de sufrir un ataque de pánico, comienza una psicoterapia con la doctora Jennifer Melfi",
+            "genero": "Ciencia Ficción, Aventura, Crimen",
+            "caratula": "https://pics.filmaffinity.com/the_sopranos-196243243-mmed.jpg"
+        },
+        {
+            "id": 6,
+            "titulo": "Vikings",
+            "descripcion": "Vikings es una serie de televisión de drama histórico creada y escrita por Michael Hirst para el canal History. Filmada en Irlanda",
+            "genero": "Documental, Drama histórico",
+            "caratula": "https://media.revistagq.com/photos/5df77825cb1bd600080dbd6d/4:3/w_1608,h_1206,c_limit/vikingos.jpg"
+        }
+    ],
+    "juegos": [
+        {
+            "id": 1,
+            "nombre": "Super Mario Bros.",
+            "descripcion": "Super Mario es una serie de videojuegos de plataformas creados por la empresa desarrolladora Nintendo y protagonizados por su mascota, Mario",
+            "caratula": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/portals_3/2x1_SuperMarioHub_image1600w.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "The Legend of Zelda: Ocarina of Time",
+            "descripcion": "The Legend of Zelda es una serie de videojuegos de acción-aventura creada por los diseñadores japoneses Shigeru Miyamoto y Takashi Tezuka",
+            "caratula": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/portals_3/SI_Hub_Zelda_Portal_image1600w.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Gran Turismo Sport",
+            "descripcion": " posee funciones de conducción automáticas que permiten dejar los frenos y el volante bajo el control de la IA",
+            "caratula": "https://static.motor.es/fotos-noticias/2017/07/gran-turismo-sport-caratula-201737790_1.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "FC 24",
+            "descripcion": "EA Sports FC 24​ es un videojuego de fútbol, desarrollado por EA, y publicado por EA Sports. Este juego marca la primera entrega de la serie EA Sports FC, ​ tras la conclusión de la asociación de EA con FIFA",
+            "caratula": "https://image.api.playstation.com/vulcan/ap/rnd/202310/0214/2d303f56b705633886b50c56e34f12de0ff12d0453c10623.png"
+        },
+        {
+            "id": 5,
+            "nombre": "Overwatch",
+            "descripcion": "Overwatch es una franquicia multimedia centrada en una serie de videojuegos de disparos en primera persona multijugador en línea desarrollados por Blizzard Entertainment",
+            "caratula": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGt1dx20aHH4SIQahF9HZogoL8MBAOjteMYkRg10_ENQ&s"
+        },
+        {
+            "id": 6,
+            "nombre": "Call of Duty: WWII",
+            "descripcion":"Call of Duty: WWII es un videojuego de disparos en primera persona desarrollado por Sledgehammer Games, distribuido por Activision, perteneciente a la franquicia Call of Duty y es la decimocuarta entrega de la saga",
+            "caratula": "https://i.blogs.es/292653/duty0/1366_2000.jpg"
+        },
+        {
+            "id": 7,
+            "nombre": "Halo 5: Guardians",
+            "descripcion":"Halo 5 Guardians es un videojuego de disparos en primera persona de la popular saga de videojuegos Halo exclusivo para la consola Xbox One",
+            "caratula": "https://media.gq.com.mx/photos/5be9f2138021583cae66fd92/master/pass/halo_5_2099.jpg"
+        }
+    ]
+}
